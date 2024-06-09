@@ -1,1 +1,5157 @@
-../../../../../../../../planguages.json
+{
+  "header": {
+    "title": "History of programming languages",
+    "author": {
+      "name": "Melchior Grützmann",
+      "email": "melchiorG@gMail.com",
+      "affiliation": "BFW Völk, Germany/EU"
+    },
+    "date": "2024-06-09",
+    "copyright": "FDL"
+  },
+  "langs": [ {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Joseph Marie Jacquard"
+    } ],
+    "name": "Jacquard Loom",
+    "inception": "1804"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Richard Clippinger"
+    }, {
+      "name": "John von Neumann"
+    } ],
+    "name": "ENIAC Short Code",
+    "inception": "1946"
+  }, {
+    "authors": [ {
+      "name": "Kathleen Booth",
+      "affiliation": "Birkbeck, University of London"
+    }, {
+      "name": "David Wheeler"
+    } ],
+    "name": "Assembly",
+    "inception": "1948"
+  }, {
+    "parents": [ {
+      "name": "ENIAC Short Code"
+    } ],
+    "authors": [ {
+      "name": "Haskell Curry"
+    } ],
+    "name": "Curry notation system",
+    "inception": "1948"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Konrad Zuse"
+    } ],
+    "name": "Plankalkül",
+    "inception": "1948"
+  }, {
+    "parents": [ {
+      "name": "Plankalkül"
+    } ],
+    "authors": [ {
+      "name": "Heinz Rutishauser"
+    } ],
+    "name": "Superplan",
+    "inception": "1951"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Edward A. Voorhees"
+    }, {
+      "name": "Karl Balke"
+    } ],
+    "name": "Algae",
+    "inception": "1951"
+  }, {
+    "authors": [ {
+      "name": "Alick Glennie",
+      "affiliation": "University of Manchester"
+    } ],
+    "name": "Autocode",
+    "inception": "1952"
+  }, {
+    "parents": [ {
+      "name": "Autocode"
+    } ],
+    "authors": [ {
+      "name": "Tony Brooker"
+    } ],
+    "name": "Mark I Autocode",
+    "inception": "1954"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Grace Hopper et al",
+      "affiliation": "UNIVAC"
+    }, {
+      "name": "Charles Katz et al"
+    } ],
+    "name": "Matic", "version": "Math",
+    "inception": "1954"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Grace Hopper et al",
+      "affiliation": "UNIVAC"
+    } ],
+    "name": "Matic", "version": "Flow",
+    "inception": "1955"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "M. Grems"
+    }, {
+      "name": "R. Porter"
+    } ],
+    "name": "BACAIC",
+    "inception": "1955"
+  },{
+   "authors": [{
+    "name": "Team lead by Alan Perlis"
+   }],
+    "name": "IT",
+    "inception": "1956"
+  }, {
+    "parents": [ {
+      "name": "Flow-Matic"
+    } ],
+    "authors": [ {
+      "name": "Bob Bemer"
+    } ],
+    "name": "ComTran",
+    "inception": "1957"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "John W. Backus",
+      "affiliation": "IBM"
+    } ],
+    "name": "Fortran",
+    "inception": "1957"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Allen Newell"
+    }, {
+      "name": "Cliff Shaw"
+    }, {
+      "name": "Herbert A. Simon"
+    } ],
+    "name": "IPL",
+    "inception": "1958"
+  }, {
+    "parents": [ {
+      "name": "Math-Matic"
+    } ],
+    "authors": [ {
+      "name": "Remington Rand",
+      "affiliation": "UNIVAC"
+    } ],
+    "name": "Unicode",
+    "inception": "1958"
+  }, {
+    "parents": [ {
+      "name": "Fortran"
+    } ],
+    "authors": [ {
+      "name": "Team led by John W. Backus",
+      "affiliation": "IBM"
+    } ],
+    "name": "Fortran", "version": "II",
+    "inception": "1958"
+  }, {
+    "parents": [ {
+      "name": "Fortran"
+    }, {
+      "name": "IT"
+    } ],
+    "authors": [ {
+      "name": "ACM/GAMM"
+    } ],
+    "name": "Algol",
+    "inception": "1958"
+  }, {
+    "parents": [ {
+      "name": "IPL"
+    } ],
+    "authors": [ {
+      "name": "John McCarthy"
+    }, {
+      "name": "Steve Russell"
+    }, {
+      "name": "Timothy P. Hart"
+    }, {
+      "name": "Mike Levin"
+    } ],
+    "name": "Lisp",
+    "inception": "1958"
+  }, {
+    "parents": [ {
+      "name": "IPL"
+    } ],
+    "authors": [ {
+      "name": "Allen Newell"
+    }, {
+      "name": "Cliff Shaw"
+    }, {
+      "name": "Herbert A. Simon"
+    } ],
+    "name": "IPL", "version": "V",
+    "inception": "1958"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Douglas T. Ross"
+    } ],
+    "name": "APT",
+    "inception": "1959"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Fletcher R. Jones"
+    }, {
+      "name": "Roy Nutt"
+    }, {
+      "name": "Robert L. Patrick"
+    } ],
+    "name": "FACT",
+    "inception": "1959"
+  }, {
+    "parents": [ {
+      "name": "Lisp"
+    } ],
+    "authors": [ {
+      "name": "John McCarthy"
+    }, {
+      "name": "Steve Russell"
+    }, {
+      "name": "Timothy P. Hart"
+    }, {
+      "name": "Mike Levin"
+    } ],
+    "name": "Lisp", "version": "1.5",
+    "inception": "1960"
+  }, {
+    "parents": [ {
+      "name": "Flow-Matic"
+    }, {
+      "name": "ComTran"
+    } ],
+    "authors": [ {
+      "name": "The CODASYL Committee"
+    } ],
+    "name": "Cobol",
+    "inception": "1960"
+  }, {
+    "parents": [ {
+      "name": "Algol"
+    } ],
+    "authors": [ {
+      "name": "Jules Schwartz",
+      "affiliation": "SDC"
+    } ],
+    "name": "Jovial",
+    "inception": "1959"
+  }, {
+    "parents": [ {
+      "name": "IPL", "version": "V"
+    } ],
+    "authors": [ {
+      "name": "John McCarthy"
+    }, {
+      "name": "Steve Russell"
+    }, {
+      "name": "Timothy P. Hart"
+    }, {
+      "name": "Mike Levin"
+    } ],
+    "name": "Lisp",
+    "inception": "1958"
+  }, {
+    "parents": [ {
+      "name": "Algol"
+    } ],
+    "authors": [ {
+      "name": "Backus"
+    }, {
+      "name": "Bauer"
+    }, {
+      "name": "Green"
+    }, {
+      "name": "Katz"
+    }, {
+      "name": "McCarthy"
+    }, {
+      "name": "Naur"
+    }, {
+      "name": "Perlis"
+    }, {
+      "name": "Rutishauser"
+    }, {
+      "name": "Samelson"
+    }, {
+      "name": "van Wijngaarden"
+    }, {
+      "name": "Vauquois"
+    }, {
+      "name": "Wegstein"
+    }, {
+      "name": "Woodger"
+    } ],
+    "name": "Algol", "version": "60",
+    "inception": "1960"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Victor Yngve"
+    } ],
+    "name": "Comit",
+    "inception": "1961"
+  }, {
+    "parents": [ {
+      "name": "Fortran", "version": "II"
+    } ],
+    "authors": [ {
+      "name": "IBM"
+    } ],
+    "name": "Fortran", "version": "IV",
+    "inception": "1962"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Kenneth E. Iverson"
+    } ],
+    "name": "APL",
+    "inception": "1962"
+  }, {
+    "parents": [ {
+      "name": "Fortran", "version": "II"
+    }, {
+      "name": "Comit"
+    } ],
+    "authors": [ {
+      "name": "Ralph Griswold, et al."
+    } ],
+    "name": "Snobol",
+    "inception": "1962"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "60"
+    } ],
+    "authors": [ {
+      "name": "Barron"
+    }, {
+      "name": "Christopher Strachey"
+    }, {
+      "name": "et al."
+    } ],
+    "name": "CPL",
+    "inception": "1963"
+  }, {
+    "parents": [ {
+      "name": "Snobol"
+    } ],
+    "authors": [ {
+      "name": "Griswold, et al."
+    } ],
+    "name": "Snobol", "version": "3",
+    "inception": "1963"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "60"
+    } ],
+    "authors": [ {
+      "name": "Cliff Shaw",
+      "affiliation": "RAND"
+    } ],
+    "name": "JOSS",
+    "inception": "1963"
+  }, {
+    "name": "CompAss",
+    "inception": "1963"
+  }, {
+    "parents": [ {
+      "name": "Fortran"
+    }, {
+      "name": "Midas"
+    } ],
+    "authors": [ {
+      "name": "H. E. Petersen, et al."
+    } ],
+    "name": "Mimic",
+    "inception": "1964"
+  }, {
+    "parents": [ {
+      "name": "CPL"
+    }, {
+      "name": "Lisp"
+    } ],
+    "authors": [ {
+      "name": "Rod Burstall"
+    }, {
+      "name": "Robin Popplestone"
+    } ],
+    "name": "Cowsel",
+    "inception": "1964"
+  }, {
+    "parents": [ {
+      "name": "Fortran", "version": "II"
+    }, {
+      "name": "JOSS"
+    } ],
+    "authors": [ {
+      "name": "John George Kemeny",
+      "affiliation": "Dartmouth College"
+    }, {
+      "name": "Thomas Eugene Kurtz",
+      "affiliation": "Dartmouth College"
+    } ],
+    "name": "Basic",
+    "inception": "1964"
+  }, {
+    "parents": [ {
+      "name": "Fargo"
+    }, {
+      "name": "9PAC"
+    } ],
+    "authors": [ {
+      "name": "IBM"
+    } ],
+    "name": "RPG",
+    "inception": "1964"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Informatics"
+    } ],
+    "name": "Mark-IV",
+    "inception": "1964"
+  }, {
+    "parents": [ {
+      "name": "Speakeasy", "version": "1"
+    } ],
+    "authors": [ {
+      "name": "Stanley Cohen",
+      "affiliation": "Argonne National Laboratory"
+    } ],
+    "name": "Speakeasy", "version": "2",
+    "inception": "1964"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Calvin Mooers"
+    } ],
+    "name": "Trac",
+    "inception": "1964"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Corrado Böhm"
+    } ],
+    "name": "P′′",
+    "inception": "1964"
+  }, {
+    "parents": [ {
+      "name": "PL", "version": "I"
+    } ],
+    "authors": [ {
+      "name": "Illinois Institute of Technology"
+    } ],
+    "name": "IITran",
+    "inception": "1964"
+  }, {
+    "parents": [ {
+      "name": "Cobol"
+    }, {
+      "name": "Fortran"
+    }, {
+      "name": "Algol", "version": "60"
+    } ],
+    "name": "PL", "version": "I",
+    "inception": "1964"
+  }, {
+    "parents": [ {
+      "name": "RPG"
+    }, {
+      "name": "Fargo"
+    } ],
+    "authors": [ {
+      "name": "IBM"
+    } ],
+    "name": "RPG", "version": "II",
+    "inception": "1965"
+  }, {
+    "parents": [ {
+      "name": "Lisp", "version": "1.5"
+    } ],
+    "authors": [ {
+      "name": "John McCarthy"
+    }, {
+      "name": "Steve Russell"
+    }, {
+      "name": "Timothy P. Hart"
+    }, {
+      "name": "Mike Levin"
+    } ],
+    "name": "Lisp", "version": "mac 1.0",
+    "inception": "1965"
+  }, {
+    "parents": [ {
+      "name": "JOSS"
+    } ],
+    "authors": [ {
+      "name": "BBN"
+    } ],
+    "name": "Telcomp",
+    "inception": "1965"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "60"
+    }, {
+      "name": "Autocode"
+    } ],
+    "authors": [ {
+      "name": "Tony Brooker",
+      "affiliation": "Manchester University"
+    }, {
+      "name": "Derrick Morris",
+      "affiliation": "Manchester University"
+    } ],
+    "name": "Atlas Autocode",
+    "inception": "1965"
+  }, {
+    "parents": [ {
+      "name": "Lisp", "version": "1.5"
+    } ],
+    "authors": [ {
+      "name": "Richard Greenblatt",
+      "affiliation": "MIT, Project MAC"
+    }, {
+      "name": "Jon L. White",
+      "affiliation": "MIT, Project MAC"
+    } ],
+    "name": "Lisp", "version": "mac 2.0",
+    "inception": "1966"
+  }, {
+    "parents": [ {
+      "name": "JOSS"
+    } ],
+    "authors": [ {
+      "name": "Chuck Baker",
+      "affiliation": "RAND"
+    } ],
+    "name": "JOSS", "version": "II",
+    "inception": "1966"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "60"
+    } ],
+    "authors": [ {
+      "name": "Niklaus Wirth"
+    }, {
+      "name": "C. A. R. Hoare"
+    } ],
+    "name": "Algol", "version": "W",
+    "inception": "1966"
+  }, {
+    "parents": [ {
+      "name": "Fortran", "version": "IV"
+    } ],
+    "authors": [ ],
+    "name": "Fortran", "version": "66",
+    "inception": "1966"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "60"
+    } ],
+    "authors": [ ],
+    "name": "Coral 66",
+    "inception": "1966"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Kenneth E. Iverson"
+    } ],
+    "name": "APL",
+    "inception": "1966"
+  }, {
+    "parents": [ {
+      "name": "CPL"
+    } ],
+    "authors": [ {
+      "name": "Martin Richards"
+    } ],
+    "name": "BCPL",
+    "inception": "1967"
+  }, {
+    "parents": [ {
+      "name": "Fortran", "version": "66"
+    }, {
+      "name": "Telcomp"
+    } ],
+    "authors": [ {
+      "name": "Massachusetts General Hospital"
+    } ],
+    "name": "Mumps",
+    "inception": "1967"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "60"
+    } ],
+    "authors": [ {
+      "name": "Ole-Johan Dahl",
+      "affiliation": "Norsk Regnesentral"
+    }, {
+      "name": "Bjørn Myhrhaug",
+      "affiliation": "Norsk Regnesentral"
+    }, {
+      "name": "Kristen Nygaard",
+      "affiliation": "Norsk Regnesentral"
+    } ],
+    "name": "Simula",
+    "inception": "1965"
+  }, {
+    "authors": [{
+      "name": "Stuart Madnick",
+      "affiliation": "MIT"
+    }],
+    "name": "CMS EXEC",
+    "inception": "1966"
+  }, {
+    "parents": [ {
+      "name": "Lisp"
+    } ],
+    "authors": [ {
+      "name": "D.G. Bobrow"
+    }, {
+      "name": "D.L. Murphy"
+    } ],
+    "name": "InterLisp",
+    "inception": "1967"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Herwart Opitz",
+      "affiliation": "RWTH Aachen, TU Berlin"
+    }, {
+      "name": "Wilhelm Simon",
+      "affiliation": "RWTH Aachen, TU Berlin"
+    }, {
+      "name": "Günter Spur",
+      "affiliation": "RWTH Aachen, TU Berlin"
+    }, {
+      "name": "Gottfried Stute\tAPT",
+      "affiliation": "RWTH Aachen, TU Berlin"
+    } ],
+    "name": "Exapt",
+    "inception": "1967"
+  }, {
+    "parents": [ {
+      "name": "Snobol", "version": "3"
+    } ],
+    "authors": [ {
+      "name": "Ralph Griswold"
+    } ],
+    "name": "Snobol", "version": "4",
+    "inception": "1967"
+  }, {
+    "parents": [ {
+      "name": "PL", "version": "I"
+    } ],
+    "authors": [ {
+      "name": "William M. McKeeman",
+      "affiliation": "University of California Santa Cruz"
+    }, {
+      "name": "J. J. Horning, et al.",
+      "affiliation": "Stanford University"
+    } ],
+    "name": "XPL",
+    "inception": "1967"
+  }, {
+    "parents": [ {
+      "name": "Jovial"
+    } ],
+    "authors": [ {
+      "name": "System Development Corporation"
+    } ],
+    "name": "SPL",
+    "description": "Space Programming Language",
+    "inception": "1967"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "60"
+    } ],
+    "authors": [ {
+      "name": "Adriaan van Wijngaarden"
+    }, {
+      "name": "Barry J. Mailloux"
+    }, {
+      "name": "John E. L. Peck"
+    }, {
+      "name": "Cornelis H. A. Koster"
+    }, {
+      "name": "et al."
+    } ],
+    "name": "Algol", "version": "68",
+    "inception": "1968"
+  }, {
+    "parents": [ {
+      "name": "Cowsel"
+    } ],
+    "authors": [ {
+      "name": "Rod Burstall"
+    }, {
+      "name": "Robin Popplestone"
+    } ],
+    "name": "POP", "version": "1",
+    "inception": "1968"
+  }, {
+    "parents": [ {
+      "name": "Lisp"
+    } ],
+    "authors": [ {
+      "name": "Wally Feurzeig"
+    }, {
+      "name": "Seymour Papert"
+    }, {
+      "name": "Cynthia Solomon"
+    } ],
+    "name": "Logo",
+    "inception": "1968"
+  }, {
+    "parents": [ {
+      "name": "RPG"
+    } ],
+    "authors": [ {
+      "name": "Unisys"
+    } ],
+    "name": "Mapper",
+    "inception": "1968"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Valentin Turchin"
+    } ],
+    "name": "Refal",
+    "inception": "1968"
+  }, {
+    "parents": [ {
+      "name": "Trac"
+    } ],
+    "authors": [ {
+      "name": "Steven Caine",
+      "affiliation": "California Institute of Technology"
+    }, {
+      "name": "E. Kent Gordon",
+      "affiliation": "California Institute of Technology"
+    } ],
+    "name": "TTM",
+    "inception": "1968"
+  }, {
+    "parents": [ {
+      "name": "Computest"
+    } ],
+    "authors": [ {
+      "name": "John Amsden Starkweather",
+      "affiliation": "University of California, San Francisco"
+    } ],
+    "name": "Pilot",
+    "inception": "1968"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "60"
+    }, {
+      "name": "Cobol"
+    }, {
+      "name": "Fortran", "version": "66"
+    } ],
+    "authors": [ {
+      "name": "IBM"
+    } ],
+    "name": "PL", "version": "I",
+    "inception": "1969"
+  }, {
+    "parents": [ {
+      "name": "BCPL"
+    } ],
+    "authors": [ {
+      "name": "Ken Thompson"
+    }, {
+      "name": "Dennis Ritchie"
+    } ],
+    "name": "B",
+    "inception": "1969"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Thomas A. Standish",
+      "affiliation": "Harvard University"
+    } ],
+    "name": "PPL",
+    "description": "Polymorphic Programming Language",
+    "inception": "1969"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "60"
+    } ],
+    "authors": [ {
+      "name": "Jack Schwartz",
+      "affiliation": "Courant Institute of Mathematical Sciences"
+    } ],
+    "name": "SETL",
+    "inception": "1969"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Paul Tenczar",
+      "affiliation": "University of Illinois at Urbana–Champaign"
+    } ],
+    "name": "Tutor",
+    "inception": "1969"
+  }, {
+    "authors": [ {
+      "name": "Charles Goldfarb",
+      "affiliation": "IBM"
+    }, {
+      "name": "Edward Mosher",
+      "affiliation": "IBM"
+    }, {
+      "name": "Raymond Lorie",
+      "affiliation": "IBM"
+    } ],
+    "name": "GML",
+    "inception": "1970"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    }, {
+      "name": "Fortran", "version": "66"
+    }, {
+      "name": "Cobol"
+    } ],
+    "authors": [ {
+      "name": "DEC"
+    } ],
+    "name": "Dibol",
+    "inception": "1970"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Charles H. Moore"
+    } ],
+    "name": "Forth",
+    "inception": "1970"
+  }, {
+    "parents": [ {
+      "name": "POP", "version": "1"
+    } ],
+    "authors": [ {
+      "name": "Robin Popplestone"
+    } ],
+    "name": "POP", "version": "2",
+    "inception": "1970"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "W"
+    } ],
+    "authors": [ {
+      "name": "Niklaus Wirth"
+    }, {
+      "name": "Kathleen Jensen"
+    } ],
+    "name": "Pascal",
+    "inception": "1970"
+  }, {
+    "parents": [ {
+      "name": "Algol"
+    } ],
+    "authors": [ {
+      "name": "Wulf",
+      "affiliation": "Carnegie Mellon University"
+    }, {
+      "name": "Russell",
+      "affiliation": "Carnegie Mellon University"
+    }, {
+      "name": "Habermann",
+      "affiliation": "Carnegie Mellon University"
+    } ],
+    "name": "Bliss",
+    "inception": "1970"
+  }, {
+    "parents": [ {
+      "name": "Pascal"
+    }, {
+      "name": "XPL"
+    } ],
+    "authors": [ {
+      "name": "Ric Holt et al",
+      "affiliation": "University of Toronto"
+    } ],
+    "name": "Sue",
+    "inception": "1971"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Cornelis H.A. Koster",
+      "affiliation": "University of Nijmegen"
+    } ],
+    "name": "CDL",
+    "description": "Compiler Description Language",
+    "inception": "1971"
+  }, {
+    "parents": [ {
+      "name": "Simula"
+    } ],
+    "authors": [ {
+      "name": "Alan Kay",
+      "affiliation": "Xerox PARC"
+    }, {
+      "name": "Adele Goldberg",
+      "affiliation": "Xerox PARC"
+    }, {
+      "name": "Dan Ingalls",
+      "affiliation": "Xerox PARC"
+    } ],
+    "name": "Smalltalk",
+    "version": "72",
+    "inception": "1972"
+  }, {
+    "parents": [ {
+      "name": "PL", "version": "I"
+    }, {
+      "name": "Algol"
+    }, {
+      "name": "XPL"
+    } ],
+    "authors": [ {
+      "name": "Gary Kildall",
+      "affiliation": "Digital Research"
+    } ],
+    "name": "PL", "version": "M",
+    "inception": "1972"
+  }, {
+    "parents": [ {
+      "name": "B"
+    }, {
+      "name": "BCPL"
+    }, {
+      "name": "Algol", "version": "68"
+    } ],
+    "authors": [ {
+      "name": "Dennis Ritchie",
+      "affiliation": "Bell Labs"
+    } ],
+    "name": "C", "version": "K&R",
+    "inception": "1972"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Don Woods"
+    }, {
+      "name": "James M. Lyon"
+    } ],
+    "name": "Intercal",
+    "inception": "1972"
+  }, {
+    "parents": [ {
+      "name": "2-level W-Grammar"
+    } ],
+    "authors": [ {
+      "name": "Alain Colmerauer"
+    } ],
+    "name": "Prolog",
+    "inception": "1972"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "D.C. Chamberlin",
+      "affiliation": "IBM"
+    }, {
+      "name": "R.F. Boyce",
+      "affiliation": "IBM"
+    }, {
+      "name": "E.F. Codd",
+      "affiliation": "IBM"
+    } ],
+    "description": "Structured Query language",
+    "name": "SQL",
+    "inception": "1972"
+  }, {
+    "parents": [ {
+      "name": "Pascal"
+    }, {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "Børge Christensen"
+    }, {
+      "name": "Benedict Løfstedt"
+    } ],
+    "name": "Comal",
+    "inception": "1973"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Robin Milner",
+      "affiliation": "University of Edinburgh"
+    } ],
+    "name": "ML",
+    "inception": "1973"
+  }, {
+    "authors": [ {
+      "name": "University of Edinburgh"
+    } ],
+    "name": "Hope",
+    "inception": "1973"
+  }, {
+    "parents": [ {
+      "name": "Pascal"
+    }, {
+      "name": "Sue"
+    } ],
+    "authors": [ {
+      "name": "Jean Ichbiah et al.",
+      "affiliation": "CII Honeywell Bull"
+    } ],
+    "name": "LIS",
+    "inception": "1973"
+  }, {
+    "authors": [{
+      "name": "Miller et al",
+      "affiliation": "Intermetrics Cambridge/Massachusetts/USA"
+    }],
+    "name": "CS-4",
+    "inception": "1973-12-26"
+  }, {
+    "parents": [ {
+      "name": "Speakeasy", "version": "2"
+    } ],
+    "authors": [ {
+      "name": "Stanley Cohen",
+      "affiliation": "Argonne National Laboratory"
+    }, {
+      "name": "Steven Pieper",
+      "affiliation": "Argonne National Laboratory"
+    } ],
+    "name": "Speakeasy", "version": "3",
+    "inception": "1973"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "60"
+    }, {
+      "name": "Lisp"
+    }, {
+      "name": "Simula"
+    } ],
+    "authors": [ {
+      "name": "Barbara Liskov"
+    } ],
+    "name": "CLU",
+    "inception": "1974"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "Thomas A. DeFanti"
+    } ],
+    "name": "Grass",
+    "inception": "1974"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "MAI BASIC Four Inc."
+    } ],
+    "name": "Basic", "version": "4",
+    "inception": "1974"
+  }, {
+    "parents": [ {
+      "name": "Fortran", "version": "66"
+    } ],
+    "authors": [ {
+      "name": "Cybernet Services"
+    } ],
+    "name": "Prose",
+    "inception": "1974"
+  }, {
+    "parents": [ {
+      "name": "SETL"
+    } ],
+    "authors": [ {
+      "name": "Leo Geurts"
+    }, {
+      "name": "Lambert Meertens"
+    } ],
+    "name": "ABC",
+    "inception": "1975"
+  }, {
+    "parents": [ {
+      "name": "Fortran", "version": "66"
+    } ],
+    "authors": [ {
+      "name": "Cybernet KRONOS Services"
+    } ],
+    "name": "Prose Time-Sharing Version",
+    "inception": "1975"
+  }, {
+    "parents": [ {
+      "name": "Lisp"
+    } ],
+    "authors": [ {
+      "name": "Gerald Jay Sussman"
+    }, {
+      "name": "Guy L. Steele, Jr."
+    } ],
+    "name": "Scheme",
+    "inception": "1975"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "Bill Gates"
+    }, {
+      "name": "Paul Allen"
+    } ],
+    "name": "Basic", "version": "Altair",
+    "inception": "1975"
+  }, {
+    "parents": [ {
+      "name": "Pascal"
+    } ],
+    "authors": [ {
+      "name": "Niklaus Wirth"
+    } ],
+    "name": "Modula",
+    "inception": "1975"
+  }, {
+    "parents": [{
+      "name": "CMS EXEC"
+    }],
+    "authors": [ {
+      "name": "IBM"
+    } ],
+    "name": "EXEC 2",
+    "inception": "1975"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "60"
+    }, {
+      "name": "Lisp"
+    }, {
+      "name": "Simula"
+    }, {
+      "name": "Alphard"
+    } ],
+    "authors": [ {
+      "name": "Barbara Liskov",
+      "affiliation": "MIT"
+    } ],
+    "name": "CLU", "version": "1",
+    "inception": "1975"
+  }, {
+    "parents": [ {
+      "name": "Pascal"
+    }, {
+      "name": "Sue"
+    } ],
+    "authors": [ {
+      "name": "Allan Ballard",
+      "affiliation": "University of British Columbia"
+    }, {
+      "name": "Paul Whaley",
+      "affiliation": "University of British Columbia"
+    } ],
+    "name": "Plus",
+    "inception": "1976"
+  }, {
+    "parents": [ {
+      "name": "KM"
+    }, {
+      "name": "FRL"
+    } ],
+    "authors": [ {
+      "name": "Daniel G. Bobrow",
+      "affiliation": "Xerox PARC"
+    }, {
+      "name": "Terry Winograd",
+      "affiliation": "Stanford University"
+    } ],
+    "name": "KRL",
+    "inception": "1976"
+  }, {
+    "parents": [ {
+      "name": "Smalltalk",
+      "version": "72"
+    } ],
+    "authors": [ {
+      "name": "Xerox PARC"
+    } ],
+    "name": "Smalltalk",
+    "version": "76",
+    "inception": "1976"
+  }, {
+    "parents": [ {
+      "name": "Algol"
+    } ],
+    "authors": [ {
+      "name": "Xerox PARC"
+    } ],
+    "name": "Mesa",
+    "inception": "1976"
+  }, {
+    "parents": [ {
+      "name": "Lisp"
+    }, {
+      "name": "Trac"
+    } ],
+    "authors": [ {
+      "name": "Claude A.R. Kagan"
+    } ],
+    "name": "SAM76",
+    "inception": "1976"
+  }, {
+    "parents": [ {
+      "name": "C"
+    }, {
+      "name": "Fortran", "version": "66"
+    } ],
+    "authors": [ {
+      "name": "Brian Kernighan"
+    } ],
+    "name": "Ratfor",
+    "inception": "1976"
+  }, {
+    "parents": [ {
+      "name": "APL"
+    }, {
+      "name": "PPL"
+    }, {
+      "name": "Scheme"
+    } ],
+    "authors": [ {
+      "name": "John Chambers",
+      "affiliation": "Bell Labs"
+    } ],
+    "name": "S",
+    "inception": "1976"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "SAS Institute"
+    } ],
+    "name": "SAS",
+    "inception": "1976"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "Steve Wozniak"
+    } ],
+    "name": "Basic", "version": "Integer",
+    "inception": "1976"
+  }, {
+    "parents": [ {
+      "name": "sed"
+    }, {
+      "name": "C"
+    }, {
+      "name": "Snobol"
+    } ],
+    "authors": [ {
+      "name": "Alfred Aho"
+    }, {
+      "name": "P.J. Weinberger"
+    }, {
+      "name": "Brian Kernighan"
+    } ],
+    "name": "AWK",
+    "inception": "1977"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "John Backus"
+    } ],
+    "name": "FP",
+    "inception": "1977"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Stephen R. Bourne"
+    } ],
+    "name": "sh",
+    "description": "Bourne Shell",
+    "inception": "1977"
+  }, {
+    "parents": [ {
+      "name": "Pascal"
+    } ],
+    "authors": [ {
+      "name": "Prof. XX",
+      "affiliation": "University of California, San Diego"
+    } ],
+    "name": "Pascal", "version": "UCSD",
+    "inception": "1977"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "Jack Tramiel"
+    } ],
+    "name": "Basic", "version": "Commodore",
+    "inception": "1977"
+  }, {
+    "parents": [ {
+      "name": "Fortran", "version": "66"
+    } ],
+    "name": "Fortran", "version": "77",
+    "inception": "1977"
+  }, {
+    "parents": [ {
+      "name": "Fortran", "version": "66"
+    } ],
+    "authors": [ {
+      "name": "David Stern",
+      "affiliation": "Research Systems Inc"
+    } ],
+    "name": "IDL",
+    "inception": "1977"
+  }, {
+    "parents": [ {
+      "name": "Mumps"
+    } ],
+    "authors": [ ],
+    "name": "Mumps", "version": "Standard",
+    "inception": "1977"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "68"
+    }, {
+      "name": "CS-4"
+    } ],
+    "authors": [ {
+      "name": "Benjamin M. Brosgol et al.",
+      "affiliation": "Intermetrics"
+    } ],
+    "name": "Red",
+    "inception": "1977"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "68"
+    } ],
+    "authors": [ {
+      "name": "John B. Goodenough et al.",
+      "affiliation": "SofTech"
+    } ],
+    "name": "Blue",
+    "inception": "1977"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "68"
+    } ],
+    "authors": [ {
+      "name": "Jay Spitzen et al.",
+      "affiliation": "SRI International"
+    } ],
+    "name": "Yellow",
+    "inception": "1977"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Butler Lampson",
+      "affiliation": "Xerox Parc"
+    }, {
+      "name": "Ric Holt",
+      "affiliation": "University of Toronto"
+    }, {
+      "name": "James Cordy",
+      "affiliation": "University of Toronto"
+    } ],
+    "name": "Euclid",
+    "inception": "1977"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "Marc McDonald"
+    }, {
+      "name": "Ric Weiland"
+    } ],
+    "name": "Basic", "version": "Applesoft",
+    "inception": "1977"
+  }, {
+    "parents": [ {
+      "name": "APT"
+    } ],
+    "authors": [ {
+      "name": "Pat Ambler"
+    }, {
+      "name": "Robin Popplestone"
+    } ],
+    "name": "RAPT",
+    "inception": "1978"
+  }, {
+    "parents": [ {
+      "name": "C"
+    } ],
+    "authors": [ {
+      "name": "Bill Joy"
+    } ],
+    "name": "C shell",
+    "inception": "1978"
+  }, {
+    "parents": [ {
+      "name": "RPG", "version": "II"
+    } ],
+    "authors": [ {
+      "name": "IBM"
+    } ],
+    "name": "RPG", "version": "III",
+    "inception": "1978"
+  }, {
+    "parents": [ {
+      "name": "XPL"
+    } ],
+    "authors": [ {
+      "name": "Intermetrics"
+  } ],
+    "name": "HAL/S",
+    "inception": "1978"
+  }, {
+    "parents": [ {
+      "name": "Basic", "version": "Applesoft"
+    } ],
+    "authors": [ {
+      "name": "Marc McDonald"
+    }, {
+      "name": "Ric Weiland"
+    } ],
+    "name": "Basic", "version": "Applesoft II",
+    "inception": "1978"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Arvind",
+      "affiliation": "University of California, Irvine"
+    }, {
+      "name": "Gostelow",
+      "affiliation": "University of California, Irvine"
+    } ],
+    "name": "Irvine Dataflow",
+    "inception": "1975"
+  }, {
+    "parents": [ {
+      "name": "Fortran", "version": "77"
+    } ],
+    "authors": [ {
+      "name": "Cleve Moler",
+      "affiliation": "University of New Mexico"
+    } ],
+    "name": "Matlab",
+    "inception": "1978"
+  }, {
+    "parents": [],
+    "authors": [ {
+      "name": " C.A.R. Hoare",
+      "affiliation": "Department of Computer Science, University of Oxford"
+    } ],
+    "name": "CSP",
+    "inception": "1978"
+  }, {
+    "authors": [ {
+      "name": "D.E. Knuth"
+    } ],
+    "name": "TeX",
+    "inception": "1978"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "60"
+    } ],
+    "authors": [ {
+      "name": "Nevil Brownlee",
+      "affiliation": "University of Auckland"
+    } ],
+    "name": "Small",
+    "inception": "1978"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Dan Bricklin"
+    }, {
+      "name": "Bob Frankston"
+    } ],
+    "name": "VisiCalc",
+    "inception": "1978"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "60"
+    } ],
+    "authors": [ {
+      "name": "Ron Morrison",
+      "affiliation": "Department of Computer Science, St. Andrews University, Scottland"
+    }, {
+      "name": "Tony Davie",
+      "affiliation": "Department of Computer Science, St. Andrews University, Scottland"
+    } ],
+    "name": "Algol", "version": "S",
+    "inception": "1979"
+  }, {
+    "parents": [ {
+      "name": "Lisp", "version": "macLisp"
+    } ],
+    "authors": [ {
+      "name": "Jon L White"
+    },{
+      "name": "Guy L. Steele Jr."
+    },{
+      "name": "Richard P. Gabriel"
+    } ],
+    "name": "Lisp", "version": "NIL",
+    "inception": "1979"
+  }, {
+    "parents": [ {
+      "name": "Modula"
+    }, {
+      "name": "Mesa"
+    } ],
+    "authors": [ {
+      "name": "Niklaus Wirth"
+    } ],
+    "name": "Modula", "version": "2",
+    "inception": "1979"
+  }, {
+    "parents": [ {
+      "name": "PL I"
+    }, {
+      "name": "Basic"
+    }, {
+      "name": "EXEC 2"
+    } ],
+    "authors": [ {
+      "name": "Mike Cowlishaw",
+      "affiliation": "IBM"
+    } ],
+    "name": "Rexx",
+    "inception": "1979"
+  }, {
+    "parents": [ {
+      "name": "SQL"
+    } ],
+    "authors": [ {
+      "name": "Ashton-Tate"
+    } ],
+    "name": "dBase",
+    "inception": "1979"
+  }, {
+    "parents": [ {
+      "name": "Snobol"
+    } ],
+    "authors": [ {
+      "name": "Ralph Griswold"
+    } ],
+    "name": "Icon",
+    "inception": "1979"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "68"
+    }, {
+      "name": "Pascal"
+    } ],
+    "authors": [ {
+      "name": "Jean Ichbiah",
+      "affiliation": "CII Honeywell Bull"
+    } ],
+    "name": "Ada",
+    "version": "80",
+    "inception": "1980"
+  }, {
+    "parents": [{
+      "name": "Smalltalk", "version": "76"
+    }],
+    "authors": [{
+      "name": "Xerox PARC"
+    }],
+    "name": "Smalltalk",
+    "version": "80",
+    "inception": "1980"
+  }, {
+    "parents": [ {
+      "name": "C", "version": "K&R"
+    }, {
+      "name": "Simula"
+    } ],
+    "authors": [ {
+      "name": "Bjarne Stroustrup"
+    } ],
+    "name": "C++", "version": "C with Classes",
+    "inception": "1980"
+  }, {
+    "parents": [ {
+      "name": "Basic", "version": "Applesoft II"
+    } ],
+    "authors": [ {
+      "name": "Apple Computer"
+    } ],
+    "name": "Basic", "version": "Applesoft III",
+    "inception": "1980"
+  }, {
+    "parents": [ {
+      "name": "Basic", "version": "Altair"
+    } ],
+    "authors": [ {
+      "name": "Microsoft"
+    } ],
+    "name": "Basic", "version": "Apple III MS",
+    "inception": "1980"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    }, {
+      "name": "Compiler Description Language (CDL)"
+    } ],
+    "authors": [ {
+      "name": "Gordon Eubanks",
+      "affiliation": "Digital Research"
+    } ],
+    "name": "Basic", "version": "C",
+    "inception": "1980"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "Sophie Wilson",
+      "affiliation": "Acorn Computers"
+    } ],
+    "name": "Basic", "version": "BBC",
+    "inception": "1981"
+  }, {
+    "parents": [ {
+      "name": "RETE"
+    } ],
+    "authors": [ {
+      "name": "Charles Forgy",
+      "affiliation": "Carnegie Mellon University"
+    } ],
+    "name": "OPS5",
+    "inception": "1981"
+  }, {
+    "parents": [ {
+      "name": "Basic", "version": "Altair"
+    } ],
+    "authors": [ ],
+    "name": "Basic", "version": "IBM A",
+    "inception": "1981"
+  }, {
+    "parents": [ {
+      "name": "Speakeasy", "version": "3"
+    } ],
+    "authors": [ {
+      "name": "Stanley Cohen et al.",
+      "affiliation": "Speakeasy Computing Corporation"
+    } ],
+    "name": "Speakeasy", "version": "4",
+    "inception": "1982"
+  }, {
+    "parents": [ {
+      "name": "Forth"
+    } ],
+    "authors": [ {
+      "name": "Charles Geschke",
+      "affiliation": "Xerox PARC"
+    }, {
+      "name": "John Warnock",
+      "affiliation": "Xerox PARC"
+    } ],
+    "name": "InterPress",
+    "inception": "1982"
+  }, {
+    "parents": [ {
+      "name": "Pascal"
+    }, {
+      "name": "C", "version": "K&R"
+    }, {
+      "name": "Algol", "version": "68"
+    } ],
+    "authors": [ {
+      "name": "Chris Gray"
+    } ],
+    "name": "Draco",
+    "inception": "1982"
+  }, {
+    "parents": [ {
+      "name": "InterPress"
+    } ],
+    "authors": [ {
+      "name": "Warnock"
+    } ],
+    "name": "PostScript",
+    "inception": "1982"
+  }, {
+    "parents": [ {
+      "name": "Euclid"
+    } ],
+    "authors": [ {
+      "name": "Ric Holt",
+      "affiliation": "University of Toronto"
+    }, {
+      "name": "James Cordy",
+      "affiliation": "University of Toronto"
+    } ],
+    "name": "Turing",
+    "inception": "1982"
+  }, {
+    "parents": [ {
+      "name": "Basic", "version": "IBM A"
+    } ],
+    "authors": [ {
+      "name": "Microsoft"
+    } ],
+    "name": "Basic", "version": "GW",
+    "inception": "1983"
+  }, {
+    "parents": [ {
+      "name": "Algol", "version": "S"
+    } ],
+    "authors": [ {
+      "name": "Ron Morrison",
+      "affiliation": "University of St. Andrews, Scottland"
+    }, {
+      "name": "Pete Bailey",
+      "affiliation": "University of St. Andrews, Scottland"
+    }, {
+      "name": "Fred Brown",
+      "affiliation": "University of Edinburgh"
+    }, {
+      "name": "Paul Cockshott",
+      "affiliation": "University of Edinburgh"
+    }, {
+      "name": "Ken Chisholm",
+      "affiliation": "University of Edinburgh"
+    }, {
+      "name": "Al Dearle",
+      "affiliation": "University of Edinburgh"
+    }, {
+      "name": "M.P. Atkinson",
+      "affiliation": "University of Edinburgh"
+    } ],
+    "name": "Algol", "version": "PS",
+    "inception": "1983"
+  }, {
+    "parents": [ {
+      "name": "Pascal"
+    } ],
+    "authors": [ {
+      "name": "Hejlsberg",
+      "affiliation": "Borland Inc"
+    } ],
+    "name": "Pascal", "version": "Turbo",
+    "inception": "1983"
+  }, {
+    "parents": [ {
+      "name": "Ada",
+      "version": "80"
+    } ],
+    "authors": [ {
+      "name": "Jean Ichbiah",
+      "affiliation": "Alsys"
+    } ],
+    "name": "Ada", "version": "83",
+    "inception": "1983"
+  }, {
+    "parents": [ {
+      "name": "Smalltalk", "version": "80"
+    }, {
+      "name": "C", "version": "with Classes"
+    } ],
+    "authors": [ {
+      "name": "Brad Cox"
+    } ],
+    "name": "Objective-C",
+    "inception": "1983"
+  }, {
+    "parents": [ {
+      "name": "C++"
+    } ],
+    "authors": [ {
+      "name": "Bjarne Stroustrup"
+    } ],
+    "name": "C++", "version": "1.0",
+    "inception": "1983"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "John George Kemeny",
+      "affiliation": "Dartmouth College"
+    }, {
+      "name": "Thomas E. Kurtz",
+      "affiliation": "Dartmouth College"
+    } ],
+    "name": "Basic", "version": "True",
+    "inception": "1983"
+  }, {
+    "parents": [ {
+      "name": "CSP"
+    } ],
+    "authors": [ {
+      "name": "David May et al",
+      "affiliation": "Inmos"
+    } ],
+    "name": "occam", "version": "1",
+    "inception": "1983"
+  }, {
+    "parents": [ {
+      "name": "Cobol"
+    } ],
+    "authors": [ {
+      "name": "SAP AG"
+    } ],
+    "name": "ABAP",
+    "inception": "1983"
+  }, {
+    "parents": [ {
+      "name": "Bourne Shell (sh)"
+    } ],
+    "authors": [ {
+      "name": "David Korn"
+    } ],
+    "name": "Korn Shell (ksh)",
+    "inception": "1983"
+  }, {
+    "parents": [ {
+      "name": "Pascal"
+    } ],
+    "authors": [ {
+      "name": "Apple Computer Inc."
+    } ],
+    "name": "Pascal", "version": "Cl",
+    "inception": "1983"
+  }, {
+    "parents": [ {
+      "name": "dBase"
+    } ],
+    "authors": [ {
+      "name": "Nantucket"
+    } ],
+    "name": "Clipper",
+    "inception": "1984"
+  }, {
+    "parents": [ {
+      "name": "Lisp"
+    } ],
+    "authors": [ {
+      "name": "Guy L. Steele, Jr. and many others"
+    } ],
+    "name": "Lisp", "version": "Common",
+    "inception": "1984"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "INRIA"
+    } ],
+    "name": "Coq",
+    "inception": "1984"
+  }, {
+    "parents": [ {
+      "name": "Forth"
+    }, {
+      "name": "Lisp"
+    } ],
+    "authors": [ {
+      "name": "Hewlett-Packard"
+    } ],
+    "name": "RPL",
+    "inception": "1984"
+  }, {
+    "parents": [ {
+      "name": "ML"
+    } ],
+    "authors": [ ],
+    "name": "Standard ML",
+    "inception": "1984"
+  }, {
+    "parents": [ {
+      "name": "Assembly"
+    } ],
+    "authors": [ {
+      "name": "Alexander Dewdney"
+    }, {
+      "name": "D.G. Jones"
+    } ],
+    "name": "Redcode",
+    "inception": "1984"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "PSION"
+    } ],
+    "name": "OPL",
+    "inception": "1984"
+  }, {
+    "parents": [ {
+      "name": "Inform"
+    } ],
+    "authors": [ {
+      "name": "Cortex"
+    } ],
+    "name": "Builder (CorVision)",
+    "inception": "1984"
+  }, {
+    "parents": [ {
+      "name": "dBase"
+    } ],
+    "authors": [ {
+      "name": "Borland"
+    } ],
+    "name": "Paradox",
+    "inception": "1985"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "Microsoft"
+    } ],
+    "name": "Basic", "version": "Quick",
+    "inception": "1985"
+  }, {
+    "parents": [ {
+      "name": "C", "version": "K&R"
+    }, {
+      "name": "CSP"
+    } ],
+    "authors": [ {
+      "name": "Rob Pike",
+      "affiliation": "Bell Labs"
+    }, {
+      "name": "Luca Cardelli",
+      "affiliation": "Bell Labs"
+    } ],
+    "name": "Newsqueak",
+    "inception": "1985"
+  }, {
+    "parents": [ {
+      "name": "ML"
+    } ],
+    "authors": [ {
+      "name": "INRIA"
+    }, {
+      "name": "ENS"
+    } ],
+    "name": "Caml",
+    "inception": "1985"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Bruce Barrington"
+    } ],
+    "name": "Clarion",
+    "inception": "1986"
+  }, {
+    "parents": [ {
+      "name": "Simula"
+    }, {
+      "name": "Ada", "version": "83"
+    } ],
+    "authors": [ {
+      "name": "Bertrand Meyer"
+    } ],
+    "name": "Eiffel",
+    "inception": "1986"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "Frank Ostrowski"
+    } ],
+    "name": "Basic", "version": "GFA",
+    "inception": "1986"
+  }, {
+    "parents": [ {
+      "name": "Lisp", "version": "NIL"
+    } ],
+    "authors": [ {
+      "name": "Thomas J. Watson Research Center",
+      "affiliation": "IBM"
+    } ],
+    "name": "Hermes",
+    "inception": "1986"
+  }, {
+    "parents": [  ],
+    "authors": [ {
+      "name": "Informix"
+    } ],
+    "name": "Informix 4GL",
+    "inception": "1986"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "National Instruments"
+    } ],
+    "name": "LabView",
+    "inception": "1986"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "David Turner at University of Kent"
+    } ],
+    "name": "Miranda",
+    "inception": "1986"
+  }, {
+    "parents": [ {
+      "name": "Pascal"
+    } ],
+    "authors": [ {
+      "name": "Apple Computer Inc."
+    } ],
+    "name": "Pascal", "version": "Object",
+    "inception": "1986"
+  }, {
+    "parents": [ {
+      "name": "C", "version": "C++"
+    } ],
+    "authors": [ {
+      "name": "MS DOS System Associates"
+    }, {
+      "name": "C64 System Associates"
+    }, {
+      "name": "Apple II System Associates"
+    } ],
+    "name": "Promal",
+    "inception": "1986"
+  }, {
+    "parents": [ {
+      "name": "Prolog"
+    } ],
+    "authors": [ {
+      "name": "Joe Armstrong and others",
+      "affiliation": "Ericsson"
+    } ],
+    "name": "Erlang",
+    "inception": "1986"
+  }, {
+    "parents": [ {
+      "name": "GML"
+    } ],
+    "authors": [ {
+      "name": "ISO 8879"
+    } ],
+    "name": "SGML",
+    "inception": "1986"
+  }, {
+    "parents": [ {
+      "name": "Ada",
+      "version": "83"
+    } ],
+    "authors": [ {
+      "name": "MIL-STD-1815A"
+    } ],
+    "name": "Ada",
+    "inception": "1987"
+  }, {
+    "parents": [ {
+      "name": "C", "version": "C++"
+    }, {
+      "name": "Fortran", "version": "77"
+    } ],
+    "authors": [ {
+      "name": "MassComp"
+    } ],
+    "name": "Laboratory Workbench",
+    "inception": "1987"
+  }, {
+    "parents": [ {
+      "name": "occam", "version": "1"
+    } ],
+    "authors": [ {
+      "name": "David May"
+    }, {
+      "name": "INMOS"
+    } ],
+    "name": "occam", "version": "2",
+    "inception": "1987"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Apple Computer Inc."
+    } ],
+    "name": "HyperTalk",
+    "inception": "1987"
+  }, {
+    "parents": [ {
+      "name": "C", "version": "C++"
+    }, {
+      "name": "AWK"
+    }, {
+      "name": "Bourne Shell (sh)"
+    } ],
+    "authors": [ {
+      "name": "Larry Wall"
+    } ],
+    "name": "Perl", "version": "1",
+    "inception": "1987"
+  }, {
+    "parents": [ {
+      "name": "Modula", "version": "2"
+    } ],
+    "authors": [ {
+      "name": "Niklaus Wirth"
+    } ],
+    "name": "Oberon",
+    "inception": "1987"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Wolfram Research"
+    } ],
+    "name": "Mathematica",
+    "description": "Mathematica Wolfram Language",
+    "inception": "1988-06"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "Robert 'Bob' Zale"
+    } ],
+    "name": "Basic", "version": "Turbo",
+    "inception": "1987"
+  }, {
+    "parents": [ {
+      "name": "Miranda"
+    } ],
+    "authors": [ {
+      "name": "Software Technology Research Group",
+      "affiliation": "Radboud University Nijmegen"
+    } ],
+    "name": "Clean",
+    "inception": "1987"
+  }, {
+    "parents": [ {
+      "name": "Matlab"
+    } ],
+    "authors": [ {
+      "name": "Gnu software foundation"
+    } ],
+    "name": "Octave",
+    "inception": "1988"
+  }, {
+      "parents": [ {
+        "name": "C", "version": "K&R"
+      }, {
+        "name": "Korn Shell (ksh)"
+      }, {
+        "name": "Perl", "version": "1"
+      } ],
+      "authors": [ {
+        "name": "DEC"
+      } ],
+      "name": "DCL",
+      "description": "Digital Command Language",
+      "inception": "1988"
+    }, {
+    "parents": [ {
+      "name": "AWK"
+    }, {
+      "name": "Lisp"
+    } ],
+    "authors": [ {
+      "name": "John Ousterhout"
+    } ],
+    "name": "Tcl",
+    "inception": "1988"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "François Lionet"
+    }, {
+      "name": "Constantin Sotiropoulos"
+    } ],
+    "name": "Basic", "version": "STOS",
+    "inception": "1988"
+  }, {
+    "parents": [ {
+      "name": "Forth"
+    }, {
+      "name": "Smalltalk", "version": "80"
+    } ],
+    "authors": [ {
+      "name": "Charles Duff"
+    }, {
+      "name": "Whitewater Group"
+    } ],
+    "name": "Actor",
+    "inception": "1988"
+  }, {
+    "parents": [ {
+      "name": "Rexx"
+    }, {
+      "name": "Smalltalk", "version": "80"
+    } ],
+    "authors": [ {
+      "name": "Simon C. Nash"
+    } ],
+    "name": "Rexx", "version": "Object",
+    "inception": "1988"
+  }, {
+    "parents": [ {
+      "name": "Ada"
+    } ],
+    "authors": [ {
+      "name": "Bernard A. Carré"
+    } ],
+    "name": "Spark",
+    "inception": "1988"
+  }, {
+    "parents": [ {
+      "name": "APL"
+    } ],
+    "authors": [ {
+      "name": "Arthur Whitney"
+    } ],
+    "name": "A+",
+    "inception": "1988"
+  }, {
+    "parents": [ {
+      "name": "C shell"
+    } ],
+    "authors": [ {
+      "name": "Nicole Hamilton"
+    } ],
+    "name": "Hamilton C shell",
+    "inception": "1988"
+  }, {
+    "parents": [ {
+      "name": "C", "version": "K&R"
+    } ],
+    "authors": [ {
+      "name": "ISO/IEC 9899"
+    } ],
+    "name": "C", "version": "90",
+    "inception": "1989"
+  }, {
+    "parents": [ {
+      "name": "Pascal"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg",
+      "affiliation": "Borland"
+    } ],
+    "name": "Pascal", "version": "Turbo OOP",
+    "inception": "1989"
+  }, {
+    "parents": [ {
+      "name": "Modula", "version": "2"
+    } ],
+    "authors": [ {
+      "name": "Cardeli, et al.",
+      "affiliation": "DEC and Olivetti"
+    } ],
+    "name": "Modula", "version": "3",
+    "inception": "1989"
+  }, {
+    "parents": [ {
+      "name": "Basic", "version": "Turbo"
+    } ],
+    "authors": [ {
+      "name": "Robert 'Bob' Zale"
+    } ],
+    "name": "Basic", "version": "Power",
+    "inception": "1989"
+  }, {
+      "parents": [ {
+        "name": "Algol", "version": "60"
+      }, {
+        "name": "Algol", "version": "PS"
+      } ],
+      "authors": [ {
+        "name": "Ron Morrison",
+        "affiliation": "University of St Andrews, Scotland"
+      }, {
+        "name": "Fred Brown",
+        "affiliation": "University of St Andrews, Scotland"
+      }, {
+        "name": "Richard Connor",
+        "affiliation": "University of St Andrews, Scotland"
+      }, {
+        "name": "Al Dearle",
+        "affiliation": "University of St Andrews, Scotland"
+      }] ,
+      "name": "Napier", "version": "88",
+      "inception": "1988"
+    }, {
+    "parents": [ {
+      "name": "C++"
+    }, {
+      "name": "Laboratory Workbench"
+    } ],
+    "authors": [ {
+      "name": "Peter Darnell",
+      "affiliation": "Visual Solutions"
+    } ],
+    "name": "VisSim",
+    "inception": "1989"
+  }, {
+    "parents": [ {
+      "name": "C++"
+    }, {
+      "name": "Lisp"
+    }, {
+      "name": "Perl"
+    } ],
+    "authors": [ {
+      "name": "Lars Pensjö"
+    } ],
+    "name": "LPC",
+    "inception": "1989"
+  }, {
+    "parents": [ {
+      "name": "Bourne Shell (sh)"
+    }, {
+      "name": "C shell"
+    }, {
+      "name": "Korn Shell (ksh)"
+    } ],
+    "authors": [ {
+      "name": "Brian Fox"
+    } ],
+    "name": "Bash",
+    "inception": "1989"
+  }, {
+    "parents": [ {
+      "name": "Smalltalk", "version": "80"
+    } ],
+    "authors": [ {
+      "name": "Arthur Chance",
+      "affiliation": "Smallworld Systems Ltd"
+    } ],
+    "name": "Magik",
+    "inception": "1989"
+  }, {
+    "parents": [ {
+      "name": "dBase"
+    } ],
+    "authors": [ {
+      "name": "Fox Software",
+      "affiliation": "Microsoft"
+    } ],
+    "name": "FoxPro",
+    "inception": "1989"
+  }, {
+    "parents": [ {
+      "name": "Basic", "version": "STOS"
+    } ],
+    "authors": [ {
+      "name": "François Lionet"
+    }, {
+      "name": "Constantin Sotiropoulos"
+    } ],
+    "name": "Basic", "version": "AMOS",
+    "inception": "1990"
+  }, {
+    "parents": [ {
+      "name": "C", "version": "C++"
+    }, {
+      "name": "AWK"
+    } ],
+    "authors": [ {
+      "name": "Robert Fourer",
+      "affiliation": "Bell Laboratories"
+    }, {
+      "name": "David Gay",
+      "affiliation": "Bell Laboratories"
+    }, {
+      "name": "Brian Kernighan",
+      "affiliation": "Bell Laboratories"
+    } ],
+    "name": "AMPL",
+    "inception": "1990"
+  }, {
+    "parents": [ {
+      "name": "Oberon"
+    } ],
+    "authors": [ {
+      "name": "H Mössenböck"
+    }, {
+      "name": "J Templ"
+    }, {
+      "name": "R Griesemer"
+    } ],
+    "name": "Oberon", "version": "Object",
+    "inception": "1990"
+  }, {
+    "parents": [ {
+      "name": "APL"
+    }, {
+      "name": "FP"
+    } ],
+    "authors": [ {
+      "name": "Kenneth E. Iverson",
+      "affiliation": "Iverson Software"
+    }, {
+      "name": "Roger Hui",
+      "affiliation": "Iverson Software"
+    } ],
+    "name": "J",
+    "inception": "1990"
+  }, {
+    "parents": [ {
+        "name": "Clean"
+      }, {
+        "name": "FP"
+      },{
+        "name": "Hope", "version": "+"
+      }, {
+        "name": "ISWIM"
+      }, {
+        "name": "KRC"
+      }, {
+        "name": "Lisp"
+      }, {
+        "name": "ML", "version": "Standard"
+      }, {
+        "name": "Orwell"
+      }, {
+        "name": "SASL"
+      }, {
+        "name": "Scheme"
+      }, {
+        "name": "SISAL"
+      }, {
+        "name": "Miranda"
+    } ],
+    "authors": [ {
+      "name": "Haskell working group"
+    } ],
+    "name": "Haskell",
+    "inception": "1990"
+  }, {
+    "parents": [ {
+      "name": "Lisp", "version": "Common"
+    }, {
+      "name": "Scheme"
+    } ],
+    "authors": [ {
+      "name": "European Lisp Standardization Committee"
+    } ],
+    "name": "EuLisp",
+    "inception": "1990"
+  }, {
+      "parents": [ {
+        "name": "C", "version": "K&R"
+      }, {
+        "name": "Korn Shell (ksh)"
+      }, {
+        "name": "Perl"
+      } ],
+      "authors": [ {
+        "name": "IBM"
+      } ],
+      "name": "CL",
+      "inception": "1990"
+    }, {
+    "parents": [ {
+      "name": "Korn Shell (ksh)"
+    } ],
+    "authors": [ {
+      "name": "Paul Falstad",
+      "affiliation": "Princeton University"
+    } ],
+    "name": "Z Shell (zsh)",
+    "inception": "1990"
+  }, {
+    "parents": [ {
+      "name": "Fortran", "version": "77"
+    } ],
+    "authors": [],
+    "name": "Fortran", "version": "90",
+    "inception": "1990"
+  }, {
+    "parents": [ {
+      "name": "Eiffel"
+    }, {
+      "name": "CLU"
+    }, {
+      "name": "Lisp", "version": "Common"
+    }, {
+      "name": "Scheme"
+    } ],
+    "authors": [ {
+      "name": "Steve Omohundro et al.",
+      "affiliation": "International Computer Science Institute, University of Berkeley"
+    } ],
+    "name": "Sather",
+    "inception": "1990"
+  }, {
+    "parents": [ {
+      "name": "C++"
+    } ],
+    "authors": [ {
+      "name": "David J. DeWitt"
+    }, {
+      "name": "Michael J. Carey"
+    } ],
+    "name": "GNU E",
+    "inception": "1991"
+  }, {
+    "parents": [ {
+      "name": "Object", "version": "Oberon"
+    } ],
+    "authors": [ {
+      "name": "Hanspeter Mössenböck"
+    }, {
+      "name": "N. Wirth"
+    } ],
+    "name": "Oberon", "version": "2",
+    "inception": "1991"
+  }, {
+    "parents": [ {
+      "name": "ABC"
+    }, {
+      "name": "Algol", "version": "68"
+    }, {
+      "name": "SETL"
+    }, {
+      "name": "Icon"
+    }, {
+      "name": "Modula", "version": "3"
+    }, {
+      "name": "occam"
+    } ],
+    "authors": [ {
+      "name": "Guido van Rossum"
+    } ],
+    "name": "Python",
+    "inception": "1991", "version": "0.9"
+  }, {
+    "parents": [ {
+      "name": "Prolog"
+    } ],
+    "authors": [ {
+      "name": "Gert Smolka and his students"
+    } ],
+    "name": "Oz",
+    "inception": "1991"
+  }, {
+    "parents": [ {
+      "name": "Haskell"
+    } ],
+    "authors": [ {
+      "name": "Albert Gräf"
+    } ],
+    "name": "Q",
+    "inception": "1991"
+  }, {
+    "parents": [ {
+      "name": "Basic", "version": "Quick"
+    } ],
+    "authors": [ {
+      "name": "Alan Cooper"
+    } ],
+    "name": "Basic", "version": "Visual",
+    "inception": "1991"
+  }, {
+    "parents": [ {
+      "name": "C", "version": "K&R"
+    }, {
+      "name": "Newsqueak"
+    } ],
+    "authors": [ {
+      "name": "Phil Winterbottom",
+      "affiliation": "Bell Labs"
+    } ],
+    "name": "Alef",
+    "inception": "1992"
+  }, {
+    "parents": [ {
+      "name": "Pascal", "version": "Turbo OOP"
+    } ],
+    "authors": [ {
+      "name": "Borland Inc"
+    } ],
+    "name": "Pascal", "version": "Borland",
+    "inception": "1992"
+  }, {
+    "parents": [ {
+      "name": "Lisp", "version": "Common"
+    }, {
+      "name": "Scheme"
+    } ],
+    "authors": [ {
+      "name": "many people",
+      "affiliation": "Apple Computer Inc."
+    } ],
+    "name": "Dylan",
+    "inception": "1992"
+  }, {
+    "parents": [ {
+      "name": "PostScript"
+    } ],
+    "authors": [ {
+      "name": "John E. Davis"
+    } ],
+    "name": "SLang",
+    "inception": "1992"
+  }, {
+    "parents": [ {
+      "name": "Smalltalk", "version": "80"
+    } ],
+    "authors": [ {
+      "name": "Sun Microsystems Inc."
+    } ],
+    "name": "Self",
+    "inception": "1993"
+  }, {
+    "parents": [ {
+      "name": "C++"
+    }, {
+      "name": "Smalltalk", "version": "80"
+    }, {
+      "name": "Modula", "version": "2"
+    } ],
+    "authors": [ {
+      "name": "Wouter van Oortmerssen"
+    } ],
+    "name": "Amiga E",
+    "inception": "1993"
+  }, {
+    "parents": [ {
+      "name": "P′′"
+    } ],
+    "authors": [ {
+      "name": "Urban Müller"
+    } ],
+    "name": "Brainfuck",
+    "inception": "1993"
+  }, {
+    "parents": [ {
+      "name": "HyperTalk"
+    } ],
+    "authors": [ {
+      "name": "LiveCode Ltd"
+    } ],
+    "name": "LiveCode Transcript",
+    "inception": "1993"
+  }, {
+    "parents": [ {
+      "name": "HyperTalk"
+    } ],
+    "authors": [ {
+      "name": "Apple Computer Inc."
+    } ],
+    "name": "AppleScript",
+    "inception": "1993"
+  }, {
+    "parents": [ {
+      "name": "APL"
+    }, {
+      "name": "Lisp"
+    } ],
+    "authors": [ {
+      "name": "Arthur Whitney"
+    } ],
+    "name": "K",
+    "inception": "1993"
+  }, {
+    "parents": [ {
+      "name": "Scheme"
+    }, {
+      "name": "Snobol"
+    }, {
+      "name": "Modula"
+    }, {
+      "name": "CLU"
+    }, {
+      "name": "C++"
+    } ],
+    "authors": [ {
+      "name": "Roberto Ierusalimschy et al.",
+      "affiliation": "Tecgraf, PUC-Rio"
+    } ],
+    "name": "Lua",
+    "inception": "1993"
+  }, {
+    "parents": [ {
+      "name": "S"
+    } ],
+    "authors": [ {
+      "name": "Robert Gentleman"
+    }, {
+      "name": "Ross Ihaka"
+    } ],
+    "name": "R",
+    "inception": "1993"
+  }, {
+    "parents": [ {
+      "name": "C++"
+    } ],
+    "authors": [ {
+      "name": "Chamberlain et al.",
+      "affiliation": "University of Washington"
+    } ],
+    "name": "ZPL",
+    "inception": "1993"
+  }, {
+    "parents": [ {
+      "name": "Self"
+    }, {
+      "name": "Dylan"
+    } ],
+    "authors": [ {
+      "name": "Walter Smith"
+    } ],
+    "name": "NewtonScript",
+    "inception": "1993"
+  }, {
+    "parents": [ {
+      "name": "Snobol"
+    }, {
+      "name": "AWK"
+    }, {
+      "name": "ABC"
+    }, {
+      "name": "Icon"
+    }, {
+      "name": "Python"
+    } ],
+    "authors": [ {
+      "name": "Robert Craig"
+    } ],
+    "name": "Euphoria",
+    "inception": "1993"
+  }, {
+    "parents": [ {
+      "name": "Z-code"
+    } ],
+    "name": "Inform",
+    "inception": "1993"
+  }, {
+    "parents": [ {
+      "name": "SGML"
+    } ],
+    "authors": [ {
+      "name": "Tim Berners-Lee",
+      "affiliation": "CERN"
+    }, {
+      "name": "Dan Connolly",
+      "affiliation": "Convex Computer Inc"
+    } ],
+    "name": "HTML", "version": "1.0",
+    "inception": "1991"
+  },{
+    "parents": [ {
+      "name": "LAURE"
+    }, {
+      "name": "Smalltalk", "version": "80"
+    }, {
+      "name": "SETL"
+    }, {
+      "name": "OPS5"
+    }, {
+      "name": "Lisp"
+    }, {
+      "name": "ML"
+    }, {
+      "name": "C", "version": "90"
+    } ],
+    "authors": [ {
+      "name": "Yves Caseau",
+      "affiliation": "Bouyges"
+    } ],
+    "name": "Claire",
+    "inception": "1994"
+  }, {
+    "parents": [ {
+      "name": "Lisp", "version": "Common"
+    } ],
+    "authors": [ {
+      "name": "ANSI Committee"
+    } ],
+    "name": "Lisp", "version": "ANSI Common",
+    "inception": "1994"
+  }, {
+    "parents": [ {
+      "name": "ARLA"
+    } ],
+    "authors": [ {
+      "name": "ABB Group"
+    } ],
+    "name": "Rapid",
+    "inception": "1994"
+  }, {
+    "parents": [ {
+      "name": "Python", "version": "0.9"
+    } ],
+    "authors": [ {
+      "name": "Guido van Rossum"
+    } ],
+    "name": "Python", "version": "1.0",
+    "inception": "1994-01"
+  }, {
+    "parents": [ {
+      "name": "LPC"
+    }, {
+      "name": "C++"
+    } ],
+    "authors": [ {
+      "name": "Fredrik Hübinette et al.",
+      "affiliation": "Linköping University"
+    } ],
+    "name": "Pike",
+    "inception": "1994"
+  }, {
+    "parents": [ {
+      "name": "Forth"
+    } ],
+    "authors": [ {
+      "name": "Elizabeth Rather et al."
+    } ],
+    "name": "ANS Forth",
+    "inception": "1994"
+  }, {
+    "parents": [ {
+      "name": "Perl"
+    } ],
+    "authors": [ {
+      "name": "Larry Wall"
+    }, {
+      "name": "perl5-porters"
+    } ],
+    "name": "Perl", "version": "5",
+    "inception": "1994-10-17"
+  }, {
+    "parents": [ {
+      "name": "Ada"
+    } ],
+    "authors": [ {
+      "name": "S. Tucker Taft, et al.",
+      "affiliation": "Intermetrics, Inc."
+    } ],
+    "name": "Ada", "version": "95",
+    "inception": "1995"
+  }, {
+    "parents": [{
+      "name": "C", "version": "K&R"
+    }, {
+      "name": "Pascal"
+    }, {
+      "name": "CSP"
+    }, {
+      "name": "Alef"
+    }, {
+      "name": "Newsqueak"
+    }],
+    "authors": [{
+      "name": "Sean Dorward",
+      "affiliation": "Bell Labs / Vita Nuova Holdings"
+    }, {
+      "name": "Phil Winterbottom",
+      "affiliation": "Bell Labs / Vita Nuova Holdings"
+    }, {
+      "name": "Rob Pike",
+      "affiliation": "Bell Labs / Vita Nuova Holdings"
+    }],
+    "name": "Limbo",
+    "inception": "1995"
+  }, {
+    "parents": [ {
+      "name": "Prolog"
+    } ],
+    "authors": [ {
+      "name": "Michael Hanus",
+      "email": "mh@informatik.uni-kiel.de",
+      "affiliation": "Max-Planck-Institut for Computer Science"
+    }, {
+      "name": "Rudolf Opalla",
+      "affiliation": "Informatik, University of Dortmund"
+    } ],
+    "name": "ALF",
+    "description": "Algebraic Logic Functional programming language",
+    "inception": "1995-02-13"
+  }, {
+    "parents": [ {
+      "name": "Pascal", "version": "Borland"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg",
+      "affiliation": "Borland Inc"
+    } ],
+    "name": "Pascal", "version": "Delphi",
+    "inception": "1995"
+  }, {
+    "parents": [ ],
+    "authors": [ {
+      "name": "Allaire"
+    } ],
+    "name": "CFML",
+    "description": "ColdFusion",
+    "inception": "1995"
+  }, {
+    "parents": [ {
+      "name": "C++"
+    }, {
+      "name": "Smalltalk", "version": "80"
+    }, {
+      "name": "Ada"
+    }, {
+      "name": "Objective-C"
+    }, {
+      "name": "Mesa"
+    } ],
+    "authors": [ {
+      "name": "James Gosling",
+      "affiliation": "Sun Microsystems Inc"
+    } ],
+    "name": "Java", "version": "0.9",
+    "inception": "1995-05-23"
+  }, {
+    "parents": [ {
+      "name": "Fortran", "version": "90"
+    } ],
+    "authors": [ {
+      "name": "John Backus",
+      "affiliation": "IBM"
+    },{
+      "name": "ISO/IEC 1539-1"
+    } ],
+    "name": "Fortran", "version": "95",
+    "inception": "1995"
+  }, {
+    "parents": [ {
+      "name": "Self"
+    }, {
+      "name": "C", "version": "90"
+    }, {
+      "name": "Scheme"
+    } ],
+    "authors": [ {
+      "name": "Brendan Eich",
+      "affiliation": "Netscape"
+    } ],
+    "name": "LiveScript",
+    "inception": "1995"
+  }, {
+    "parents": [ {
+      "name": "Prolog"
+    }, {
+      "name": "Hope"
+    }, {
+      "name": "Haskell"
+    } ],
+    "authors": [ {
+      "name": "Zoltan Somogyi",
+      "affiliation": "University of Melbourne"
+    } ],
+    "name": "Mercury",
+    "inception": "1995"
+  }, {
+    "parents": [ {
+      "name": "Perl"
+    } ],
+    "authors": [ {
+      "name": "Rasmus Lerdorf"
+    } ],
+    "name": "PHP",
+    "inception": "1995"
+  }, {
+    "parents": [ {
+      "name": "Smalltalk", "version": "80"
+    }, {
+      "name": "Eiffel"
+    }, {
+      "name": "Perl"
+    }, {
+      "name": "Ada"
+    }, {
+      "name": "Basic"
+    }, {
+      "name": "C++"
+    }, {
+      "name": "CLU"
+    }, {
+      "name": "Dylan"
+    }, {
+      "name": "Lisp"
+    } ],
+    "authors": [ {
+      "name": "Yukihiro Matsumoto"
+    } ],
+    "name": "Ruby", "version": "0.95",
+    "inception": "1995"
+  }, {
+    "parents": [ {
+      "name": "Scheme"
+    }, {
+      "name": "Lisp"
+    } ],
+    "authors": [ {
+      "name": "Matthew Flatt",
+      "affiliation": "Rice University"
+    } ],
+    "name": "Racket",
+    "inception": "1995"
+  }, {
+    "parents": [ {
+      "name": "HTML", "version": "1.0"
+    } ],
+    "authors": [ {
+      "name": "HTML Working Group"
+    }],
+    "name": "HTML", "version": "2.0",
+    "inception": "1995-11-24"
+  }, {
+    "parents": [ {
+      "name": "LiveScript"
+    } ],
+    "authors": [ {
+      "name": "Brendan Eich",
+      "affiliation": "Netscape"
+    } ],
+    "name": "javaScript",
+    "inception": "1995-12"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "James Gosling",
+      "affiliation": "Sun Microsystems Inc"
+    } ],
+    "name": "Java", "version": "1.0",
+    "inception": "1996-01-23"
+  }, {
+    "parents": [ {
+      "name": "Dylan"
+    }, {
+      "name": "Smalltalk", "version": "80"
+    }, {
+      "name": "Scala"
+    } ],
+    "authors": [ {
+      "name": "Blue World Communications Inc."
+    } ],
+    "name": "Lasso",
+    "inception": "1996"
+  }, {
+   "parents": [{
+     "name": "Fortran", "version": "90"
+   }],
+   "authors": [{
+     "name": "Ken Kennedy",
+     "email": "HPFF@cs.rice.edu",
+     "affiliation": "Rice University"
+   }],
+   "description": "High Performance Fortran",
+   "name": "HPF",
+   "inception": "1996-04"
+  }, {
+    "parents": [ {
+      "name": "APL"
+    }, {
+      "name": "Perl"
+    } ],
+    "authors": [ {
+      "name": "Karl Glazebrook"
+    }, {
+      "name": "Jarle Brinchmann"
+    }, {
+      "name": "Tuomas Lukka"
+    }, {
+      "name": "Christian Soeller"
+    } ],
+    "name": "PDL",
+    "description": "Perl Data Language",
+    "inception": "1996"
+  }, {
+    "parents": [ {
+      "name": "Basic", "version": "Visual"
+    } ],
+    "authors": [ {
+      "name": "Microsoft"
+    } ],
+    "name": "VBScript",
+    "inception": "1996"
+  }, {
+    "parents": [ {
+      "name": "Caml"
+    }, {
+      "name": "Standard ML"
+    }, {
+      "name": "Pascal"
+    } ],
+    "authors": [ {
+      "name": "INRIA"
+    } ],
+    "name": "OCaml",
+    "inception": "1996"
+  }, {
+    "parents": [ {
+      "name": "Rexx"
+    } ],
+    "authors": [ {
+      "name": "Mike Cowlishaw"
+    } ],
+    "name": "Rexx", "version": "Net",
+    "inception": "1996"
+  }, {
+    "parents": [ {
+      "name": "Actors"
+    }, {
+      "name": "Concurrent Logic Programming (CLP)"
+    } ],
+    "authors": [ {
+      "name": "E.D. Tribble"
+    } ],
+    "name": "Joule",
+    "inception": "1996"
+  }, {
+    "parents": [ {
+      "name": "Haskell"
+    } ],
+    "authors": [ {
+      "name": "Haskell working group"
+    } ],
+    "name": "Haskell", "version": "1.3",
+    "inception": "1996"
+  }, {
+    "parents": [ {
+      "name": "Scheme"
+    } ],
+    "authors": [ {
+      "name": "ISO/IEC JTC1/SC34"
+    } ],
+    "name": "DSSSL",
+    "inception": "1996"
+  }, {
+    "parents": [ {
+      "name": "HyperCard"
+    }, {
+      "name": "Logo"
+    }, {
+      "name": "Smalltalk", "version": "80"
+    } ],
+    "authors": [ {
+      "name": "Alan Kay"
+    }, {
+      "name": "Scott Wallace"
+    }, {
+      "name": "Ted Kaehler"
+    }, {
+      "name": "John Maloney"
+    }, {
+      "name": "Andreas Raab"
+    }, {
+      "name": "Dan Ingalls"
+    } ],
+    "name": "E-Toys",
+    "inception": "1996"
+  }, {
+    "parents": [ {
+      "name": "SGML"
+    } ],
+    "authors": [ {
+      "name": "Tim Bray"
+    }, {
+      "name": "Jean Paoli"
+    }, {
+      "name": "C. M. Sperberg-McQueen"
+    }, {
+      "name": "XML Working Group"
+    } ],
+    "name": "XML",
+    "inception": "1996-11"
+  }, {
+    "parents": [ {
+      "name": "Ruby"
+    }, {
+      "name": "Lua"
+    }, {
+      "name": "Python"
+    } ],
+    "authors": [ {
+      "name": "Matsumoto Yukihiro"
+    } ],
+    "name": "Ruby", "version": "1.0",
+    "inception": "1996-12-25"
+  }, {
+    "parents": [ {
+      "name": "HTML", "version": "2.0"
+    } ],
+    "authors": [ {
+      "name": "W3C"
+    } ],
+    "name": "HTML", "version": "3.0",
+    "inception": "1997-01-14"
+  }, {
+    "parents": [ {
+      "name": "Oberon", "version": "2"
+    } ],
+    "authors": [ {
+      "name": "Oberon microsystems Inc"
+    } ],
+    "name": "Pascal", "version":  "Component",
+    "inception": "1997"
+  }, {
+    "parents": [ {
+      "name": "Joule"
+    }, {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "Mark S. Miller",
+      "affiliation": "Electric Communities"
+    }, {
+      "name": "Dan Bronstein",
+      "affiliation": "Electric Communities"
+    }, {
+      "name": "et al"
+    } ],
+    "name": "E",
+    "inception": "1997"
+  }, {
+    "parents": [ {
+      "name": "Scheme"
+    } ],
+    "authors": [ {
+      "name": "Free University of Brussels"
+    } ],
+    "name": "Pico",
+    "inception": "1997"
+  }, {
+    "parents": [ {
+      "name": "Smalltalk", "version": "80"
+    }, {
+      "name": "Self"
+    } ],
+    "authors": [ {
+      "name": "Alan Kay, et al.",
+      "affiliation": "Apple Computer Inc"
+    } ],
+    "name": "Squeak",
+    "inception": "1997"
+  }, {
+    "parents": [ {
+      "name": "javaScript"
+    } ],
+    "authors": [ {
+      "name": "ECMA TC39-TG1"
+    } ],
+    "name": "javaScript", "version": "ECMA",
+    "inception": "1997"
+  }, {
+    "parents": [ {
+      "name": "Smalltalk", "version": "80"
+    }, {
+      "name": "APL"
+    }, {
+      "name": "Objective-C"
+    } ],
+    "authors": [ {
+      "name": "Philippe Mougin"
+    } ],
+    "name": "F-Script",
+    "inception": "1997"
+  }, {
+    "parents": [ {
+      "name": "Lisp", "version": "Common"
+    } ],
+    "authors": [ {
+      "name": "ISO Standard ISLisp"
+    } ],
+    "name": "Lisp", "version": "IS",
+    "inception": "1997"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    }, {
+      "name": "Scheme"
+    }, {
+      "name": "Tcl"
+    } ],
+    "authors": [ {
+      "name": "Jorge Nunes"
+    } ],
+    "name": "Tea",
+    "inception": "1997"
+  }, {
+    "parents": [ {
+      "name": "Gofer"
+    }, {
+      "name": "Haskell"
+    } ],
+    "authors": [ {
+      "name": "Haskell working group"
+    } ],
+    "name": "Haskell", "version": "98",
+    "inception": "1997-11"
+  }, {
+    "parents": [ {
+      "name": "HTML"
+    } ],
+    "authors": [ {
+      "name": "W3C"
+    } ],
+    "name": "HTML", "version": "4.0",
+    "inception": "1997-12-18"
+  }, {
+    "parents": [ {
+      "name": "Self"
+    }, {
+      "name": "Forth"
+    }, {
+      "name": "Lisp"
+    }, {
+      "name": "Logo"
+    } ],
+    "authors": [ {
+      "name": "Carl Sassenrath",
+      "affiliation": "Rebol Technologies"
+    } ],
+    "name": "Rebol",
+    "inception": "1997"
+  }, {
+    "parents": [ {
+      "name": "Prolog"
+    } ],
+    "authors": [ {
+      "name": "Paulo Moura",
+      "affiliation": "University of Coimbra"
+    } ],
+    "name": "Logtalk",
+    "inception": "1998"
+  }, {
+    "parents": [ {
+      "name": "ECMAScript"
+    } ],
+    "authors": [ {
+      "name": "Gary Grossman"
+    } ],
+    "name": "ActionScript",
+    "inception": "1998"
+  }, {
+    "parents": [ {
+      "name": "C++"
+    }, {
+      "name": "C", "version": "90"
+    } ],
+    "authors": [ {
+      "name": "ANSI/ISO"
+    } ],
+    "name": "C++", "version": "98",
+    "inception": "1998"
+  }, {
+    "parents": [ {
+      "name": "Lisp"
+    }, {
+      "name": "javaScript"
+    }, {
+      "name": "HTML", "version": "4.0"
+    }, {
+      "name": "TeX"
+    } ],
+    "authors": [ {
+      "name": "David Kranz",
+      "affiliation": "MIT"
+    }, {
+      "name": "Steve Ward",
+      "affiliation": "MIT"
+    }, {
+      "name": "Chris Terman",
+      "affiliation": "MIT"
+    } ],
+    "name": "Curl",
+    "inception": "1998"
+  }, {
+    "parents": [ {
+      "name": "Pascal"
+    }, {
+      "name": "Oberon", "version": "2"
+    } ],
+    "authors": [ {
+      "name": "Ronald E. Prather",
+      "affiliation": "Trinity University (Texas)"
+    } ],
+    "name": "M2001",
+    "inception": "1998"
+  }, {
+    "parents": [ {
+      "name": "AWK"
+    }, {
+      "name": "Perl"
+    }, {
+      "name": "Bash"
+    } ],
+    "authors": [ {
+      "name": "Robert Osterlund",
+      "affiliation": "University of Chicago"
+    } ],
+    "name": "Pikt",
+    "inception": "1998"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "Frederic Laboureur",
+      "affiliation": "Fantaisie Software"
+    } ],
+    "name": "Basic", "version": "Pure",
+    "inception": "1998"
+  }, {
+    "parents": [ {
+      "name": "C++", "version": "98"
+    }, {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "Tim Sweeney",
+      "affiliation": "Epic Games"
+    } ],
+    "name": "UnrealScript",
+    "inception": "1998"
+  }, {
+    "parents": [ {
+      "name": "DSSSL"
+    }, {
+      "name": "XML"
+    } ],
+    "authors": [ {
+      "name": "W3C"
+    }, {
+      "name": "James Clark"
+    } ],
+    "name": "XSLT (+XPath)",
+    "inception": "1998"
+  }, {
+    "parents": [ {
+      "name": "Basic", "version": "Visual"
+    } ],
+    "authors": [ {
+      "name": "Xojo, Inc."
+    }, {
+      "name": "Andrew Barry"
+    } ],
+    "name": "Xojo (REALbasic)",
+    "inception": "1998"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    }, {
+      "name": "C++", "version": "98"
+    } ],
+    "name": "Java", "version": "1.2",
+    "inception": "1998-12-08"
+  }, {
+    "parents": [ {
+      "name": "C90"
+    } ],
+    "authors": [ {
+      "name": "ISO/IEC 9899"
+    } ],
+    "name": "C", "version": "99",
+    "inception": "1999"
+  }, {
+    "parents": [ {
+      "name": "Game Maker"
+    } ],
+    "authors": [ {
+      "name": "Mark Overmars"
+    } ],
+    "name": "GML Game Maker Language",
+    "inception": "1999"
+  }, {
+    "parents": [ {
+      "name": "Ruby"
+    }, {
+      "name": "C++"
+    } ],
+    "authors": [ {
+      "name": "Matsumoto Yukihiro"
+    } ],
+    "name": "Ruby", "version": "1.4",
+    "inception": "1999-08"
+  }, {
+    "parents": [ {
+      "name": "dBase"
+    } ],
+    "authors": [ {
+      "name": "Antonio Linares"
+    } ],
+    "name": "Harbour",
+    "inception": "1999"
+  }, {
+    "parents": [ {
+      "name": "HTML", "version": "4.0"
+    } ],
+    "authors": [ {
+      "name": "W3C"
+    } ],
+    "name": "HTML", "version": "4.01",
+    "inception": "1999-12-24"
+  }, {
+    "parents": [ {
+      "name": "javaScript"
+    } ],
+    "authors": [ {
+      "name": "Douglas Crockford",
+      "affiliation": "PayPal"
+    } ],
+    "name": "Json",
+    "inception": "2000"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "James Gosling"
+    } ],
+    "name": "Java", "version": "1.3",
+    "inception": "2000-05-08"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "G Stewart von Itzstein"
+    } ],
+    "name": "Join Java",
+    "inception": "2000"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "The Game Creators"
+    } ],
+    "name": "Basic", "version": "Dark",
+    "inception": "2000"
+  }, {
+    "parents": [ {
+      "name": "C++"
+    }, {
+      "name": "Java"
+    }, {
+      "name": "Eiffel"
+    }, {
+      "name": "Delphi"
+    }, {
+      "name": "Basic", "version": "Visual"
+    }, {
+      "name": "Modula"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg",
+      "affiliation": "Microsoft, ECMA"
+    } ],
+    "name": "C#", "version": "0.8",
+    "inception": "2000"
+  }, {
+    "parents": [ {
+      "name": "Python", "version": "1.0"
+    } ],
+    "authors": [ {
+      "name": "Guido van Rossum"
+    } ],
+    "name": "Python", "version": "2.0",
+    "inception": "2000-10"
+  }, {
+    "parents": [ {
+      "name": "HTML", "version": "4.01"
+    }, {
+      "name": "XML"
+    } ],
+    "authors": [ {
+      "name": "World Wide Web Consortium (W3C)"
+    } ],
+    "name": "XHTML", "version": "1.0",
+    "inception": "2000-01-26"
+  }, {
+    "parents": [{
+      "name": "Smalltalk",
+      "version": "80"
+    }],
+    "authors": [{
+      "name": "Andreas Raab",
+      "affiliation": "Squeak development team"
+    }],
+    "name": "Tweak",
+    "inception": "2001"
+  }, {
+    "parents": [{
+      "name": "Logo"
+    }],
+    "authors": [{
+      "name": "Mitchel Resnick",
+      "affiliation": "Massachusetts Institute of Technology (MIT) Media Lab"
+    }, {
+      "name": "Eric Klopfer",
+      "affiliation": "Massachusetts Institute of Technology (MIT) Media Lab"
+    }, {
+      "name": "Scheller Teacher Education Program",
+      "affiliation": "Massachusetts"
+    }],
+    "name": "StarLogo",
+    "inception": "2001"
+  }, {
+    "parents": [ {
+      "name": "FP"
+    }, {
+      "name": "Forth"
+    } ],
+    "authors": [ {
+      "name": "Manfred von Thun"
+    } ],
+    "name": "Joy",
+    "inception": "2001"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    }, {
+      "name": "Lisp", "version": "Common"
+    } ],
+    "authors": [ {
+      "name": "Gregor Kiczales",
+      "affiliation": "Xerox Parc"
+    } ],
+    "name": "AspectJ",
+    "inception": "2001"
+  }, {
+    "parents": [ {
+      "name": "C++", "version": "98"
+    }, {
+      "name": "C#"
+    } ],
+    "authors": [ {
+      "name": "Walter Bright",
+      "affiliation": "Digital Mars"
+    } ],
+    "name": "D",
+    "inception": "2001"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    }, {
+      "name": "C++", "version": "98"
+    } ],
+    "authors": [ {
+      "name": "Casey Reas"
+    }, {
+      "name": "Benjamin Fry"
+    } ],
+    "name": "Processing",
+    "inception": "2001"
+  }, {
+    "parents": [ {
+      "name": "XHTML", "version": "1.0"
+    } ],
+    "authors": [ {
+      "name": "W3C"
+    } ],
+    "name": "XHTML", "version": "1.1",
+    "inception": "2001-05-31"
+  }, {
+    "parents": [ {
+      "name": "Basic", "version": "Visual"
+    } ],
+    "authors": [ {
+      "name": "Microsoft"
+    } ],
+    "name": "Basic", "version": "Visual .NET",
+    "inception": "2001"
+  }, {
+    "parents": [ {
+      "name": "Godot"
+    } ],
+    "authors": [ {
+      "name": "OKAM Studio"
+    } ],
+    "name": "GDS",
+    "description": "GDScript",
+    "inception": "2001"
+  }, {
+    "parents": [ {
+      "name": "C#"
+    }, {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg",
+      "affiliation": "Microsoft, ECMA"
+    } ],
+    "name": "C#", "version": "1.0",
+    "inception": "2002-01"
+  }, {
+    "parents": [ {
+      "name": "Self"
+    }, {
+      "name": "NewtonScript"
+    }, {
+      "name": "Lua"
+    } ],
+    "authors": [ {
+      "name": "Steve Dekorte"
+    } ],
+    "name": "Io",
+    "inception": "2002"
+  }, {
+    "parents": [ {
+      "name": "C#"
+    }, {
+      "name": "ML"
+    }, {
+      "name": "Haskell"
+    } ],
+    "authors": [ {
+      "name": "University of Wrocław"
+    } ],
+    "name": "Nemerle",
+    "inception": "2003"
+  }, {
+    "parents": [ {
+      "name": "Joy"
+    }, {
+      "name": "Forth"
+    }, {
+      "name": "Lisp"
+    } ],
+    "authors": [ {
+      "name": "Slava Pestov"
+    } ],
+    "name": "Factor",
+    "inception": "2003"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    }, {
+      "name": "Haskell"
+    }, {
+      "name": "Standard ML"
+    }, {
+      "name": "OCaml"
+    } ],
+    "authors": [ {
+      "name": "Martin Odersky"
+    } ],
+    "name": "Scala",
+    "inception": "2003"
+  }, {
+    "parents": [ {
+      "name": "C++", "version": "98"
+    }, {
+      "name": "C", "version": "99"
+    } ],
+    "authors": [ {
+      "name": "C++ ISO/IEC 14882"
+    } ],
+    "name": "C++", "version": "03",
+    "inception": "2003"
+  }, {
+    "parents": [ {
+      "name": "Ruby"
+    } ],
+    "authors": [ {
+      "name": "Matsumoto Yukihiro"
+    } ],
+    "name": "Ruby", "version": "1.8",
+    "inception": "2003-08"
+  }, {
+    "parents": [ {
+      "name": "Lua"
+    } ],
+    "authors": [ {
+      "name": "Alberto Demichelis"
+    } ],
+    "name": "Squirrel",
+    "inception": "2003"
+  }, {
+    "parents": [ {
+      "name": "Python"
+    }, {
+      "name": "C#"
+    } ],
+    "authors": [ {
+      "name": "Rodrigo B. de Oliveira"
+    } ],
+    "name": "Boo",
+    "inception": "2003"
+  }, {
+    "parents": [ {
+      "name": "LabView"
+    } ],
+    "authors": [ {
+      "name": "Jonathan Edwards"
+    } ],
+    "name": "Subtext",
+    "inception": "2004"
+  }, {
+    "parents": [ {
+      "name": "Modula", "version": "2"
+    }, {
+      "name": "Prolog"
+    } ],
+    "authors": [ {
+      "name": "Krzysztof Apt",
+      "affiliation": "Centrum Wiskunde & Informatica"
+    } ],
+    "name": "Alma-0",
+    "inception": "2004"
+  }, {
+    "parents": [ {
+      "name": "Basic", "version": "Quick"
+    } ],
+    "authors": [ {
+      "name": "Andre Victor"
+    } ],
+    "name": "Basic", "version": "Free",
+    "inception": "2004"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "James Strachan"
+    } ],
+    "name": "Groovy",
+    "inception": "2004"
+  }, {
+    "parents": [ {
+      "name": "Lisp"
+    } ],
+    "authors": [ {
+      "name": "Aneil Mallavarapu",
+      "affiliation": "Harvard Medical School, Department of Systems Biology"
+    } ],
+    "name": "Little b",
+    "inception": "2004"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "Java Community Process (JCP)"
+    } ],
+    "name": "Java", "version": "1.5",
+    "inception": "2004"
+  }, {
+    "parents": [ {
+      "name": "C#"
+    }, {
+      "name": "Eiffel"
+    }, {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "Microsoft Research"
+    } ],
+    "name": "Spec#",
+    "inception": "2004"
+  }, {
+    "parents": [{
+      "name": "ALF"
+    }],
+    "authors": [{
+      "name": "Conor McBride"
+    }, {
+      "name": "James McKinna"
+    }],
+    "name": "Epigram",
+    "inception": "2004"
+  }, {
+    "parents": [ {
+      "name": "C#"
+    }, {
+      "name": "Scala"
+    }, {
+      "name": "Ruby"
+    }, {
+      "name": "Erlang"
+    } ],
+    "authors": [ {
+      "name": "Brian Frank"
+    }, {
+      "name": "Andy Frank"
+    } ],
+    "name": "Fantom",
+    "inception": "2005"
+  }, {
+    "parents": [ {
+      "name": "OCaml"
+    }, {
+      "name": "C#"
+    }, {
+      "name": "Haskell"
+    } ],
+    "authors": [ {
+      "name": "Don Syme",
+      "affiliation": "Microsoft Research"
+    } ],
+    "name": "F#",
+    "inception": "2005"
+  }, {
+    "parents": [ {
+      "name": "ActionScript"
+    }, {
+      "name": "OCaml"
+    }, {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "Nicolas Cannasse"
+    } ],
+    "name": "Haxe",
+    "inception": "2005"
+  }, {
+    "parents": [ {
+      "name": "Pascal", "version": "Object"
+    }, {
+      "name": "C#"
+    } ],
+    "authors": [ {
+      "name": "RemObjects Software"
+    } ],
+    "name": "Oxygene",
+    "inception": "2005"
+  }, {
+    "parents": [ {
+      "name": "Pascal", "version": "Object"
+    }, {
+      "name": "Ada", "version": "95"
+    } ],
+    "authors": [ {
+      "name": "Thomas Mertes"
+    } ],
+    "name": "Seed 7",
+    "inception": "2005"
+  }, {
+    "parents": [ {
+      "name": "C#"
+    }, {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg",
+      "affiliation": "Microsoft, ECMA"
+    } ],
+    "name": "C#", "version": "2.0",
+    "inception": "2005-11"
+  }, {
+    "parents": [ {
+      "name": "FoxPro"
+    } ],
+    "authors": [ {
+      "name": "Mahmoud Samir Fayed",
+      "affiliation": "King Saud University, Saudi Arabia"
+    }, {
+      "name": "PWCT Development Group"
+    } ],
+    "name": "PWCT",
+    "inception": "2005-12"
+  }, {
+    "parents": [ {
+      "name": "Python"
+    }, {
+      "name": "C#"
+    }, {
+      "name": "Eiffel"
+    }, {
+      "name": "Objective-C"
+    } ],
+    "authors": [ {
+      "name": "Chuck Esterbrook"
+    } ],
+    "name": "Cobra",
+    "inception": "2006"
+  }, {
+    "parents": [ {
+      "name": "C#"
+    }, {
+      "name": "Korn Shell (ksh)"
+    }, {
+      "name": "Perl"
+    }, {
+      "name": "CL"
+    }, {
+      "name": "DCL"
+    }, {
+      "name": "SQL"
+    } ],
+    "authors": [ {
+      "name": "Microsoft"
+    } ],
+    "name": "Windows PowerShell",
+    "inception": "2006"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "Ateji"
+    } ],
+    "name": "OptimJ",
+    "inception": "2006"
+  }, {
+    "parents": [ {
+      "name": "Scala"
+    }, {
+      "name": "ML"
+    }, {
+      "name": "Haskell"
+    } ],
+    "authors": [ {
+      "name": "Guy Steele"
+    } ],
+    "name": "Fortress",
+    "inception": "2006"
+  }, {
+    "parents": [ {
+      "name": "C#"
+    } ],
+    "authors": [ {
+      "name": "GNOME"
+    } ],
+    "name": "Vala",
+    "inception": "2006"
+  }, {
+    "parents": [ {
+      "name": "AgentSheets"
+    }, {
+      "name": "Logo"
+    }, {
+      "name": "Smalltalk", "version": "80"
+    } ],
+    "authors": [ {
+      "name": "Alexander Repenning",
+      "affiliation": "Center for Lifelong Learning and Design, University of Colorado / Boulder / USA"
+    } ],
+    "name": "AgentCubes",
+    "inception": "2006"
+  }, {
+    "parents": [  {
+      "name": "HyperCard"
+    }, {
+      "name": "AgentSheets"
+    }, {
+      "name": "Logo"
+    }, {
+      "name": "Smalltalk", "version": "80"
+    }, {
+      "name": "E-Toys"
+    }, {
+      "name": "StarLogo"
+    }, {
+      "name": "Tweak"
+    } ],
+    "authors": [ {
+      "name": "Mitchel Resnick"
+    }, {
+      "name": "John Maloney"
+    }, {
+      "name": "Natalie Rusk"
+    }, {
+      "name": "Evelyn Eastmond"
+    }, {
+      "name": "Tammy Stern"
+    }, {
+      "name": "Amon Millner"
+    }, {
+      "name": "Jay Silver"
+    }, {
+      "name": "Brian Silverman"
+    } ],
+    "name": "Scratch",
+    "inception": "2007"
+  }, {
+    "parents": [ {
+      "name": "Ada", "version": "95"
+    } ],
+    "authors": [ {
+      "name": "Ada Rapporteur Group"
+    } ],
+    "name": "Ada", "version": "2005",
+    "inception": "2007"
+  }, {
+    "parents": [ {
+      "name": "Coq"
+    }, {
+      "name": "Epigram"
+    }, {
+      "name": "Haskell"
+    } ],
+    "authors": [ {
+      "name": "Ulf Norell"
+    } ],
+    "name": "Agda",
+    "inception": "2007"
+  }, {
+    "parents": [ {
+      "name": "Basic", "version": "Quick"
+    } ],
+    "authors": [ {
+      "name": "Galleon"
+    }, {
+      "name": "QB64Team"
+    } ],
+    "name": "Basic", "version":"Quick 64",
+    "inception": "2007"
+  }, {
+    "parents": [ {
+      "name": "Lisp"
+    }, {
+      "name": "ML"
+    }, {
+      "name": "Haskell"
+    }, {
+      "name": "Erlang"
+    } ],
+    "authors": [ {
+      "name": "Rich Hickey"
+    } ],
+    "name": "Clojure",
+    "inception": "2007"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "Adam Lindsay"
+    } ],
+    "name": "LolCode",
+    "inception": "2007"
+  }, {
+    "parents": [ {
+      "name": "Oberon"
+    } ],
+    "authors": [ {
+      "name": "Wirth"
+    } ],
+    "name": "Oberon", "version": "07",
+    "inception": "2007"
+  }, {
+    "parents": [ {
+      "name": "C"
+    }, {
+      "name": "Haskell"
+    } ],
+    "authors": [ {
+      "name": "University of Chicago"
+    }, {
+      "name": "Argonne National Laboratory"
+    } ],
+    "name": "Swift (parallel scripting language)",
+    "inception": "2007"
+  }, {
+    "parents": [ {
+      "name": "Python"
+    }, {
+      "name": "Lisp"
+    }, {
+      "name": "Pascal", "version": "Object"
+    } ],
+    "authors": [ {
+      "name": "Andreas Rumpf"
+    } ],
+    "name": "Nim",
+    "inception": "2008"
+  }, {
+    "parents": [ {
+      "name": "Python"
+    }, {
+      "name": "Boo"
+    }, {
+      "name": "D"
+    }, {
+      "name": "Pascal", "version": "Object"
+    } ],
+    "authors": [ {
+      "name": "Jamie McCracken"
+    } ],
+    "name": "Genie",
+    "inception": "2008"
+  }, {
+    "parents": [ {
+      "name": "Python", "version": "2.0"
+    }, {
+      "name": "Haskell"
+    } ],
+    "authors": [ {
+      "name": "Python Software Foundation"
+    } ],
+    "name": "Python", "version": "3.0",
+    "inception": "2008-12"
+  }, {
+    "parents": [ {
+      "name": "Q"
+    } ],
+    "authors": [ {
+      "name": "Albert Gräf"
+    } ],
+    "name": "Pure",
+    "inception": "2008"
+  }, {
+    "parents": [ {
+      "name": "Fortran"
+    } ],
+    "authors": [ ],
+    "name": "Fortran", "version": "2008",
+    "inception": "2008"
+  }, {
+    "parents": [ {
+      "name": "Json"
+    }, {
+      "name": "javaScript"
+    } ],
+    "authors": [ {
+      "name": "Qt Development Team"
+    } ],
+    "name": "QML",
+    "description": "Qt's Markup Language",
+    "inception": "2009"
+  }, {
+    "parents": [ {
+      "name": "HPF"
+    }, {
+      "name": "ZPL"
+    } ],
+    "authors": [ {
+      "name": "Brad Chamberlain",
+      "affiliation": "Cray Inc."
+    } ],
+    "name": "Chapel",
+    "inception": "2009"
+  }, {
+    "parents": [ {
+      "name": "C"
+    }, {
+      "name": "Oberon"
+    }, {
+      "name": "Limbo"
+    }, {
+      "name": "Smalltalk", "version": "80"
+    }, {
+      "name": "occam"
+    } ],
+    "authors": [ {
+      "name": "Google"
+    } ],
+    "name": "Go",
+    "inception": "2009"
+  }, {
+    "parents": [ {
+      "name": "javaScript"
+    }, {
+      "name": "Ruby"
+    }, {
+      "name": "Python"
+    }, {
+      "name": "Haskell"
+    } ],
+    "authors": [ {
+      "name": "Jeremy Ashkenas"
+    } ],
+    "name": "CoffeeScript",
+    "inception": "2009"
+  }, {
+    "parents": [ {
+      "name": "Haskell"
+    }, {
+      "name": "Agda"
+    }, {
+      "name": "Coq"
+    } ],
+    "authors": [ {
+      "name": "Edwin Brady"
+    } ],
+    "name": "Idris",
+    "inception": "2009"
+  }, {
+    "parents": [ {
+      "name": "Modula"
+    }, {
+      "name": "Ada"
+    }, {
+      "name": "ML"
+    } ],
+    "authors": [ {
+      "name": "S. Tucker Taft"
+    }, {
+      "name": "AdaCore"
+    } ],
+    "name": "Parasail",
+    "inception": "2009"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    }, {
+      "name": "C"
+    }, {
+      "name": "Python"
+    } ],
+    "authors": [ {
+      "name": "David J. Pearce"
+    } ],
+    "name": "Whiley",
+    "inception": "2009"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    }, {
+      "name": "Spec#"
+    } ],
+    "authors": [ {
+      "name": "K. Rustan"
+    }, {
+      "name": "M. Leino"
+    } ],
+    "name": "Dafny",
+    "inception": "2009"
+  }, {
+    "parents": [ {
+      "name": "javaScript"
+    }, {
+      "name": "ActionScript"
+    }, {
+      "name": "JScript"
+    } ],
+    "name": "javaScript", "version": "ES5",
+    "inception": "2009-12"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    }, {
+      "name": "C#"
+    } ],
+    "authors": [ {
+      "name": "Guidewire Software"
+    } ],
+    "name": "Gosu",
+    "inception": "2010"
+  }, {
+    "parents": [ {
+      "name": "Alef"
+    }, {
+      "name": "C++", "version": "03"
+    }, {
+      "name": "Erlang"
+    }, {
+      "name": "Hermes"
+    }, {
+      "name": "Limbo"
+    }, {
+      "name": "Napier", "version": "88"
+    }, {
+      "name": "Newsqueak"
+    }, {
+      "name": "Lisp", "version": "NIL"
+    }, {
+      "name": "Sather"
+    }, {
+      "name": "Standard ML"
+    } ],
+    "authors": [ {
+      "name": "Graydon Hoare",
+      "affiliation": "Mozilla"
+    } ],
+    "name": "Rust", "version": "0.1",
+    "inception": "2010"
+  }, {
+    "parents": [ {
+      "name": "Haskell"
+    } ],
+    "authors": [ {
+      "name": "Haskell working group"
+    } ],
+    "name": "Haskell", "version": "2010",
+    "inception": "2010-07"
+  }, {
+    "parents": [ {
+      "name": "PWCT"
+    } ],
+    "authors": [ {
+      "name": "Mahmoud Samir Fayed",
+      "affiliation": "King Saud University, Saudi Arabia"
+    } ],
+    "name": "Supernova",
+    "inception": "2010"
+  }, {
+    "parents": [ {
+      "name": "C", "version": "99"
+    } ],
+    "authors": [ {
+      "name": "ISO/IEC 9899"
+    } ],
+    "name": "C", "version": "11",
+    "inception": "2011"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "Gavin King",
+      "affiliation": "Red Hat"
+    } ],
+    "name": "Ceylon",
+    "inception": "2011"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    }, {
+      "name": "javaScript"
+    }, {
+      "name": "CoffeeScript"
+    }, {
+      "name": "Go"
+    } ],
+    "authors": [ {
+      "name": "Google"
+    } ],
+    "name": "Dart",
+    "inception": "2011"
+  }, {
+    "parents": [ {
+      "name": "Ruby"
+    } ],
+    "authors": [ {
+      "name": "Matsumoto Yukihiro"
+    } ],
+    "name": "Ruby", "version": "1.9.3",
+    "inception": "2011-10-31"
+  }, {
+    "parents": [ {
+      "name": "Scratch"
+    }, {
+      "name": "Scheme"
+    }, {
+      "name": "Logo"
+    }, {
+      "name": "Smalltalk", "version": "80"
+    }],
+    "authors": [ {
+      "name": "Jens Mönig"
+    }, {
+      "name": "Brian Harvey",
+      "affiliation": "University of California, Berkeley"
+    }],
+    "name": "Snap!",
+    "inception": "2011"
+  }, {
+    "parents": [ {
+      "name": "C++", "version": "03"
+    }, {
+      "name": "Haskell"
+    } ],
+    "authors": [ {
+      "name": "ISO/IEC 14882"
+    } ],
+    "name": "C++", "version": "11",
+    "inception": "2011"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    }, {
+      "name": "Scala"
+    }, {
+      "name": "Groovy"
+    }, {
+      "name": "C#"
+    }, {
+      "name": "Gosu"
+    }, {
+      "name": "javaScript", "version": "ES5"
+    } ],
+    "authors": [ {
+      "name": "JetBrains Inc"
+    } ],
+    "name": "Kotlin", "version": "0.1",
+    "inception": "2011"
+  }, {
+    "parents": [ {
+      "name": "Rebol"
+    }, {
+      "name": "Scala"
+    }, {
+      "name": "Lua"
+    } ],
+    "authors": [ {
+      "name": "Nenad Rakocevic"
+    } ],
+    "name": "Red",
+    "inception": "2011"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    } ],
+    "authors": [ {
+      "name": "Mark Sibly"
+    } ],
+    "name": "MonkeyX",
+    "inception": "2011"
+  }, {
+    "parents": [ {
+      "name": "OCaml"
+    }, {
+      "name": "Erlang"
+    }, {
+      "name": "javaScript"
+    } ],
+    "authors": [ {
+      "name": "MLstate"
+    } ],
+    "name": "Opa",
+    "inception": "2011"
+  }, {
+    "parents": [ {
+      "name": "Erlang"
+    }, {
+      "name": "Ruby"
+    }, {
+      "name": "Clojure"
+    } ],
+    "authors": [ {
+      "name": "José Valim"
+    } ],
+    "name": "Elixir",
+    "inception": "2012"
+  }, {
+    "parents": [ {
+      "name": "Haskell"
+    }, {
+      "name": "Standard ML"
+    }, {
+      "name": "OCaml"
+    }, {
+      "name": "F#"
+    } ],
+    "authors": [ {
+      "name": "Evan Czaplicki"
+    } ],
+    "name": "Elm",
+    "inception": "2012"
+  }, {
+    "parents": [ {
+      "name": "javaScript"
+    }, {
+      "name": "CoffeeScript"
+    }, {
+      "name": "Java"
+    }, {
+      "name": "C#"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg",
+      "affiliation": "Microsoft Corporation"
+    } ],
+    "name": "TypeScript", "version": "0.8",
+    "inception": "2012-10"
+  }, {
+    "parents": [ {
+      "name": "Matlab"
+    }, {
+      "name": "Lisp"
+    }, {
+      "name": "C"
+    }, {
+      "name": "Fortran"
+    }, {
+      "name": "Mathematica"
+    }, {
+      "name": "Python"
+    }, {
+      "name": "Perl"
+    }, {
+      "name": "R"
+    }, {
+      "name": "Ruby"
+    }, {
+      "name": "Lua"
+    } ],
+    "authors": [ {
+      "name": "Jeff Bezanson",
+      "affiliation": "MIT"
+    }, {
+      "name": "Stefan Karpinski",
+      "affiliation": "MIT"
+    }, {
+      "name": "Viral Shah",
+      "affiliation": "MIT"
+    }, {
+      "name": "Alan Edelman",
+      "affiliation": "MIT"
+    } ],
+    "name": "Julia",
+    "inception": "2012"
+  }, {
+    "parents": [ {
+      "name": "Basic"
+    }, {
+      "name": "javaScript"
+    } ],
+    "authors": [ {
+      "name": "Vivek Gupta",
+      "affiliation": "Microsoft"
+    }, {
+      "name": "Ethan Jackson",
+      "affiliation": "Microsoft, University of California/Berkeley"
+    }, {
+      "name": "Shaz Qadeer",
+      "affiliation": "Microsoft, University of California/Berkeley"
+    }, {
+      "name": "Sriram Rajamani",
+      "affiliation": "Microsoft"
+    } ],
+    "name": "P",
+    "inception": "2012"
+  },  {
+    "parents": [ {
+      "name": "C#"
+    }, {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg",
+      "affiliation": "Microsoft, ECMA"
+    } ],
+    "name": "C#", "version": "5.0",
+    "inception": "2012-08"
+  },{
+    "parents": [ {
+      "name": "Ada", "version": "2005"
+    } ],
+    "authors": [ {
+      "name": "ARA"
+    }, {
+      "name": "Ada Europe"
+    } ],
+    "name": "Ada", "version": "2012",
+    "inception": "2012"
+  }, {
+    "parents": [ {
+      "name": "javaScript"
+    } ],
+    "authors": [ {
+      "name": "P4 Language Consortium"
+    } ],
+    "name": "P4",
+    "inception": "2013"
+  }, {
+    "parents": [ {
+      "name": "TypeScript"
+    }, {
+      "name": "C#"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg",
+      "affiliation": "Microsoft Corporation"
+    } ],
+    "name": "TypeScript", "version": "0.9",
+    "inception": "2013"
+  }, {
+    "parents": [ {
+      "name": "Swift (parallel scripting language)"
+    } ],
+    "authors": [ {
+      "name": "Jörgen Brandt"
+    } ],
+    "name": "Cuneiform",
+    "inception": "2013"
+  }, {
+    "parents": [ {
+      "name": "Ruby"
+    }, {
+      "name": "Rust"
+    }, {
+      "name": "C#"
+    }, {
+      "name": "Python"
+    } ],
+    "authors": [ {
+      "name": "Ary Borenszweig",
+      "affiliation": "Manas Technology Solutions"
+    } ],
+    "name": "Crystal",
+    "inception": "2014"
+  }, {
+    "parents": [ {
+      "name": "PHP"
+    } ],
+    "authors": [ {
+      "name": "Facebook"
+    } ],
+    "name": "Hack",
+    "inception": "2014"
+  }, {
+    "parents": [ {
+      "name": "Objective-C"
+    }, {
+      "name": "Rust"
+    }, {
+      "name": "Haskell"
+    }, {
+      "name": "Ruby"
+    }, {
+      "name": "Python"
+    }, {
+      "name": "C#"
+    }, {
+      "name": "CLU"
+    } ],
+    "authors": [ {
+      "name": "Apple Inc."
+    } ],
+    "name": "Swift",
+    "inception": "2014"
+  }, {
+    "parents": [ {
+      "name": "C++", "version": "11"
+    } ],
+    "authors": [ {
+      "name": "ISO/IEC 14882"
+    } ],
+    "name": "C++", "version": "14",
+    "inception": "2014"
+  }, {
+    "parents": [ {
+      "name": "TypeScript"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg",
+      "affiliation": "Microsoft Corporation"
+    } ],
+    "name": "TypeScript", "version": "1.0",
+    "inception": "2014"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    }, {
+      "name": "C++", "version": "11"
+    }, {
+      "name": "Haskell"
+    } ],
+    "authors": [ {
+      "name": "Java Community Process (JCP)"
+    } ],
+    "name": "Java", "version": "1.8",
+    "inception": "2014-03-18"
+  }, {
+    "parents": [ {
+      "name": "HTML", "version": "4.01"
+    }, {
+      "name": "XHTML", "version": "1.1"
+    } ],
+    "name": "HTML", "version": "5",
+    "inception": "2014-10-28"
+  }, {
+    "parents": [ {
+      "name": "Ruby"
+    } ],
+    "authors": [ {
+      "name": "Matsumoto Yukihiro"
+    } ],
+    "name": "Ruby", "version": "2.2.10",
+    "inception": "2014-12-25"
+  }, {
+    "parents": [ {
+      "name": "Perl"
+    }, {
+      "name": "Haskell"
+    }, {
+      "name": "Python"
+    }, {
+      "name": "Ruby"
+    } ],
+    "authors": [ {
+      "name": "The Rakudo Team"
+    } ],
+    "name": "Perl", "version": "6",
+    "inception": "2015"
+  }, {
+    "parents": [ {
+      "name": "javaScript"
+    }, {
+      "name": "Haskell"
+    } ],
+    "name": "javaScript", "version": "ES6",
+    "inception": "2015"
+  }, {
+    "parents": [ {
+      "name": "javaScript"
+    }, {
+      "name": "OCaml"
+    } ],
+    "authors": [ {
+      "name": "Jordan Walke"
+    } ],
+    "name": "Reason",
+    "inception": "2016"
+  }, {
+    "parents": [ {
+      "name": "Kotlin", "version": "0.1"
+    }, {
+      "name": "javaScript", "version": "ES6"
+    }, {
+      "name": "Perl"
+    } ],
+    "authors": [ {
+      "name": "JetBrains Inc"
+    } ],
+    "name": "Kotlin", "version": "1.0",
+    "inception": "2016-02-15"
+  }, {
+    "parents": [ {
+      "name": "Rust"
+    }, {
+      "name": "Haskell"
+    }, {
+      "name": "C++"
+    }, {
+      "name": "C"
+    }, {
+      "name": "Go"
+    } ],
+    "name": "Rust", "version": "1.0",
+    "inception": "2015-5-15"
+  }, {
+    "parents": [ {
+      "name": "Lua"
+    }, {
+      "name": "Python"
+    }, {
+      "name": "Ruby"
+    }, {
+      "name": "C#"
+    }, {
+      "name": "Basic"
+    }, {
+      "name": "QML"
+    }, {
+      "name": "dBase"
+    }, {
+      "name": "Supernova"
+    } ],
+    "authors": [ {
+      "name": "Mahmoud Fayed"
+    } ],
+    "name": "Ring",
+    "inception": "2016"
+  }, {
+    "parents": [ {
+      "name": "TypeScript"
+    }, {
+      "name": "javaScript"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg",
+      "affiliation": "Microsoft Corporation"
+    } ],
+    "name": "TypeScript", "version": "2.0",
+    "inception": "2016-09-22"
+  }, {
+    "parents": [ {
+      "name": "Java", "version": "1.8"
+    } ],
+    "authors": [ {
+      "name": "Java Community Process (JCP)"
+    } ],
+    "name": "Java", "version": "9",
+    "inception": "2017-09"
+  }, {
+    "parents": [ {
+      "name": "C++", "version": "14"
+    }, {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "ISO/IEC 14882"
+    } ],
+    "name": "C++", "version": "17",
+    "inception": "2017-12"
+  }, {
+    "parents": [ {
+      "name": "Kotlin", "version": "1.0"
+    }, {
+      "name": "Objective-C"
+    }, {
+      "name": "Haskell"
+    } ],
+    "authors": [ {
+      "name": "JetBrains Inc"
+    } ],
+    "name": "Kotlin", "version": "1.2",
+    "inception": "2017-11-28"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    }, {
+      "name": "javaScript", "version": "ES6"
+    }, {
+      "name": "Rust"
+    }, {
+      "name": "C#"
+    } ],
+    "authors": [ {
+      "name": "WSO2"
+    } ],
+    "name": "Ballerina",
+    "inception": "2017"
+  }, {
+    "parents": [ {
+      "name": "TypeScript"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg",
+      "affiliation": "Microsoft Corporation"
+    } ],
+    "name": "TypeScript", "version": "3.0",
+    "inception": "2018-07-30"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    }, {
+      "name": "C++", "version": "14"
+    }, {
+      "name": "Kotlin", "version": "1.2"
+    } ],
+    "name": "Java", "version": "11",
+    "inception": "2018-09"
+  }, {
+    "parents": [ {
+      "name": "C11"
+    }, {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "ISO/IEC 9899"
+    } ],
+    "name": "C", "version": "18",
+    "inception": "2018"
+  }, {
+    "parents": [ {
+      "name": "Fortran 2008"
+    } ],
+    "authors": [ {
+      "name": "ISO/IEC JTC1/SC22/WG5 N2150"
+    } ],
+    "name": "Fortran", "version": "2018",
+    "inception": "2018"
+  }, {
+    "parents": [ {
+      "name": "Kotlin", "version": "1.2"
+    }, {
+      "name": "Eiffel"
+    }, {
+      "name": "Python"
+    } ],
+    "authors": [ {
+      "name": "JetBrains Inc"
+    }, {
+      "name": "javaScript"
+    } ],
+    "name": "Kotlin", "version": "1.3",
+    "inception": "2018-10-29"
+  }, {
+    "parents": [ {
+      "name": "C++", "version": "17"
+    } ],
+    "authors": [ {
+      "name": "ISO/IEC 9899"
+    } ],
+    "name": "C++", "version": "20",
+    "inception": "2020"
+  }, {
+    "parents": [ {
+      "name": "TypeScript"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg",
+      "affiliation": "Microsoft Corporation"
+    } ],
+    "name": "TypeScript", "version": "4.0",
+    "inception": "2020-08-20"
+  }, {
+    "parents": [ {
+      "name": "Rust"
+    } ],
+    "authors": [ {
+      "name": "Rust Foundation"
+    }, {
+      "name": "Mozilla Foundation"
+    }, {
+      "name": "Google Inc.",
+      "affiliation": "Alphabet SE"
+    }, {
+      "name": "Microsoft Inc."
+    }, {
+      "name": "AWS",
+      "affiliation": "Amazon SE"
+    }, {
+      "name": "Huawei"
+    } ],
+    "name": "Rust", "version": "1.50",
+    "inception": "2021-2-11"
+  }, {
+    "parents": [ {
+      "name": "Java", "version": "11"
+    }, {
+      "name": "Kotlin", "version": "1.3"
+    } ],
+    "name": "Java", "version": "17",
+    "inception": "2021-09"
+  }, {
+    "parents": [ {
+      "name": "Haskell"
+    } ],
+    "name": "Haskell", "version": "2020",
+    "inception": "2021-10-29"
+  }, {
+    "parents": [ {
+      "name": "C#"
+    }, {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg",
+      "affiliation": "Microsoft, ECMA"
+    } ],
+    "name": "C#", "version": "10.0",
+    "inception": "2021-11"
+  }, {
+    "parents": [ {
+      "name": "Ruby"
+    } ],
+    "authors": [ {
+      "name": "Matsumoto Yukihiro"
+    } ],
+    "name": "Ruby", "version": "3.0.0",
+    "inception": "2021-12-25"
+  }, {
+    "parents": [ {
+      "name": "Rust", "version": "1.50"
+    } ],
+    "authors": [ {
+      "name": "Rust Foundation"
+    } ],
+    "name": "Rust", "version": "1.60",
+    "inception": "2022-4-07"
+  }, {
+    "parents": [ {
+      "name": "Kotlin"
+    } ],
+    "authors": [ {
+      "name": "JetBrains"
+    } ],
+    "name": "Kotlin", "version": "1.7",
+    "inception": "2022-07"
+  }, {
+    "parents": [ {
+      "name": "Python", "version": "3.0"
+    } ],
+    "authors": [ {
+      "name": "Python Software Foundation"
+    } ],
+    "name": "Python", "version": "3.11",
+    "inception": "2022-10-24"
+  }, {
+    "parents": [ {
+      "name": "TypeScript"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg",
+      "affiliation": "Microsoft Corporation"
+    } ],
+    "name": "TypeScript", "version": "4.9",
+    "inception": "2022-11-15"
+  }, {
+    "parents": [ {
+      "name": "Kotlin", "version": "1.7"
+    } ],
+    "authors": [ {
+        "name": "R. Elizarov",
+        "affiliation": "JetBrains Inc."
+    } ],
+    "name": "Kotlin", "version": "1.8",
+    "inception": "2022-12"
+  }, {
+    "parents": [ {
+      "name": "Rust", "version": "1.60"
+    }, {
+      "name": "C++", "version": "20"
+    }, {
+      "name": "Ruby"
+    }, {
+      "name": ""
+    } ],
+    "name": "Rust", "version": "1.70",
+    "inception": "2023-6-01"
+  }, {
+    "parents": [ {
+      "name": "TypeScript"
+    }, {
+      "name": "Kotlin"
+    }, {
+      "name": "C#"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg", "affiliation": "Microsoft Inc."
+    } ],
+    "name": "TypeScript", "version": "5.0",
+    "inception": "2023-3-16"
+  }, {
+    "parents": [ {
+      "name": "Kotlin", "version": "1.8"
+    }, {
+      "name": "TypeScript"
+    } ],
+    "authors": [ {
+      "name": "Andrey Breslav",
+      "affiliation": "JetBrains Inc."
+    } ],
+    "name": "Kotlin", "version": "1.9",
+    "inception": "2023-7-06"
+  }, {
+    "parents": [ {
+      "name": "Kotlin", "version": "1.8"
+    }, {
+      "name": "Java", "version": "17"
+    } ],
+    "authors": [ {
+      "name": "Java Community Process"
+    } ],
+    "name": "Java", "version": "21",
+    "inception": "2023-9-19"
+  }, {
+    "parents": [ {
+      "name": "Kotlin"
+    } ],
+    "authors": [ {
+      "name": "A. Breslav", "affiliation": "JetBrains Inc."
+    } ],
+    "name": "Kotlin", "version": "2.0",
+    "inception": "2024-5-21"
+  }, {
+    "parents": [ {
+      "name": "Rust"
+    } ],
+    "authors": [ {
+      "name": "Rust Foundation"
+    } ],
+    "name": "Rust", "version": "1.80",
+    "inception": "2024-7-25"
+  } ]
+}
