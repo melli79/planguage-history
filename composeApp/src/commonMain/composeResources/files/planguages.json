@@ -458,15 +458,6 @@
     "inception": "1964"
   }, {
     "parents": [ {
-      "name": "PL", "version": "I"
-    } ],
-    "authors": [ {
-      "name": "Illinois Institute of Technology"
-    } ],
-    "name": "IITran",
-    "inception": "1964"
-  }, {
-    "parents": [ {
       "name": "Cobol"
     }, {
       "name": "Fortran"
@@ -474,6 +465,15 @@
       "name": "Algol", "version": "60"
     } ],
     "name": "PL", "version": "I",
+    "inception": "1964"
+  }, {
+    "parents": [ {
+      "name": "PL", "version": "I"
+    } ],
+    "authors": [ {
+      "name": "Illinois Institute of Technology"
+    } ],
+    "name": "IITran",
     "inception": "1964"
   }, {
     "parents": [ {
@@ -523,8 +523,8 @@
       "name": "Derrick Morris",
       "affiliation": "Manchester University"
     } ],
-    "name": "Atlas Autocode",
-    "inception": "1965"
+    "name": "Algol", "version": "Atlas Autocode",
+    "inception": "1963"
   }, {
     "parents": [ {
       "name": "Lisp", "version": "1.5"
@@ -571,7 +571,7 @@
       "name": "Algol", "version": "60"
     } ],
     "authors": [ ],
-    "name": "Coral 66",
+    "name": "Algol", "version": "Coral 66",
     "inception": "1966"
   }, {
     "parents": [ ],
@@ -723,7 +723,7 @@
       "name": "Cynthia Solomon"
     } ],
     "name": "Logo",
-    "inception": "1968"
+    "inception": "1967"
   }, {
     "parents": [ {
       "name": "RPG"
@@ -1155,7 +1155,7 @@
       "name": "Barbara Liskov",
       "affiliation": "MIT"
     } ],
-    "name": "CLU", "version": "1",
+    "name": "CLU",
     "inception": "1975"
   }, {
     "parents": [ {
@@ -1290,6 +1290,17 @@
     } ],
     "name": "sh",
     "description": "Bourne Shell",
+    "inception": "1977"
+  }, {
+    "parents": [ {
+      "name": "M3"
+    } ],
+    "authors": [ {
+      "name": "Brian Kernighan"
+    }, {
+      "name": "Dennis Ritchie"
+    } ],
+    "name": "M4",
     "inception": "1977"
   }, {
     "parents": [ {
@@ -1697,6 +1708,20 @@
       "name": "Warnock"
     } ],
     "name": "PostScript",
+    "inception": "1984"
+  }, {
+    "parents": [ {
+      "name": "Fortran"
+    }, {
+      "name": "C"
+    }, {
+      "name": "Pascal"
+    } ],
+    "authors": [ {
+      "name": "Department of Mathematics",
+      "affiliation": "Waterloo University"
+    } ],
+    "name": "Maple",
     "inception": "1982"
   }, {
     "parents": [ {
@@ -1846,8 +1871,8 @@
     "authors": [ {
       "name": "Nantucket"
     } ],
-    "name": "Clipper",
-    "inception": "1984"
+    "name": "xBase", "version": "Clipper",
+    "inception": "1985"
   }, {
     "parents": [ {
       "name": "Lisp"
@@ -2005,7 +2030,7 @@
       "name": "National Instruments"
     } ],
     "name": "LabView",
-    "inception": "1986"
+    "inception": "1986-10"
   }, {
     "parents": [ ],
     "authors": [ {
@@ -2265,7 +2290,7 @@
       "name": "Cardeli, et al.",
       "affiliation": "DEC and Olivetti"
     } ],
-    "name": "Modula", "version": "3",
+    "name": "Modula-3",
     "inception": "1989"
   }, {
     "parents": [ {
@@ -2486,6 +2511,18 @@
     "inception": "1990"
   }, {
     "parents": [ {
+      "name": "HyperTalk"
+    }, {
+      "name": "Pdf"
+    } ],
+    "authors": [ {
+      "name": "John H. Thompson",
+      "affiliation": "MacroMind"
+    } ],
+    "name": "Lingo",
+    "inception": "1990"
+  }, {
+    "parents": [ {
       "name": "Eiffel"
     }, {
       "name": "CLU"
@@ -2500,6 +2537,15 @@
     } ],
     "name": "Sather",
     "inception": "1990"
+  }, {
+    "parents": [ {
+      "name": "PostScript"
+    } ],
+    "authors": [ {
+      "name": "Adobe Systems Inc."
+    } ],
+    "name": "PostScript", "version": "2",
+    "inception": "1991"
   }, {
     "parents": [ {
       "name": "C++"
@@ -2698,7 +2744,7 @@
       "name": "Ross Ihaka"
     } ],
     "name": "R",
-    "inception": "1993"
+    "inception": "1993-8"
   }, {
     "parents": [ {
       "name": "C++"
@@ -2961,7 +3007,7 @@
       "affiliation": "University of Melbourne"
     } ],
     "name": "Mercury",
-    "inception": "1995"
+    "inception": "1995-4-08"
   }, {
     "parents": [ {
       "name": "Perl"
@@ -2995,6 +3041,19 @@
       "name": "Yukihiro Matsumoto"
     } ],
     "name": "Ruby", "version": "0.95",
+    "inception": "1995"
+  }, {
+    "parents": [ {
+      "name": "Dylan"
+    }, {
+      "name": "Smalltalk", "version": "80"
+    }, {
+      "name": "Scala"
+    } ],
+    "authors": [ {
+      "name": "Blue World Communications Inc."
+    } ],
+    "name": "Lasso",
     "inception": "1995"
   }, {
     "parents": [ {
@@ -3039,16 +3098,16 @@
     "inception": "1996-01-23"
   }, {
     "parents": [ {
-      "name": "Dylan"
+      "name": "Perl"
     }, {
-      "name": "Smalltalk", "version": "80"
+      "name": "Java"
     }, {
-      "name": "Scala"
+      "name": "C++"
     } ],
     "authors": [ {
-      "name": "Blue World Communications Inc."
+      "name": "Miva Merchant"
     } ],
-    "name": "Lasso",
+    "name": "MivaScript",
     "inception": "1996"
   }, {
    "parents": [{
@@ -3200,6 +3259,15 @@
     } ],
     "name": "HTML", "version": "3.0",
     "inception": "1997-01-14"
+  }, {
+    "parents": [ {
+      "name": "PostScript"
+    } ],
+    "authors": [ {
+      "name": "Adobe Systems Inc."
+    } ],
+    "name": "PostScript", "version": "3",
+    "inception": "1997"
   }, {
     "parents": [ {
       "name": "Oberon", "version": "2"
@@ -3700,6 +3768,17 @@
     "inception": "2002-01"
   }, {
     "parents": [ {
+      "name": "Java"
+    }, {
+      "name": "Visual J++"
+    } ],
+    "authors": [ {
+      "name": "Microsoft Inc"
+    } ],
+    "name": "Visual J#",
+    "inception": "2002-7-01"
+  }, {
+    "parents": [ {
       "name": "Self"
     }, {
       "name": "NewtonScript"
@@ -3963,7 +4042,7 @@
       "name": "PWCT Development Group"
     } ],
     "name": "PWCT",
-    "inception": "2005-12"
+    "inception": "2005-12-26"
   }, {
     "parents": [ {
       "name": "Python"
@@ -3997,7 +4076,7 @@
       "name": "Microsoft"
     } ],
     "name": "Windows PowerShell",
-    "inception": "2006"
+    "inception": "2006-11-14"
   }, {
     "parents": [ {
       "name": "Java"
@@ -4124,7 +4203,7 @@
     "authors": [ {
       "name": "Rich Hickey"
     } ],
-    "name": "Clojure",
+    "name": "Lisp", "version": "Clojure",
     "inception": "2007"
   }, {
     "parents": [ {
@@ -4280,7 +4359,7 @@
       "name": "Edwin Brady"
     } ],
     "name": "Idris",
-    "inception": "2009"
+    "inception": "2007"
   }, {
     "parents": [ {
       "name": "Modula"
@@ -4322,6 +4401,18 @@
     } ],
     "name": "Dafny",
     "inception": "2009"
+  }, {
+    "parents": [ {
+      "name": "C99"
+    }, {
+      "name": "Cuda"
+    } ],
+    "authors": [ {
+      "name": "Khronos Group",
+      "affiliation": "Apple Inc."
+    } ],
+    "name": "OpenCL",
+    "inception": "2009-8-28"
   }, {
     "parents": [ {
       "name": "javaScript"
@@ -4399,6 +4490,16 @@
     } ],
     "name": "C", "version": "11",
     "inception": "2011"
+  }, {
+    "parents": [ {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "James Spagnola",
+      "affiliation": "Salesforce Inc."
+    } ],
+    "name": "Apex",
+    "inception": "2010"
   }, {
     "parents": [ {
       "name": "Java"
@@ -4686,7 +4787,7 @@
       "affiliation": "Manas Technology Solutions"
     } ],
     "name": "Crystal",
-    "inception": "2014"
+    "inception": "2014-6-19"
   }, {
     "parents": [ {
       "name": "PHP"
@@ -5089,13 +5190,25 @@
     "inception": "2022-12"
   }, {
     "parents": [ {
+      "name": "Python"
+    }, {
+      "name": "Rust"
+    }, {
+      "name": "C++"
+    }, {
+      "name": "Swift"
+    }, {
+      "name": "TypeScript"
+    } ],
+    "name": "Mojo",
+    "inception": "2023"
+  }, {
+    "parents": [ {
       "name": "Rust", "version": "1.60"
     }, {
       "name": "C++", "version": "20"
     }, {
       "name": "Ruby"
-    }, {
-      "name": ""
     } ],
     "name": "Rust", "version": "1.70",
     "inception": "2023-6-01"
