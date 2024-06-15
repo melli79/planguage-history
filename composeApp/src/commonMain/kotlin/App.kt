@@ -50,7 +50,7 @@ fun App() {
             }
             val currentLanguage = selectedLanguage
             if (currentLanguage!=null) {
-                Text(currentLanguage.toString(), fontSize = 32.sp, color = Color.Blue)
+                Text(currentLanguage.toString(), fontSize= 32.sp, fontWeight= FontWeight.Bold, color= Color.Blue)
                 Text("Predecessors:")
                 if (currentLanguage.fullParents.isEmpty())
                     Text(" --", fontSize= 20.sp, fontWeight= FontWeight.Bold)
@@ -177,7 +177,7 @@ object HistoryManager :PLanguage.LanguageProvider {
     }
 
     fun getAllPLangs() = the.langs.sortedBy { it.inception }
-    fun getFiltered(prefix :String) = the.langs.filter { lang -> lang.name.startsWith(prefix, ignoreCase = true) }
+    fun getFiltered(prefix :String) = findByNameLike(Regex(".*$prefix.*"))
         .sortedBy { it.inception }
     override fun findByName(name :String) = the.langs.filter { l -> l.name==name }
     override fun findByNameAndYear(name :String, year :Short) = the.langs
