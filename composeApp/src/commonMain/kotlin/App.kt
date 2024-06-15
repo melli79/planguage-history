@@ -11,11 +11,13 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
+import androidx.compose.material.TextButton
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.GlobalScope
@@ -33,26 +35,58 @@ fun App() {
     MaterialTheme {
         var history by remember { mutableStateOf(HistoryManager.getAllPLangs()) }
         var searchTerm by remember { mutableStateOf("") }
-        Column(Modifier.fillMaxSize()) {
+        var selectedLanguage by remember { mutableStateOf<PLanguage?>(null) }
+        Column(Modifier.fillMaxSize().padding(5.dp)) {
             Row(Modifier.fillMaxWidth()) {
                 Spacer(Modifier.weight(1f))
                 Text("Search:  ", Modifier.padding(2.dp).align(Alignment.CenterVertically))
                 BasicTextField(searchTerm, modifier= Modifier.width(100.dp).border(1.dp, Color.Black)
-                    .align(Alignment.CenterVertically), textStyle = TextStyle(fontSize = 20.sp),
-                        singleLine= true, onValueChange = { newText :String ->
-                    HistoryManager.filter = newText
-                    searchTerm = newText
-                })
-                Spacer(Modifier.width(5.dp))
+                    .align(Alignment.CenterVertically), textStyle= TextStyle(fontSize = 20.sp),
+                    singleLine= true, onValueChange= { newText :String ->
+                        HistoryManager.filter = newText
+                        searchTerm = newText
+                        selectedLanguage = null
+                    })
             }
-            LazyColumn(Modifier.padding(5.dp).fillMaxWidth(), horizontalAlignment= Alignment.CenterHorizontally,
-            ) {
-                items (history) { lang ->
-                    Text(
-                        text = "${lang.name} ${lang.version} (*${lang.inception})",
-                        fontSize = 20.sp,
-                        modifier = Modifier.padding(2.dp)
-                    )
+            val currentLanguage = selectedLanguage
+            if (currentLanguage!=null) {
+                Text(currentLanguage.toString(), fontSize = 32.sp, color = Color.Blue)
+                Text("Predecessors:")
+                if (currentLanguage.fullParents.isEmpty())
+                    Text(" --", fontSize= 20.sp, fontWeight= FontWeight.Bold)
+                LazyColumn(Modifier.padding(20.dp).fillMaxWidth()) {
+                    items(currentLanguage.fullParents.sortedBy { it.inception }) { p ->
+                        TextButton(onClick = { selectedLanguage = p }) {
+                            Text(p.toString(), fontSize = 20.sp, color = Color.Black)
+                        }
+                    }
+                }
+                Text("Creators:")
+                if (currentLanguage.authors.isEmpty())
+                    Text(" --", fontSize= 20.sp, fontWeight= FontWeight.Bold)
+                LazyColumn(Modifier.padding(20.dp).fillMaxWidth()) {
+                    items(currentLanguage.authors.sortedBy { it.name }) { cr ->
+                        Text(cr.toString(), fontSize = 20.sp)
+                    }
+                }
+                val children = HistoryManager.computeChildren(currentLanguage)
+                        .sortedBy { it.inception }
+                Text("Descendants:")
+                if (children.isEmpty())
+                    Text(" --", fontSize= 20.sp, fontWeight= FontWeight.Bold)
+                LazyColumn(Modifier.padding(20.dp).fillMaxWidth()) {
+                    items(children) { ch ->
+                        TextButton(onClick = { selectedLanguage = ch }) {
+                            Text(ch.toString(), fontSize = 20.sp, color = Color.Black)
+                        }
+                    }
+                }
+            } else  LazyColumn(Modifier.fillMaxWidth(), horizontalAlignment= Alignment.CenterHorizontally,
+                    ) {
+                items(history) { lang ->
+                    TextButton(onClick= { selectedLanguage = lang }) {
+                        Text(lang.toString(), fontSize= 20.sp, color= Color.Black)
+                    }
                 }
             }
         }
