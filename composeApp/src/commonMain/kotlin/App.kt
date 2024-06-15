@@ -1,12 +1,21 @@
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.GlobalScope
@@ -23,23 +32,43 @@ import programminglanguages.composeapp.generated.resources.Res
 fun App() {
     MaterialTheme {
         var history by remember { mutableStateOf(HistoryManager.getAllPLangs()) }
-        HistoryManager.updater = { newLanguages -> history = newLanguages }
-        LazyColumn(Modifier.padding(5.dp).fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally,
-        ) {
-            items (history) { lang ->
-                Text(
-                    text = "${lang.name} ${lang.version} (*${lang.inception})",
-                    fontSize = 20.sp,
-                    modifier = Modifier.padding(2.dp)
-                )
+        var searchTerm by remember { mutableStateOf("") }
+        Column(Modifier.fillMaxSize()) {
+            Row(Modifier.fillMaxWidth()) {
+                Spacer(Modifier.weight(1f))
+                Text("Search:  ", Modifier.padding(2.dp).align(Alignment.CenterVertically))
+                BasicTextField(searchTerm, modifier= Modifier.width(100.dp).border(1.dp, Color.Black)
+                    .align(Alignment.CenterVertically), textStyle = TextStyle(fontSize = 20.sp),
+                        singleLine= true, onValueChange = { newText :String ->
+                    HistoryManager.filter = newText
+                    searchTerm = newText
+                })
+                Spacer(Modifier.width(5.dp))
+            }
+            LazyColumn(Modifier.padding(5.dp).fillMaxWidth(), horizontalAlignment= Alignment.CenterHorizontally,
+            ) {
+                items (history) { lang ->
+                    Text(
+                        text = "${lang.name} ${lang.version} (*${lang.inception})",
+                        fontSize = 20.sp,
+                        modifier = Modifier.padding(2.dp)
+                    )
+                }
             }
         }
+        HistoryManager.updater = { newLanguages -> history = newLanguages }
     }
 }
 
 @OptIn(ExperimentalResourceApi::class)
 @ExperimentalSerializationApi
 object HistoryManager :PLanguage.LanguageProvider {
+
+    var filter :String = ""
+        set(value) {
+            field = value
+            updater?.invoke(getFiltered(value))
+        }
 
     private var the = History()
     var updater :((List<PLanguage>)->Unit)? =null
@@ -114,6 +143,8 @@ object HistoryManager :PLanguage.LanguageProvider {
     }
 
     fun getAllPLangs() = the.langs.sortedBy { it.inception }
+    fun getFiltered(prefix :String) = the.langs.filter { lang -> lang.name.startsWith(prefix, ignoreCase = true) }
+        .sortedBy { it.inception }
     override fun findByName(name :String) = the.langs.filter { l -> l.name==name }
     override fun findByNameAndYear(name :String, year :Short) = the.langs
         .filter { l -> l.name==name&&(l.inception==null||l.inception.year<year) }
