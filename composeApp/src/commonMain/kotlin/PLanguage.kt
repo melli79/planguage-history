@@ -12,14 +12,14 @@ data class PLanguage(val name :String, var version :String ="",
 ) {
     interface LanguageProvider {
         fun findByName(name :String) :List<PLanguage>
-        fun findByNameAndYear(name :String, year :Short) :List<PLanguage>
+        fun findByNameAndInception(name :String, inception :PartialDate) :List<PLanguage>
     }
 
     override fun toString() = "$name $version (*$inception)"
 
     private fun normalizeParents(history :LanguageProvider) {
         fullParents = parents?.map{ p ->
-            val candidates = history.findByNameAndYear(p.name, inception?.year ?: 2022)
+            val candidates = history.findByNameAndInception(p.name, inception)
             if (p.version!=null) candidates.firstOrNull { l -> l.version==p.version } ?: candidates.firstOrNull()
             else candidates.firstOrNull()
         }?.filterNotNull()?.toMutableSet() ?: mutableSetOf()

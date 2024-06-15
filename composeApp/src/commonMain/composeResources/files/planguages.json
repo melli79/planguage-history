@@ -5155,10 +5155,10 @@
       "name": "Kotlin"
     } ],
     "authors": [ {
-      "name": "JetBrains"
+      "name": "JetBrains Inc."
     } ],
     "name": "Kotlin", "version": "1.7",
-    "inception": "2022-07"
+    "inception": "2022-06-09"
   }, {
     "parents": [ {
       "name": "Python", "version": "3.0"
@@ -5187,7 +5187,7 @@
         "affiliation": "JetBrains Inc."
     } ],
     "name": "Kotlin", "version": "1.8",
-    "inception": "2022-12"
+    "inception": "2022-12-28"
   }, {
     "parents": [ {
       "name": "Python"

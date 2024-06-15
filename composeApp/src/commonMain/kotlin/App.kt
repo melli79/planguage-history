@@ -180,9 +180,9 @@ object HistoryManager :PLanguage.LanguageProvider {
     fun getFiltered(prefix :String) = findByNameLike(Regex(".*$prefix.*"))
         .sortedBy { it.inception }
     override fun findByName(name :String) = the.langs.filter { l -> l.name==name }
-    override fun findByNameAndYear(name :String, year :Short) = the.langs
-        .filter { l -> l.name==name&&(l.inception==null||l.inception.year<year) }
-        .sortedBy() { l -> l.inception?.year?.unaryMinus() ?: -1945 }
+    override fun findByNameAndInception(name :String, inception :PartialDate) = the.langs
+        .filter { l -> l.name==name&&l.inception<inception }
+        .sortedByDescending() { l -> l.inception }
 
     fun findByNameLike(pattern :Regex) = the.langs.filter { l -> l.name.matches(pattern) }
     fun count() = the.langs.size
