@@ -13,6 +13,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.material.TextButton
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -36,6 +37,13 @@ fun App() {
         var history by remember { mutableStateOf(HistoryManager.getAllPLangs()) }
         var searchTerm by remember { mutableStateOf("") }
         var selectedLanguage by remember { mutableStateOf<PLanguage?>(null) }
+        var lastLanguage by rememberSaveable { mutableStateOf<String?>(null) }
+        if (selectedLanguage==null && lastLanguage!=null) {
+            println("saveed state: '$lastLanguage'")
+            val components = lastLanguage!!.split(';')
+            selectedLanguage =
+                HistoryManager.findByNameAndVersion(components.first(), components.last())
+        }
         Column(Modifier.fillMaxSize().padding(5.dp)) {
             Row(Modifier.fillMaxWidth()) {
                 Spacer(Modifier.weight(1f))
@@ -46,6 +54,7 @@ fun App() {
                         HistoryManager.filter = newText
                         searchTerm = newText
                         selectedLanguage = null
+                        lastLanguage = null
                     })
             }
             val currentLanguage = selectedLanguage
@@ -53,30 +62,30 @@ fun App() {
                 Text(currentLanguage.toString(), fontSize= 32.sp, fontWeight= FontWeight.Bold, color= Color.Blue)
                 Text("Predecessors:")
                 if (currentLanguage.fullParents.isEmpty())
-                    Text(" --", fontSize= 20.sp, fontWeight= FontWeight.Bold)
-                LazyColumn(Modifier.padding(20.dp).fillMaxWidth()) {
+                    Text(" --", fontSize= 20.sp, fontWeight= FontWeight.Bold, modifier= Modifier.padding(25.dp))
+                LazyColumn(Modifier.padding(15.dp).fillMaxWidth().weight(1f)) {
                     items(currentLanguage.fullParents.sortedBy { it.inception }) { p ->
-                        TextButton(onClick = { selectedLanguage = p }) {
+                        TextButton(onClick = { selectedLanguage = p;  lastLanguage = "${p.name};${p.version}" }) {
                             Text(p.toString(), fontSize = 20.sp, color = Color.Black)
                         }
                     }
                 }
                 Text("Creators:")
                 if (currentLanguage.authors.isEmpty())
-                    Text(" --", fontSize= 20.sp, fontWeight= FontWeight.Bold)
-                LazyColumn(Modifier.padding(20.dp).fillMaxWidth()) {
+                    Text(" --", fontSize= 20.sp, fontWeight= FontWeight.Bold, modifier= Modifier.padding(25.dp))
+                LazyColumn(Modifier.padding(15.dp).fillMaxWidth().weight(1f)) {
                     items(currentLanguage.authors.sortedBy { it.name }) { cr ->
-                        Text(cr.toString(), fontSize = 20.sp)
+                        Text(cr.toString(), fontSize = 20.sp, modifier = Modifier.padding(5.dp))
                     }
                 }
                 val children = HistoryManager.computeChildren(currentLanguage)
                         .sortedBy { it.inception }
                 Text("Descendants:")
                 if (children.isEmpty())
-                    Text(" --", fontSize= 20.sp, fontWeight= FontWeight.Bold)
-                LazyColumn(Modifier.padding(20.dp).fillMaxWidth()) {
+                    Text(" --", fontSize= 20.sp, fontWeight= FontWeight.Bold, modifier= Modifier.padding(25.dp))
+                LazyColumn(Modifier.padding(15.dp).fillMaxWidth().weight(1f)) {
                     items(children) { ch ->
-                        TextButton(onClick = { selectedLanguage = ch }) {
+                        TextButton(onClick = { selectedLanguage = ch;  lastLanguage = "${ch.name};${ch.version}" }) {
                             Text(ch.toString(), fontSize = 20.sp, color = Color.Black)
                         }
                     }
@@ -84,7 +93,7 @@ fun App() {
             } else  LazyColumn(Modifier.fillMaxWidth(), horizontalAlignment= Alignment.CenterHorizontally,
                     ) {
                 items(history) { lang ->
-                    TextButton(onClick= { selectedLanguage = lang }) {
+                    TextButton(onClick= { selectedLanguage = lang;  lastLanguage = "${lang.name};${lang.version}" }) {
                         Text(lang.toString(), fontSize= 20.sp, color= Color.Black)
                     }
                 }
@@ -109,8 +118,8 @@ object HistoryManager :PLanguage.LanguageProvider {
 
     init {
         GlobalScope.launch {
-            val src :ByteArray = Res.readBytes("files/planguages.json")
-            the = deSerializer.decodeFromString(src.decodeToString())
+            val src = Res.readBytes("files/planguages.json").decodeToString()
+            the = deSerializer.decodeFromString(src)
             normalize()
             updater?.invoke(getAllPLangs())
         }
@@ -177,14 +186,16 @@ object HistoryManager :PLanguage.LanguageProvider {
     }
 
     fun getAllPLangs() = the.langs.sortedBy { it.inception }
-    fun getFiltered(prefix :String) = findByNameLike(Regex(".*$prefix.*"))
-        .sortedBy { it.inception }
+    fun getFiltered(prefix :String) :List<PLanguage> {
+        return if (prefix.endsWith(' ')) findByName(prefix.trim()).sortedBy { it.inception }
+        else findByNameLike(prefix).sortedBy { it.inception }
+    }
     override fun findByName(name :String) = the.langs.filter { l -> l.name==name }
     override fun findByNameAndInception(name :String, inception :PartialDate) = the.langs
         .filter { l -> l.name==name&&l.inception<inception }
         .sortedByDescending() { l -> l.inception }
 
-    fun findByNameLike(pattern :Regex) = the.langs.filter { l -> l.name.matches(pattern) }
+    fun findByNameLike(prefix :String) = the.langs.filter { l -> l.name.startsWith(prefix, ignoreCase= true) }
     fun count() = the.langs.size
 
     fun computeMostInfluential() :List<Pair<PLanguage, Int>> {
@@ -202,4 +213,7 @@ object HistoryManager :PLanguage.LanguageProvider {
 
     fun computeSeries() = the.langs.groupBy { p -> p.name }
         .entries.sortedBy { -it.value.size }.take(15)
+
+    fun findByNameAndVersion(name :String, version :String) :PLanguage? = the.langs
+        .find { it.name==name && it.version==version }
 }

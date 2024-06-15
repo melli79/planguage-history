@@ -1798,7 +1798,7 @@
     "parents": [ {
       "name": "Smalltalk", "version": "80"
     }, {
-      "name": "C", "version": "with Classes"
+      "name": "C++", "version": "with Classes"
     } ],
     "authors": [ {
       "name": "Brad Cox"
@@ -2049,7 +2049,7 @@
     "inception": "1986"
   }, {
     "parents": [ {
-      "name": "C", "version": "C++"
+      "name": "C++"
     } ],
     "authors": [ {
       "name": "MS DOS System Associates"
@@ -2091,7 +2091,7 @@
     "inception": "1987"
   }, {
     "parents": [ {
-      "name": "C", "version": "C++"
+      "name": "C++"
     }, {
       "name": "Fortran", "version": "77"
     } ],
@@ -2120,7 +2120,7 @@
     "inception": "1987"
   }, {
     "parents": [ {
-      "name": "C", "version": "C++"
+      "name": "C++"
     }, {
       "name": "AWK"
     }, {
@@ -2265,7 +2265,7 @@
     "inception": "1988"
   }, {
     "parents": [ {
-      "name": "C", "version": "K&R"
+      "name": "C"
     } ],
     "authors": [ {
       "name": "ISO/IEC 9899"
@@ -2393,7 +2393,7 @@
     "inception": "1990"
   }, {
     "parents": [ {
-      "name": "C", "version": "C++"
+      "name": "C++"
     }, {
       "name": "AWK"
     } ],
@@ -2481,7 +2481,7 @@
     "inception": "1990"
   }, {
       "parents": [ {
-        "name": "C", "version": "K&R"
+        "name": "C"
       }, {
         "name": "Korn Shell (ksh)"
       }, {
@@ -2616,7 +2616,7 @@
     "inception": "1991"
   }, {
     "parents": [ {
-      "name": "C", "version": "K&R"
+      "name": "C"
     }, {
       "name": "Newsqueak"
     } ],
@@ -2816,7 +2816,7 @@
     }, {
       "name": "ML"
     }, {
-      "name": "C", "version": "90"
+      "name": "C"
     } ],
     "authors": [ {
       "name": "Yves Caseau",
@@ -2895,7 +2895,7 @@
     "inception": "1995"
   }, {
     "parents": [{
-      "name": "C", "version": "K&R"
+      "name": "C"
     }, {
       "name": "Pascal"
     }, {
@@ -2984,7 +2984,7 @@
     "parents": [ {
       "name": "Self"
     }, {
-      "name": "C", "version": "90"
+      "name": "C"
     }, {
       "name": "Scheme"
     } ],
@@ -3418,7 +3418,7 @@
     "parents": [ {
       "name": "C++"
     }, {
-      "name": "C", "version": "90"
+      "name": "C"
     } ],
     "authors": [ {
       "name": "ANSI/ISO"
@@ -3529,7 +3529,7 @@
     "inception": "1998-12-08"
   }, {
     "parents": [ {
-      "name": "C90"
+      "name": "C"
     } ],
     "authors": [ {
       "name": "ISO/IEC 9899"
@@ -3835,7 +3835,7 @@
     "parents": [ {
       "name": "C++", "version": "98"
     }, {
-      "name": "C", "version": "99"
+      "name": "C"
     } ],
     "authors": [ {
       "name": "C++ ISO/IEC 14882"
@@ -4483,7 +4483,7 @@
     "inception": "2010"
   }, {
     "parents": [ {
-      "name": "C", "version": "99"
+      "name": "C"
     } ],
     "authors": [ {
       "name": "ISO/IEC 9899"
@@ -5033,7 +5033,7 @@
     "inception": "2018-09"
   }, {
     "parents": [ {
-      "name": "C11"
+      "name": "C"
     }, {
       "name": "Java"
     } ],
