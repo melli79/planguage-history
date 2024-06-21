@@ -66,7 +66,7 @@ android {
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
-        versionName = "1.2.1"
+        versionName = "1.2.2"
     }
     packaging {
         resources {
@@ -97,7 +97,7 @@ compose.desktop {
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "org.grutzmann.mda"
-            packageVersion = "1.0.0"
+            packageVersion = "1.2.2"
         }
     }
 }

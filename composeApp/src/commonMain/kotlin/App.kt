@@ -1,4 +1,9 @@
+/*
+ * Copyright (c) 2024.  Use under Apache Free License 2.0.
+ */
+
 import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -6,214 +11,77 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
-import androidx.compose.material.TextButton
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 import kotlinx.serialization.ExperimentalSerializationApi
-import kotlinx.serialization.Serializable
-import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.ui.tooling.preview.Preview
-import programminglanguages.composeapp.generated.resources.Res
+
+data class LangState @OptIn(ExperimentalSerializationApi::class) constructor(
+    val searchTerm :String = "",
+    val selectedLanguage :PLanguage? =null,
+    val history :List<PLanguage> = HistoryManager.getAllPLangs()
+) {}
 
 @OptIn(ExperimentalSerializationApi::class)
 @Composable
 @Preview
 fun App() {
     MaterialTheme {
-        var history by remember { mutableStateOf(HistoryManager.getAllPLangs()) }
-        var searchTerm by remember { mutableStateOf("") }
-        var selectedLanguage by remember { mutableStateOf<PLanguage?>(null) }
+        var state by remember { mutableStateOf(LangState()) }
+        var isPortrait by remember { mutableStateOf(true) }
         var lastLanguage by rememberSaveable { mutableStateOf<String?>(null) }
-        if (selectedLanguage==null && lastLanguage!=null) {
+        if (state.selectedLanguage == null && lastLanguage != null) {
             println("saveed state: '$lastLanguage'")
             val components = lastLanguage!!.split(';')
-            selectedLanguage =
-                HistoryManager.findByNameAndVersion(components.first(), components.last())
+            state = LangState(selectedLanguage =
+                HistoryManager.findByNameAndVersion(components.first(), components.last()))
+            lastLanguage = null
         }
         Column(Modifier.fillMaxSize().padding(5.dp)) {
             Row(Modifier.fillMaxWidth()) {
                 Spacer(Modifier.weight(1f))
                 Text("Search:  ", Modifier.padding(2.dp).align(Alignment.CenterVertically))
-                BasicTextField(searchTerm, modifier= Modifier.width(100.dp).border(1.dp, Color.Black)
-                    .align(Alignment.CenterVertically), textStyle= TextStyle(fontSize = 20.sp),
-                    singleLine= true, onValueChange= { newText :String ->
+                BasicTextField(state.searchTerm,
+                    modifier = Modifier.width(100.dp).border(1.dp, Color.Black)
+                        .align(Alignment.CenterVertically),
+                    textStyle = TextStyle(fontSize = 20.sp),
+                    singleLine = true,
+                    onValueChange = { input :String ->
+                        val newText = input.ifBlank { "" }
                         HistoryManager.filter = newText
-                        searchTerm = newText
-                        selectedLanguage = null
                         lastLanguage = null
+                        state = state.copy(searchTerm = newText, selectedLanguage = null)
                     })
             }
-            val currentLanguage = selectedLanguage
-            if (currentLanguage!=null) {
-                Text(currentLanguage.toString(), fontSize= 32.sp, fontWeight= FontWeight.Bold, color= Color.Blue)
-                Text("Predecessors:")
-                if (currentLanguage.fullParents.isEmpty())
-                    Text(" --", fontSize= 20.sp, fontWeight= FontWeight.Bold, modifier= Modifier.padding(25.dp))
-                LazyColumn(Modifier.padding(15.dp).fillMaxWidth().weight(1f)) {
-                    items(currentLanguage.fullParents.sortedBy { it.inception }) { p ->
-                        TextButton(onClick = { selectedLanguage = p;  lastLanguage = "${p.name};${p.version}" }) {
-                            Text(p.toString(), fontSize = 20.sp, color = Color.Black)
-                        }
+            Box(modifier = Modifier.fillMaxSize()
+                .onSizeChanged { size -> isPortrait = size.width <= size.height }) {
+                if (isPortrait)
+                    ListView(state) { newLanguage :PLanguage? ->
+                        state = state.copy(selectedLanguage = newLanguage)
+                        lastLanguage = "${newLanguage?.name};${newLanguage?.version}"
                     }
-                }
-                Text("Creators:")
-                if (currentLanguage.authors.isEmpty())
-                    Text(" --", fontSize= 20.sp, fontWeight= FontWeight.Bold, modifier= Modifier.padding(25.dp))
-                LazyColumn(Modifier.padding(15.dp).fillMaxWidth().weight(1f)) {
-                    items(currentLanguage.authors.sortedBy { it.name }) { cr ->
-                        Text(cr.toString(), fontSize = 20.sp, modifier = Modifier.padding(5.dp))
+                else
+                    MapView(state) { newLanguage :PLanguage? ->
+                        state = state.copy(selectedLanguage = newLanguage)
+                        lastLanguage = "${newLanguage?.name};${newLanguage?.version}"
                     }
-                }
-                val children = HistoryManager.computeChildren(currentLanguage)
-                        .sortedBy { it.inception }
-                Text("Descendants:")
-                if (children.isEmpty())
-                    Text(" --", fontSize= 20.sp, fontWeight= FontWeight.Bold, modifier= Modifier.padding(25.dp))
-                LazyColumn(Modifier.padding(15.dp).fillMaxWidth().weight(1f)) {
-                    items(children) { ch ->
-                        TextButton(onClick = { selectedLanguage = ch;  lastLanguage = "${ch.name};${ch.version}" }) {
-                            Text(ch.toString(), fontSize = 20.sp, color = Color.Black)
-                        }
-                    }
-                }
-            } else  LazyColumn(Modifier.fillMaxWidth(), horizontalAlignment= Alignment.CenterHorizontally,
-                    ) {
-                items(history) { lang ->
-                    TextButton(onClick= { selectedLanguage = lang;  lastLanguage = "${lang.name};${lang.version}" }) {
-                        Text(lang.toString(), fontSize= 20.sp, color= Color.Black)
-                    }
-                }
             }
         }
-        HistoryManager.updater = { newLanguages -> history = newLanguages }
+        HistoryManager.updater = { newLanguages -> state = state.copy(history= newLanguages) }
     }
 }
 
-@OptIn(ExperimentalResourceApi::class)
-@ExperimentalSerializationApi
-object HistoryManager :PLanguage.LanguageProvider {
-
-    var filter :String = ""
-        set(value) {
-            field = value
-            updater?.invoke(getFiltered(value))
-        }
-
-    private var the = History()
-    var updater :((List<PLanguage>)->Unit)? =null
-
-    init {
-        GlobalScope.launch {
-            val src = Res.readBytes("files/planguages.json").decodeToString()
-            the = deSerializer.decodeFromString(src)
-            normalize()
-            updater?.invoke(getAllPLangs())
-        }
-    }
-
-    @Serializable
-    class History  {
-
-        @Serializable
-        data class Header(
-            val title :String = "History of Programming Languages",
-            val author :Author =Author(name = "M. Gr.", email = "melchiorG@gMail.com"),
-            val date :PartialDate = PartialDate(2024,6,9),
-            val copyright :String = "FDL"
-        ) {}
-
-        val header = Header()
-
-        val langs = mutableSetOf(
-            PLanguage("Basic", inception= PartialDate(1964), authors = setOf(Author("J.G. Kemeny"), Author("T.E. Kurtz"))),
-            PLanguage("Basic", version = "4", PartialDate(1974), authors = setOf(Author("MAI BASIC Four Inc."))),
-            PLanguage("Basic", version = "Altair", PartialDate(1975), authors = setOf(Author("B. Gates", "P. Allen"))),
-            PLanguage("Basic", version = "Integer", PartialDate(1976), authors = setOf(Author("St. Wozniak"))),
-            PLanguage("Basic", version = "Commodore", PartialDate(1977), authors = setOf(Author("J. Tramiel"))),
-            PLanguage("Basic", version = "Applesoft", PartialDate(1977), authors = setOf(Author("M. McDonald"), Author("R. Weiland"))),
-            PLanguage("Basic", version = "Applesoft III", PartialDate(1980), authors = setOf(Author("Apple Inc."))),
-            PLanguage("Basic", version = "Applesoft III MS", PartialDate(1980), authors = setOf(Author("Microsoft Inc."))),
-            PLanguage("javaScript", inception= PartialDate(1995, 12), authors = setOf(Author("B. Eich"))),
-            PLanguage("javaScript", version = "ECMA", PartialDate(1997), authors = setOf(Author("EXMA TC39-TG1"))),
-            PLanguage("Json", inception= PartialDate(2000), authors = setOf(Author("D. Crockford", affiliation = "PayPal"))),
-            PLanguage("javaScript", version = "ES5", PartialDate(2009,12), authors = setOf(Author("ECMA Task Force"))),
-            PLanguage("Rust", version = "0.1", PartialDate(2010), authors = setOf(Author("G. Hoare"))),
-            PLanguage("Kotlin", version = "0.1", PartialDate(2011), authors = setOf(Author("JetBrains Inc."))),
-            PLanguage("TypeScript", version = "0.8", PartialDate(2012,10), authors = setOf(Author("A. Heijlsberg", affiliation = "Microsoft inc."))),
-            PLanguage("TypeScript", version = "0.9", PartialDate(2013), authors = setOf(Author("A. Heijlsberg", affiliation = "Microsoft inc."))),
-            PLanguage("Swift", inception= PartialDate(2014), authors = setOf(Author("Apple Inc."))),
-            PLanguage("TypeScript", version = "1.0", PartialDate(2014), authors = setOf(Author("A. Heijlsberg", affiliation = "Microsoft inc."))),
-            PLanguage("Rust", version = "1.0", PartialDate(2015,5,15), authors = setOf(Author("G. Hoare"))),
-            PLanguage("Kotlin", version = "1.0", PartialDate(2016,2,15), authors = setOf(Author("JetBrains Inc."))),
-            PLanguage("TypeScript", version = "2.0", PartialDate(2016,9,22), authors = setOf(Author("A. Heijlsberg", affiliation = "Microsoft inc."))),
-            PLanguage("Kotlin", version = "1.2", PartialDate(2017,11,28), authors = setOf(Author("JetBrains Inc."))),
-            PLanguage("TypeScript", version = "3.0", PartialDate(2018,7,30), authors = setOf(Author("A. Heijlsberg", affiliation = "Microsoft inc."))),
-            PLanguage("Kotlin", version = "1.3", PartialDate(2018,10,29), authors = setOf(Author("JetBrains Inc."))),
-            PLanguage("TypeScript", version = "4.0", PartialDate(2020,8,20), authors = setOf(Author("A. Heijlsberg", affiliation = "Microsoft inc."))),
-            PLanguage("Rust", version = "1.50", PartialDate(2021,2,11), authors = setOf(Author("Rust Foundation"), Author("Mozilla Foundation"), Author("Google Inc"), Author("Microsoft Inc"), Author("AWS", "Huawei"))),
-            PLanguage("Rust", version = "1.60", PartialDate(2022,4,7), authors = setOf(Author("Rust Foundation"))),
-            PLanguage("Kotlin", version = "1.7", PartialDate(2022,7), authors = setOf(Author("JetBrains Inc."))),
-            PLanguage("TypeScript", version = "4.0", PartialDate(2022,11,15), authors = setOf(Author("A. Heijlsberg", affiliation = "Microsoft inc."))),
-            PLanguage("Kotlin", version = "1.8", PartialDate(2022,12), authors = setOf(Author("JetBrains Inc."))),
-            PLanguage("TypeScript", version = "5.0", PartialDate(2023,3,16), authors = setOf(Author("A. Heijlsberg", affiliation = "Microsoft inc."))),
-            PLanguage("Rust", version = "1.70", PartialDate(2023,6,1), authors = setOf(Author("Rust Foundation"))),
-            PLanguage("Kotlin", version = "1.9", PartialDate(2023,7,6), authors = setOf(Author("A. Breslav", affiliation= "JetBrains Inc."))),
-            PLanguage("Kotlin", version = "2.0", PartialDate(2024,5,21), authors = setOf(Author("A. Breslav", affiliation= "JetBrains Inc."))),
-            PLanguage("Rust", version = "1.80", PartialDate(2024,7,25), authors = setOf(Author("Rust Foundation"))),
-        )
-    }
-
-    private fun normalize() {
-        val that = this
-        if (the.langs==null || the.langs.isEmpty())
-            throw RuntimeException("Failed reading any languages from 'planguages.json'")
-        the.langs.forEach{lang -> lang.normalize(that)}
-        print("Parsed ${the.langs.size} language versions.\n")
-    }
-
-    fun getAllPLangs() = the.langs.sortedBy { it.inception }
-    fun getFiltered(prefix :String) :List<PLanguage> {
-        return if (prefix.endsWith(' ')) findByName(prefix.trim()).sortedBy { it.inception }
-        else findByNameLike(prefix).sortedBy { it.inception }
-    }
-    override fun findByName(name :String) = the.langs.filter { l -> l.name==name }
-    override fun findByNameAndInception(name :String, inception :PartialDate) = the.langs
-        .filter { l -> l.name==name&&l.inception<inception }
-        .sortedByDescending() { l -> l.inception }
-
-    fun findByNameLike(prefix :String) = the.langs.filter { l -> l.name.startsWith(prefix, ignoreCase= true) }
-    fun count() = the.langs.size
-
-    fun computeMostInfluential() :List<Pair<PLanguage, Int>> {
-        val result = mutableMapOf<PLanguage, Int>()
-        for (plang in the.langs) {
-            for (parent in plang.fullParents) {
-                result[parent] = (result[parent] ?: 0) +1
-            }
-        }
-        return result.entries.sortedBy { en -> -en.value }
-            .take(20).map { en -> Pair(en.key, en.value) }
-    }
-
-    fun computeChildren(plang: PLanguage) = the.langs.filter { child -> plang in child.fullParents }
-
-    fun computeSeries() = the.langs.groupBy { p -> p.name }
-        .entries.sortedBy { -it.value.size }.take(15)
-
-    fun findByNameAndVersion(name :String, version :String) :PLanguage? = the.langs
-        .find { it.name==name && it.version==version }
+@Composable
+fun MapView(state :LangState, setLastLanguage :(PLanguage?)->Unit) {
+    Text("...to be implemented")
 }
