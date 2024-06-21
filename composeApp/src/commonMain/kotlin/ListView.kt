@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Text
-import androidx.compose.material.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -33,11 +32,7 @@ private fun HistoryListView(state :LangState, setSelectedLanguage :(PLanguage?)-
         Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         items(state.history) { lang ->
-            TextButton(onClick = {
-                setSelectedLanguage(lang)
-            }) {
-                Text(lang.toString(), fontSize = 20.sp, color = Color.Black)
-            }
+            LanguageButton(lang, setSelectedLanguage)
         }
     }
 }
@@ -60,9 +55,7 @@ private fun DetailView(currentLanguage :PLanguage, setSelectedLanguage :(PLangua
             )
         LazyColumn(Modifier.padding(15.dp).fillMaxWidth().weight(1f)) {
             items(currentLanguage.fullParents.sortedBy { it.inception }) { p ->
-                TextButton(onClick = { setSelectedLanguage(p) }) {
-                    Text(p.toString(), fontSize = 20.sp, color = Color.Black)
-                }
+                LanguageButton(p, setSelectedLanguage)
             }
         }
         Text("Creators:")
@@ -88,9 +81,7 @@ private fun DetailView(currentLanguage :PLanguage, setSelectedLanguage :(PLangua
             )
         LazyColumn(Modifier.padding(15.dp).fillMaxWidth().weight(1f)) {
             items(children) { ch ->
-                TextButton(onClick = { setSelectedLanguage(ch) }) {
-                    Text(ch.toString(), fontSize = 20.sp, color = Color.Black)
-                }
+                LanguageButton(ch, setSelectedLanguage)
             }
         }
     }
