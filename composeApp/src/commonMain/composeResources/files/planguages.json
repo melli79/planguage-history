@@ -377,6 +377,21 @@
     "inception": "1963"
   }, {
     "parents": [ {
+      "name": "Algol", "version": "60"
+    }, {
+      "name": "Autocode"
+    } ],
+    "authors": [ {
+      "name": "Tony Brooker",
+      "affiliation": "Manchester University"
+    }, {
+      "name": "Derrick Morris",
+      "affiliation": "Manchester University"
+    } ],
+    "name": "Algol", "version": "Atlas Autocode",
+    "inception": "1963"
+  }, {
+    "parents": [ {
       "name": "Fortran"
     }, {
       "name": "Midas"
@@ -471,7 +486,8 @@
       "name": "PL", "version": "I"
     } ],
     "authors": [ {
-      "name": "Illinois Institute of Technology"
+      "name": "William S. Worley",
+      "affiliation": "Illinois Institute of Technology"
     } ],
     "name": "IITran",
     "inception": "1964"
@@ -512,21 +528,6 @@
     "inception": "1965"
   }, {
     "parents": [ {
-      "name": "Algol", "version": "60"
-    }, {
-      "name": "Autocode"
-    } ],
-    "authors": [ {
-      "name": "Tony Brooker",
-      "affiliation": "Manchester University"
-    }, {
-      "name": "Derrick Morris",
-      "affiliation": "Manchester University"
-    } ],
-    "name": "Algol", "version": "Atlas Autocode",
-    "inception": "1963"
-  }, {
-    "parents": [ {
       "name": "Lisp", "version": "1.5"
     } ],
     "authors": [ {
@@ -537,6 +538,15 @@
       "affiliation": "MIT, Project MAC"
     } ],
     "name": "Lisp", "version": "mac 2.0",
+    "inception": "1966"
+  }, {
+    "parents": [ {
+      "name": "IITran"
+    } ],
+    "authors": [ {
+      "name": "Peter G. Lykos"
+    } ],
+    "name": "IITran", "version": "2",
     "inception": "1966"
   }, {
     "parents": [ {
@@ -944,6 +954,9 @@
       "name": "Algol", "version": "68"
     } ],
     "authors": [ {
+      "name": "Brian Kernighan",
+      "affiliation": "Bell Labs"
+    }, {
       "name": "Dennis Ritchie",
       "affiliation": "Bell Labs"
     } ],
@@ -1505,6 +1518,13 @@
     "name": "VisiCalc",
     "inception": "1978"
   }, {
+    "authors": [ {
+      "name": "W. Ratliff",
+      "affiliation": "Martin Marietta Corp"
+    } ],
+    "name": "Vulcan",
+    "inception": "1978"
+  }, {
     "parents": [ {
       "name": "Algol", "version": "60"
     } ],
@@ -1554,15 +1574,6 @@
       "affiliation": "IBM"
     } ],
     "name": "Rexx",
-    "inception": "1979"
-  }, {
-    "parents": [ {
-      "name": "SQL"
-    } ],
-    "authors": [ {
-      "name": "Ashton-Tate"
-    } ],
-    "name": "dBase",
     "inception": "1979"
   }, {
     "parents": [ {
@@ -1649,6 +1660,16 @@
     "inception": "1981"
   }, {
     "parents": [ {
+      "name": "Vulcan"
+    } ],
+    "authors": [ {
+      "name": "W. Ratliff",
+      "affiliation": "Ashton-Tate Corp"
+    } ],
+    "name": "dBase", "version": "II",
+    "inception": "1981"
+  }, {
+    "parents": [ {
       "name": "RETE"
     } ],
     "authors": [ {
@@ -1700,15 +1721,6 @@
     } ],
     "name": "Draco",
     "inception": "1982"
-  }, {
-    "parents": [ {
-      "name": "InterPress"
-    } ],
-    "authors": [ {
-      "name": "Warnock"
-    } ],
-    "name": "PostScript",
-    "inception": "1984"
   }, {
     "parents": [ {
       "name": "Fortran"
@@ -1772,6 +1784,15 @@
       "affiliation": "University of Edinburgh"
     } ],
     "name": "Algol", "version": "PS",
+    "inception": "1983"
+  }, {
+    "parents": [ {
+      "name": "Pascal"
+    } ],
+    "authors": [ {
+      "name": "ISO 7185 Committee"
+    } ],
+    "name": "Pascal", "version": "ISO",
     "inception": "1983"
   }, {
     "parents": [ {
@@ -1866,13 +1887,22 @@
     "inception": "1983"
   }, {
     "parents": [ {
+      "name": "InterPress"
+    } ],
+    "authors": [ {
+      "name": "Warnock"
+    } ],
+    "name": "PostScript",
+    "inception": "1984"
+  }, {
+    "parents": [ {
       "name": "dBase"
     } ],
     "authors": [ {
-      "name": "Nantucket"
+      "name": "Ashton-Tate Corp"
     } ],
-    "name": "xBase", "version": "Clipper",
-    "inception": "1985"
+    "name": "dBase", "version": "III",
+    "inception": "1984-7"
   }, {
     "parents": [ {
       "name": "Lisp"
@@ -1956,6 +1986,15 @@
     "inception": "1985"
   }, {
     "parents": [ {
+      "name": "dBase"
+    } ],
+    "authors": [ {
+      "name": "Nantucket"
+    } ],
+    "name": "Clipper",
+    "inception": "1985"
+  }, {
+    "parents": [ {
       "name": "C", "version": "K&R"
     }, {
       "name": "CSP"
@@ -1980,6 +2019,15 @@
     } ],
     "name": "Caml",
     "inception": "1985"
+  }, {
+    "parents": [ {
+      "name": "dBase"
+    } ],
+    "authors": [ {
+      "name": "Ashton-Tate Corp"
+    } ],
+    "name": "dBase", "version": "III+",
+    "inception": "1986"
   }, {
     "parents": [ ],
     "authors": [ {
@@ -2069,15 +2117,6 @@
       "affiliation": "Ericsson"
     } ],
     "name": "Erlang",
-    "inception": "1986"
-  }, {
-    "parents": [ {
-      "name": "GML"
-    } ],
-    "authors": [ {
-      "name": "ISO 8879"
-    } ],
-    "name": "SGML",
     "inception": "1986"
   }, {
     "parents": [ {
@@ -2791,19 +2830,6 @@
     "inception": "1993"
   }, {
     "parents": [ {
-      "name": "SGML"
-    } ],
-    "authors": [ {
-      "name": "Tim Berners-Lee",
-      "affiliation": "CERN"
-    }, {
-      "name": "Dan Connolly",
-      "affiliation": "Convex Computer Inc"
-    } ],
-    "name": "HTML", "version": "1.0",
-    "inception": "1991"
-  },{
-    "parents": [ {
       "name": "LAURE"
     }, {
       "name": "Smalltalk", "version": "80"
@@ -2844,7 +2870,9 @@
     "inception": "1994"
   }, {
     "parents": [ {
-      "name": "Python", "version": "0.9"
+      "name": "Python"
+    }, {
+      "name": "Dylan"
     } ],
     "authors": [ {
       "name": "Guido van Rossum"
@@ -2940,7 +2968,7 @@
       "name": "Anders Hejlsberg",
       "affiliation": "Borland Inc"
     } ],
-    "name": "Pascal", "version": "Delphi",
+    "name": "Delphi",
     "inception": "1995"
   }, {
     "parents": [ ],
@@ -3067,15 +3095,6 @@
     } ],
     "name": "Racket",
     "inception": "1995"
-  }, {
-    "parents": [ {
-      "name": "HTML", "version": "1.0"
-    } ],
-    "authors": [ {
-      "name": "HTML Working Group"
-    }],
-    "name": "HTML", "version": "2.0",
-    "inception": "1995-11-24"
   }, {
     "parents": [ {
       "name": "LiveScript"
@@ -3252,21 +3271,21 @@
     "inception": "1996-12-25"
   }, {
     "parents": [ {
-      "name": "HTML", "version": "2.0"
-    } ],
-    "authors": [ {
-      "name": "W3C"
-    } ],
-    "name": "HTML", "version": "3.0",
-    "inception": "1997-01-14"
-  }, {
-    "parents": [ {
       "name": "PostScript"
     } ],
     "authors": [ {
       "name": "Adobe Systems Inc."
     } ],
     "name": "PostScript", "version": "3",
+    "inception": "1997"
+  }, {
+    "parents": [ {
+      "name": "Pascal", "version": "Borland"
+    } ],
+    "authors": [ {
+      "name": "Florian P. Klämpfl"
+    } ],
+    "name": "Pascal", "version": "Free",
     "inception": "1997"
   }, {
     "parents": [ {
@@ -3370,15 +3389,6 @@
     } ],
     "name": "Haskell", "version": "98",
     "inception": "1997-11"
-  }, {
-    "parents": [ {
-      "name": "HTML"
-    } ],
-    "authors": [ {
-      "name": "W3C"
-    } ],
-    "name": "HTML", "version": "4.0",
-    "inception": "1997-12-18"
   }, {
     "parents": [ {
       "name": "Self"
@@ -3567,15 +3577,6 @@
     "inception": "1999"
   }, {
     "parents": [ {
-      "name": "HTML", "version": "4.0"
-    } ],
-    "authors": [ {
-      "name": "W3C"
-    } ],
-    "name": "HTML", "version": "4.01",
-    "inception": "1999-12-24"
-  }, {
-    "parents": [ {
       "name": "javaScript"
     } ],
     "authors": [ {
@@ -3640,17 +3641,6 @@
     } ],
     "name": "Python", "version": "2.0",
     "inception": "2000-10"
-  }, {
-    "parents": [ {
-      "name": "HTML", "version": "4.01"
-    }, {
-      "name": "XML"
-    } ],
-    "authors": [ {
-      "name": "World Wide Web Consortium (W3C)"
-    } ],
-    "name": "XHTML", "version": "1.0",
-    "inception": "2000-01-26"
   }, {
     "parents": [{
       "name": "Smalltalk",
@@ -3726,15 +3716,6 @@
     } ],
     "name": "Processing",
     "inception": "2001"
-  }, {
-    "parents": [ {
-      "name": "XHTML", "version": "1.0"
-    } ],
-    "authors": [ {
-      "name": "W3C"
-    } ],
-    "name": "XHTML", "version": "1.1",
-    "inception": "2001-05-31"
   }, {
     "parents": [ {
       "name": "Basic", "version": "Visual"
@@ -4852,14 +4833,6 @@
     "inception": "2014-03-18"
   }, {
     "parents": [ {
-      "name": "HTML", "version": "4.01"
-    }, {
-      "name": "XHTML", "version": "1.1"
-    } ],
-    "name": "HTML", "version": "5",
-    "inception": "2014-10-28"
-  }, {
-    "parents": [ {
       "name": "Ruby"
     } ],
     "authors": [ {
@@ -4867,6 +4840,28 @@
     } ],
     "name": "Ruby", "version": "2.2.10",
     "inception": "2014-12-25"
+  }, {
+    "parents": [ {
+      "name": "Rust"
+    }, {
+      "name": "Haskell"
+    }, {
+      "name": "C++"
+    }, {
+      "name": "C"
+    }, {
+      "name": "Go"
+    } ],
+    "name": "Rust", "version": "1.0",
+    "inception": "2015-5-15"
+  }, {
+    "parents": [ {
+      "name": "javaScript"
+    }, {
+      "name": "Haskell"
+    } ],
+    "name": "javaScript", "version": "ES6",
+    "inception": "2015"
   }, {
     "parents": [ {
       "name": "Perl"
@@ -4880,16 +4875,8 @@
     "authors": [ {
       "name": "The Rakudo Team"
     } ],
-    "name": "Perl", "version": "6",
-    "inception": "2015"
-  }, {
-    "parents": [ {
-      "name": "javaScript"
-    }, {
-      "name": "Haskell"
-    } ],
-    "name": "javaScript", "version": "ES6",
-    "inception": "2015"
+    "name": "Raku",
+    "inception": "2015-12-25"
   }, {
     "parents": [ {
       "name": "javaScript"
@@ -4914,20 +4901,6 @@
     } ],
     "name": "Kotlin", "version": "1.0",
     "inception": "2016-02-15"
-  }, {
-    "parents": [ {
-      "name": "Rust"
-    }, {
-      "name": "Haskell"
-    }, {
-      "name": "C++"
-    }, {
-      "name": "C"
-    }, {
-      "name": "Go"
-    } ],
-    "name": "Rust", "version": "1.0",
-    "inception": "2015-5-15"
   }, {
     "parents": [ {
       "name": "Lua"
@@ -5066,6 +5039,25 @@
     } ],
     "name": "Kotlin", "version": "1.3",
     "inception": "2018-10-29"
+  }, {
+    "parents": [ {
+      "name": "Rust"
+    }, {
+      "name": "Kotlin"
+    }, {
+      "name": "Go"
+    }, {
+      "name": "Swift"
+    }, {
+      "name": "Python"
+    }, {
+      "name": "Oberon"
+    } ],
+    "authors": [ {
+      "name": "A. Medvednikov"
+    } ],
+    "name": "V",
+    "inception": "2019-6-20"
   }, {
     "parents": [ {
       "name": "C++", "version": "17"
