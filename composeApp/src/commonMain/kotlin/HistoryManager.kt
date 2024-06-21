@@ -21,12 +21,15 @@ object HistoryManager : PLanguage.LanguageProvider {
 
     private var the = History()
     var updater :((List<PLanguage>)->Unit)? =null
+    var historyLength = 365*(124-46)+6*30+24
+        private set
 
     init {
         GlobalScope.launch {
             val src = Res.readBytes("files/planguages.json").decodeToString()
             the = deSerializer.decodeFromString(src)
             normalize()
+            historyLength = the.langs.maxOf { it.inception }.toDays()
             updater?.invoke(getAllPLangs())
         }
     }

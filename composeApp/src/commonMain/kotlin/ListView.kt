@@ -32,7 +32,7 @@ private fun HistoryListView(state :LangState, setSelectedLanguage :(PLanguage?)-
         Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         items(state.history) { lang ->
-            LanguageButton(lang, setSelectedLanguage)
+            LanguageButton(lang, setSelectedLanguage, Modifier)
         }
     }
 }
@@ -55,7 +55,7 @@ private fun DetailView(currentLanguage :PLanguage, setSelectedLanguage :(PLangua
             )
         LazyColumn(Modifier.padding(15.dp).fillMaxWidth().weight(1f)) {
             items(currentLanguage.fullParents.sortedBy { it.inception }) { p ->
-                LanguageButton(p, setSelectedLanguage)
+                LanguageButton(p, setSelectedLanguage, Modifier)
             }
         }
         Text("Creators:")
@@ -81,7 +81,7 @@ private fun DetailView(currentLanguage :PLanguage, setSelectedLanguage :(PLangua
             )
         LazyColumn(Modifier.padding(15.dp).fillMaxWidth().weight(1f)) {
             items(children) { ch ->
-                LanguageButton(ch, setSelectedLanguage)
+                LanguageButton(ch, setSelectedLanguage, Modifier)
             }
         }
     }

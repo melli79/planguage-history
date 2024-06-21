@@ -34,6 +34,8 @@ data class PartialDate(val year :Short, val month :Byte? = null, val day :Byte? 
         if (day==null)  return "$year-$month"
         return "$year-$month-$day"
     }
+
+    fun toDays() = (year-1946)*365 +((month ?: 6)-1)*30 +(day ?: 15)-1
 }
 
 @OptIn(ExperimentalSerializationApi::class)

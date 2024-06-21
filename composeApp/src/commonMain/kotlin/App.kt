@@ -80,8 +80,3 @@ fun App() {
         HistoryManager.updater = { newLanguages -> state = state.copy(history= newLanguages) }
     }
 }
-
-@Composable
-fun MapView(state :LangState, setLastLanguage :(PLanguage?)->Unit) {
-    Text("...to be implemented")
-}
