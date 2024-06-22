@@ -7,7 +7,7 @@ fun main() = application {
     Window(
         onCloseRequest = ::exitApplication,
         title = "Programming Languages",
-        state = rememberWindowState(width = 600.dp, height = 1200.dp)
+        state = rememberWindowState(width = 1200.dp, height = 600.dp)
     ) {
         App()
     }
