@@ -1,6 +1,7 @@
 package org.grutzmann.mda
 
 import App
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -13,6 +14,14 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             App()
+        }
+    }
+
+    @SuppressLint("MissingSuperCall")
+    @Deprecated("API is not yet stable")
+    override fun onBackPressed() {
+        setContent {
+            App(true)
         }
     }
 }

@@ -70,7 +70,7 @@ private fun DetailView(currentLanguage :PLanguage, setSelectedLanguage :(PLangua
                 Text(cr.toString(), fontSize = 20.sp, modifier = Modifier.padding(5.dp))
             }
         }
-        val children = HistoryManager.computeChildren(currentLanguage)
+        val children = LanguageManager.computeChildren(currentLanguage)
             .sortedBy { it.inception }
         Text("Descendants:")
         if (children.isEmpty())

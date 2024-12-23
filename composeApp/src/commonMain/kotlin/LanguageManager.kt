@@ -11,7 +11,7 @@ import programminglanguages.composeapp.generated.resources.Res
 
 @OptIn(ExperimentalResourceApi::class)
 @ExperimentalSerializationApi
-object HistoryManager : PLanguage.LanguageProvider {
+object LanguageManager : PLanguage.LanguageProvider {
 
     var filter :String = ""
         set(value) {

@@ -65,7 +65,7 @@ fun MapView(state :LangState, setLastLanguage :(PLanguage?)->Unit) {
 fun computeTextWitdth(text :String) = (12*text.length +10).dp
 
 fun computeColumn(inception :PartialDate, freeWidth :Dp) =
-    max(0.dp, (freeWidth*inception.toDays())/HistoryManager.historyLength)
+    max(0.dp, (freeWidth*inception.toDays())/LanguageManager.historyLength)
 
 data class Geometry(val width :Dp, val height :Dp, val boxWidth :Dp, val textHeight :Dp) {}
 
