@@ -102,7 +102,7 @@ compose.desktop {
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "org.grutzmann.mda"
-            packageVersion = "1.3.1"
+            packageVersion = "1.3.2"
         }
     }
 }

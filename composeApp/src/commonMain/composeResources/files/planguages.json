@@ -2922,6 +2922,27 @@
     "name": "Ada", "version": "95",
     "inception": "1995"
   }, {
+    "parents": [ {
+      "name": "Haskell"
+    }, {
+      "name": "Prolog"
+    } ],
+    "authors": [ {
+      "name": "Kiel University"
+    }, {
+      "name": "LMU Munich"
+    }, {
+      "name": "Univeristy of Münster"
+    }, {
+      "name": "Portland State University"
+    }, {
+      "name": "CompuIntense University of Madrid"
+    }, {
+      "name": "Technical Univeristy of Madrid"
+    } ],
+    "name": "Curry",
+    "inception": "1995"
+  }, {
     "parents": [{
       "name": "C"
     }, {
@@ -4230,6 +4251,17 @@
     "inception": "2007"
   }, {
     "parents": [ {
+      "name": "Objective-C"
+    }, {
+      "name": "C++"
+    } ],
+    "authors": [ {
+      "name": "Apple Inc"
+    } ],
+    "name": "Objective-C", "version": "2.0",
+    "inception": "2007-10"
+  }, {
+    "parents": [ {
       "name": "Python"
     }, {
       "name": "Lisp"
@@ -4548,7 +4580,11 @@
     "parents": [ {
       "name": "C++", "version": "03"
     }, {
-      "name": "Haskell"
+      "name": "Rust"
+    }, {
+      "name": "Clojure"
+    }, {
+      "name": "Objective-C", "version": "2.0"
     } ],
     "authors": [ {
       "name": "ISO/IEC 14882"
@@ -5058,12 +5094,14 @@
     }, {
       "name": "Eiffel"
     }, {
+      "name": "ML"
+    }, {
       "name": "Python"
+    }, {
+      "name": "javaScript"
     } ],
     "authors": [ {
       "name": "JetBrains Inc"
-    }, {
-      "name": "javaScript"
     } ],
     "name": "Kotlin", "version": "1.3",
     "inception": "2018-10-29"
@@ -5110,19 +5148,19 @@
       "name": "Rust"
     } ],
     "authors": [ {
-      "name": "Rust Foundation"
-    }, {
-      "name": "Mozilla Foundation"
-    }, {
-      "name": "Google Inc.",
-      "affiliation": "Alphabet SE"
-    }, {
-      "name": "Microsoft Inc."
-    }, {
-      "name": "AWS",
-      "affiliation": "Amazon SE"
-    }, {
-      "name": "Huawei"
+        "name": "Rust Foundation"
+      }, {
+        "name": "Mozilla Foundation"
+      }, {
+        "name": "Google Inc.",
+        "affiliation": "Alphabet SE"
+      }, {
+        "name": "Microsoft Inc."
+      }, {
+        "name": "AWS",
+        "affiliation": "Amazon SE"
+      }, {
+        "name": "Huawei"
     } ],
     "name": "Rust", "version": "1.50",
     "inception": "2021-2-11"
@@ -5216,8 +5254,21 @@
     }, {
       "name": "Cody Tapscott"
     } ],
-    "name": "Zig", "version": "0.10.0",
+    "name": "Zig", "version": "0.10",
     "inception": "2022-10-31"
+  }, {
+    "parents": [ {
+      "name": "C++"
+    }, {
+      "name": "Rust"
+    }, {
+      "name": "Carbon"
+    } ],
+    "authors": [ {
+      "name": "WG21"
+    } ],
+    "name": "C++", "version": "23",
+    "inception": "2023-02"
   }, {
     "parents": [ {
         "name": "TypeScript"
@@ -5344,6 +5395,8 @@
         "name": "Rust"
       }, {
         "name": "javaScript"
+      }, {
+        "name": "Zig"
     } ],
     "name": "Zig", "version": "0.13",
     "inception": "2024-06-06"
@@ -5356,5 +5409,14 @@
     } ],
     "name": "Rust", "version": "1.80",
     "inception": "2024-7-25"
+  }, {
+    "parents": [ {
+      "name": "Kotlin"
+    } ],
+    "authors": [ {
+      "name": "A. Breslav", "affiliation": "JetBrains Inc."
+    } ],
+    "name": "Kotlin", "version": "2.1",
+    "inception": "2024-11-27"
   } ]
 }
