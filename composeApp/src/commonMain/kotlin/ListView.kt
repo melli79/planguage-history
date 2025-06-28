@@ -32,7 +32,7 @@ fun ListView(state :LangState, setSelectedLanguage :(PLanguage?)->Unit) {
 private fun HistoryListView(state :LangState, selectLanguage :(PLanguage?)->Unit) {
     val scrollState = rememberSaveable(saver= LazyListState.Saver) {
         val pos = state.history.indexOfFirst { it.name == "Kotlin" }
-        LazyListState(pos, pos)
+        LazyListState(pos-1)
     }
     LazyColumn(
         Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally,

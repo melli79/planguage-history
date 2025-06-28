@@ -5418,5 +5418,25 @@
     } ],
     "name": "Kotlin", "version": "2.1",
     "inception": "2024-11-27"
+  }, {
+    "parents": [ {
+      "name": "Ruby"
+    }, {
+      "name": "Kotlin", "version": "2.0"
+    } ],
+    "authors": [ {
+      "name": "Matsumoto Yukihiro"
+    } ],
+    "name": "Ruby", "version": "3.4",
+    "inception": "2024-12-25"
+  }, {
+    "parents": [ {
+      "name": "Kotlin"
+    } ],
+    "authors": [ {
+      "name": "A. Breslav", "affiliation": "JetBrains Inc."
+    } ],
+    "name": "Kotlin", "version": "2.2",
+    "inception": "2025-06-23"
   } ]
 }
