@@ -52,7 +52,7 @@ fun MapView(state :LangState, setLastLanguage :(PLanguage?)->Unit) {
                 offsetX = -col
                 println("horizontal offset set to $offsetX")
             }
-            LanguageButton(lang, setLastLanguage,
+            LanguageListItemView(lang, setLastLanguage,
                 modifier = Modifier.offset(offsetX+col, midY +rowHeight*row)
             )
             with(density) {

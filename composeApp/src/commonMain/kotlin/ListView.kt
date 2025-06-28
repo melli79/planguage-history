@@ -6,9 +6,11 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material.Text
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -27,12 +29,17 @@ fun ListView(state :LangState, setSelectedLanguage :(PLanguage?)->Unit) {
 }
 
 @Composable
-private fun HistoryListView(state :LangState, setSelectedLanguage :(PLanguage?)->Unit) {
+private fun HistoryListView(state :LangState, selectLanguage :(PLanguage?)->Unit) {
+    val scrollState = rememberSaveable(saver= LazyListState.Saver) {
+        val pos = state.history.indexOfFirst { it.name == "Kotlin" }
+        LazyListState(pos, pos)
+    }
     LazyColumn(
         Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally,
+        state = scrollState,
     ) {
         items(state.history) { lang ->
-            LanguageButton(lang, setSelectedLanguage, Modifier)
+            LanguageListItemView(lang, selectLanguage, Modifier)
         }
     }
 }
@@ -55,7 +62,7 @@ private fun DetailView(currentLanguage :PLanguage, setSelectedLanguage :(PLangua
             )
         LazyColumn(Modifier.padding(15.dp).fillMaxWidth().weight(1f)) {
             items(currentLanguage.fullParents.sortedBy { it.inception }) { p ->
-                LanguageButton(p, setSelectedLanguage, Modifier)
+                LanguageListItemView(p, setSelectedLanguage, Modifier)
             }
         }
         Text("Creators:")
@@ -81,7 +88,7 @@ private fun DetailView(currentLanguage :PLanguage, setSelectedLanguage :(PLangua
             )
         LazyColumn(Modifier.padding(15.dp).fillMaxWidth().weight(1f)) {
             items(children) { ch ->
-                LanguageButton(ch, setSelectedLanguage, Modifier)
+                LanguageListItemView(ch, setSelectedLanguage, Modifier)
             }
         }
     }
