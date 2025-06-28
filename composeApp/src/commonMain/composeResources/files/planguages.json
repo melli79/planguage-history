@@ -4540,14 +4540,22 @@
     }, {
       "name": "javaScript"
     }, {
+      "name": "Smalltalk"
+    }, {
+      "name": "Erlang"
+    }, {
       "name": "CoffeeScript"
     }, {
       "name": "Go"
+    }, {
+      "name": "Ruby"
     } ],
     "authors": [ {
-      "name": "Google"
+      "name": "Lars Bak", "affiliation": "Google Inc."
+    }, {
+      "name": "Kasper Lund", "affiliation": "Google Inc."
     } ],
-    "name": "Dart",
+    "name": "Dart", "version": "1.0",
     "inception": "2011"
   }, {
     "parents": [ {
@@ -5050,6 +5058,17 @@
     "inception": "2017"
   }, {
     "parents": [ {
+      "name": "Dart"
+    }, {
+      "name": "TypeScript"
+    } ],
+    "authors": [ {
+      "name": "Google Inc."
+    } ],
+    "name": "Dart", "version": "2.0",
+    "inception": "2018-02-22"
+  }, {
+    "parents": [ {
       "name": "TypeScript"
     } ],
     "authors": [ {
@@ -5105,6 +5124,15 @@
     } ],
     "name": "Kotlin", "version": "1.3",
     "inception": "2018-10-29"
+  }, {
+    "parents": [ {
+      "name": "Dart"
+    } ],
+    "authors": [ {
+      "name": "Google Inc."
+    } ],
+    "name": "Dart", "version": "2.1",
+    "inception": "2018-11-15"
   }, {
     "parents": [ {
       "name": "Rust"
@@ -5166,6 +5194,17 @@
     "inception": "2021-2-11"
   }, {
     "parents": [ {
+        "name": "Dart"
+      }, {
+        "name": "Kotlin"
+    } ],
+    "authors": [ {
+      "name": "Google Inc."
+    } ],
+    "name": "Dart", "version": "2.12",
+    "inception": "2021-03-03"
+  }, {
+    "parents": [ {
       "name": "Crystal"
     } ],
     "authors": [ {
@@ -5174,6 +5213,17 @@
     } ],
     "name": "Crystal", "version": "1.0",
     "inception": "2021-03-22"
+  }, {
+    "parents": [ {
+      "name": "Dart"
+    }, {
+      "name": "Kotlin"
+    } ],
+    "authors": [ {
+      "name": "Google Inc."
+    } ],
+    "name": "Dart", "version": "2.13",
+    "inception": "2021-05-19"
   }, {
     "parents": [ {
       "name": "Java", "version": "11"
@@ -5202,6 +5252,15 @@
     "inception": "2021-11"
   }, {
     "parents": [ {
+      "name": "Dart"
+    } ],
+    "authors": [ {
+      "name": "Google Inc."
+    } ],
+    "name": "Dart", "version": "2.15",
+    "inception": "2021-12-08"
+  }, {
+    "parents": [ {
       "name": "Ruby"
     } ],
     "authors": [ {
@@ -5220,6 +5279,17 @@
     "inception": "2022-4-07"
   }, {
     "parents": [ {
+      "name": "Dart"
+    }, {
+      "name": "Java"
+    } ],
+    "authors": [ {
+      "name": "Google Inc."
+    } ],
+    "name": "Dart", "version": "2.17",
+    "inception": "2022-05-11"
+  }, {
+    "parents": [ {
       "name": "Kotlin"
     } ],
     "authors": [ {
@@ -5236,6 +5306,19 @@
     } ],
     "name": "Crystal", "version": "1.5",
     "inception": "2022-07-06"
+  }, {
+    "parents": [ {
+      "name": "Dart"
+    }, {
+      "name": "Haskell"
+    }, {
+      "name": "Scala"
+    } ],
+    "authors": [ {
+      "name": "Google Inc."
+    } ],
+    "name": "Dart", "version": "2.18",
+    "inception": "2022-08-30"
   }, {
     "parents": [ {
       "name": "Python", "version": "3.0"
@@ -5269,6 +5352,19 @@
     } ],
     "name": "C++", "version": "23",
     "inception": "2023-02"
+  }, {
+    "parents": [ {
+      "name": "Dart"
+    }, {
+      "name": "TypeScript"
+    }, {
+      "name": "Kotlin"
+    } ],
+    "authors": [ {
+      "name": "Google Inc."
+    } ],
+    "name": "Dart", "version": "3.0",
+    "inception": "2023-05-10"
   }, {
     "parents": [ {
         "name": "TypeScript"
@@ -5429,6 +5525,15 @@
     } ],
     "name": "Ruby", "version": "3.4",
     "inception": "2024-12-25"
+  }, {
+    "parents": [ {
+      "name": "Dart"
+    } ],
+    "authors": [ {
+      "name": "Google Inc."
+    } ],
+    "name": "Dart", "version": "3.8",
+    "inception": "2025-05-20"
   }, {
     "parents": [ {
       "name": "Kotlin"

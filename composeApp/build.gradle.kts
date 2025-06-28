@@ -72,8 +72,8 @@ android {
         applicationId = "org.grutzmann.mda"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
-        versionCode = 5
-        versionName = "1.3.2"
+        versionCode = 6
+        versionName = "1.3.3"
     }
     packaging {
         resources {
