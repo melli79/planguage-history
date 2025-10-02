@@ -44,7 +44,7 @@ private fun HistoryListView(state :LangState, selectLanguage :(PLanguage?)->Unit
     LanguageManager.postInit {
         coroutineScope.launch {
             val pos = state.history.indexOfFirst { it.name == "Kotlin" }
-            scrollState.animateScrollToItem(pos - 1)
+            scrollState.scrollToItem(pos - 1)
         }
     }
     LazyColumn(
