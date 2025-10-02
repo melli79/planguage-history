@@ -117,8 +117,8 @@ fun App(requestBack :Boolean = false) {
             }) {
                 Icon(imageVector= Icons.AutoMirrored.Filled.ArrowBack, "back")
             }
-        })}) {
-            Box(modifier= Modifier.fillMaxSize()
+        })}) { innerPadding ->
+            Box(modifier= Modifier.fillMaxSize().padding(innerPadding)
                 .onSizeChanged { size -> isPortrait = size.width <= size.height }) {
                 if (isPortrait)
                     ListView(state, { newLanguage :PLanguage? ->
