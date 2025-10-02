@@ -15,3 +15,10 @@ fun LanguageListItemView(lang :PLanguage, setSelectedLanguage :(PLanguage?)->Uni
         Text(lang.toString(), fontSize = 20.sp, color = Color.Black)
     }
 }
+
+@Composable
+fun AuthorListItemView(author :AuthorAff, setSelectedAuthor :(Author?)->Unit, modifier :Modifier =Modifier) {
+    TextButton(modifier= modifier, onClick = { setSelectedAuthor(author.author) }) {
+        Text(author.toString(), fontSize = 20.sp, color = Color.Black)
+    }
+}

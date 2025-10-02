@@ -33,12 +33,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import kotlinx.coroutines.launch
 import kotlinx.serialization.ExperimentalSerializationApi
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 data class LangState @OptIn(ExperimentalSerializationApi::class) constructor(
     val searchTerm :String = "",
     val selectedLanguage :PLanguage? =null,
+    val selectedAuthor :Author? =null,
     val history :List<PLanguage> = LanguageManager.getAllPLangs()
 ) {}
 
@@ -57,6 +59,10 @@ data class ClickHistory(val last :MutableList<PLanguage?> =mutableListOf()) {
 @Composable
 @Preview
 fun App(requestBack :Boolean = false) {
+    val coroutineScope = rememberCoroutineScope()
+    coroutineScope.launch {
+        LanguageManager.initialize()
+    }
     MaterialTheme {
         var state by remember { mutableStateOf(LangState()) }
         var isPortrait by remember { mutableStateOf(true) }
@@ -115,10 +121,12 @@ fun App(requestBack :Boolean = false) {
             Box(modifier= Modifier.fillMaxSize()
                 .onSizeChanged { size -> isPortrait = size.width <= size.height }) {
                 if (isPortrait)
-                    ListView(state) { newLanguage :PLanguage? ->
+                    ListView(state, { newLanguage :PLanguage? ->
                         clickHistory.push(state.selectedLanguage)
-                        state = state.copy(selectedLanguage= newLanguage)
+                        state = state.copy(selectedLanguage= newLanguage, selectedAuthor= null)
                         savedLanguage = "${newLanguage?.name};${newLanguage?.version ?: ""}"
+                    }) { newAuthor :Author? ->
+                        state = state.copy(selectedAuthor= newAuthor, selectedLanguage= null)
                     }
                 else
                     MapView(state) { newLanguage :PLanguage? ->
