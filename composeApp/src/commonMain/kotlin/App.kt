@@ -19,6 +19,7 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.MaterialTheme.colorScheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -97,10 +98,12 @@ fun App(requestBack :Boolean = false) {
             BasicTextField(state.searchTerm,
                 modifier= Modifier.width(100.dp).height(30.dp).align(Alignment.CenterVertically).border(1.dp, Color.White),
                 singleLine= true,
-                textStyle= TextStyle(fontSize = 24.sp, color = Color.White),
+                textStyle= TextStyle(fontSize= 24.sp, color= colorScheme.inversePrimary),
                 onValueChange= { input :String ->
                     val newText = input.ifBlank { "" }
-                    LanguageManager.filter = newText
+                    coroutineScope.launch {
+                        LanguageManager.filter = newText
+                    }
                     clickHistory.push(state.selectedLanguage)
                     savedLanguage = null
                     state = state.copy(searchTerm= newText, selectedLanguage= null)

@@ -37,14 +37,15 @@ fun ListView(state :LangState, selectLanguage :(PLanguage?)->Unit, selectAuthor 
 private fun HistoryListView(state :LangState, selectLanguage :(PLanguage?)->Unit) {
     val scrollState = rememberSaveable(saver= LazyListState.Saver) {
         val pos = state.history.indexOfFirst { it.name == "Kotlin" }
-        LazyListState(pos-1)
+        LazyListState(if (pos>0) pos-1  else 0)
     }
     val coroutineScope = rememberCoroutineScope()
 
     LanguageManager.postInit {
         coroutineScope.launch {
             val pos = state.history.indexOfFirst { it.name == "Kotlin" }
-            scrollState.scrollToItem(pos)
+            if (pos>=0)
+                scrollState.scrollToItem(pos)
         }
     }
     LazyColumn(
