@@ -4710,7 +4710,7 @@
       "affiliation": "Microsoft Corporation"
     } ],
     "name": "TypeScript", "version": "0.8",
-    "inception": "2012-10"
+    "inception": "2012-10-01"
   }, {
     "parents": [ {
       "name": "Matlab"
@@ -4803,6 +4803,15 @@
     "inception": "2013"
   }, {
     "parents": [ {
+      "name": "Swift (parallel scripting language)"
+    } ],
+    "authors": [ {
+      "name": "Jörgen Brandt"
+    } ],
+    "name": "Cuneiform",
+    "inception": "2013"
+  }, {
+    "parents": [ {
       "name": "TypeScript"
     }, {
       "name": "C#"
@@ -4812,16 +4821,7 @@
       "affiliation": "Microsoft Corporation"
     } ],
     "name": "TypeScript", "version": "0.9",
-    "inception": "2013"
-  }, {
-    "parents": [ {
-      "name": "Swift (parallel scripting language)"
-    } ],
-    "authors": [ {
-      "name": "Jörgen Brandt"
-    } ],
-    "name": "Cuneiform",
-    "inception": "2013"
+    "inception": "2013-06-13"
   }, {
     "parents": [ {
       "name": "Ruby"
@@ -4879,16 +4879,6 @@
     "inception": "2014"
   }, {
     "parents": [ {
-      "name": "TypeScript"
-    } ],
-    "authors": [ {
-      "name": "Anders Hejlsberg",
-      "affiliation": "Microsoft Corporation"
-    } ],
-    "name": "TypeScript", "version": "1.0",
-    "inception": "2014"
-  }, {
-    "parents": [ {
       "name": "Java"
     }, {
       "name": "C++", "version": "11"
@@ -4900,6 +4890,16 @@
     } ],
     "name": "Java", "version": "1.8",
     "inception": "2014-03-18"
+  }, {
+    "parents": [ {
+      "name": "TypeScript"
+    } ],
+    "authors": [ {
+      "name": "Anders Hejlsberg",
+      "affiliation": "Microsoft Corporation"
+    } ],
+    "name": "TypeScript", "version": "1.0",
+    "inception": "2014-04-12"
   }, {
     "parents": [ {
       "name": "Ruby"
@@ -5175,6 +5175,17 @@
     } ],
     "name": "C++", "version": "20",
     "inception": "2020"
+  }, {
+    "parents": [ {
+      "name": "Pascal", "version": "Free"
+    }, {
+      "name": "C++"
+    } ],
+    "authors": [ {
+      "name": "Florian P. Klämpfl"
+    } ],
+    "name": "Pascal", "version": "Free-3.2",
+    "inception": "2020-06-19"
   }, {
     "parents": [ {
       "name": "TypeScript"
@@ -5535,6 +5546,20 @@
     "inception": "2024-12-25"
   }, {
     "parents": [ {
+      "name": "Mojo"
+    }, {
+      "name": "Python"
+    }, {
+      "name": "Rust"
+    }, {
+      "name": "Swift"
+    }, {
+      "name": "TypeScript"
+    } ],
+    "name": "Mojo", "version": "25",
+    "inception": "2025"
+  }, {
+    "parents": [ {
       "name": "Dart"
     } ],
     "authors": [ {
@@ -5551,5 +5576,38 @@
     } ],
     "name": "Kotlin", "version": "2.2",
     "inception": "2025-06-23"
+  }, {
+    "authors": [ {
+      "name": "Andrew Kelley"
+    } ],
+    "parents": [ {
+      "name": "C"
+    }, {
+      "name": "Rust"
+    }, {
+      "name": "javaScript"
+    }, {
+      "name": "Zig"
+    } ],
+    "name": "Zig", "version": "0.15",
+    "inception": "2025-08-19"
+  }, {
+    "parents": [ {
+      "name": "Rust"
+    } ],
+    "authors": [ {
+      "name": "Rust Foundation"
+    } ],
+    "name": "Rust", "version": "1.90",
+    "inception": "2025-9-18"
+  }, {
+    "parents": [ {
+      "name": "Crystal"
+    } ],
+    "authors": [ {
+      "name": "Johannes Müller"
+    } ],
+    "name": "Crystal", "version": "1.18",
+    "inception": "2025-10-14"
   } ]
 }
