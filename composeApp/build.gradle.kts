@@ -73,8 +73,8 @@ android {
         applicationId = "org.grutzmann.mda"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
-        versionCode = 8
-        versionName = "1.4.1"
+        versionCode = 9
+        versionName = "1.4.2"
     }
     packaging {
         resources {
@@ -108,7 +108,7 @@ compose.desktop {
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "org.grutzmann.mda"
-            packageVersion = "1.4.1"
+            packageVersion = "1.4.2"
         }
     }
 }

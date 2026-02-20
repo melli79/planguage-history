@@ -5593,6 +5593,17 @@
     "inception": "2025-08-19"
   }, {
     "parents": [ {
+      "name": "Kotlin", "version": "2.2"
+    }, {
+      "name": "Java", "version": "21"
+    } ],
+    "authors": [ {
+      "name": "Java Community Process"
+    } ],
+    "name": "Java", "version": "25",
+    "inception": "2025-9-16"
+  }, {
+    "parents": [ {
       "name": "Rust"
     } ],
     "authors": [ {
@@ -5609,5 +5620,64 @@
     } ],
     "name": "Crystal", "version": "1.18",
     "inception": "2025-10-14"
+  }, {
+    "parents": [ {
+      "name": "Dart"
+    } ],
+    "authors": [ {
+      "name": "Google Inc."
+    } ],
+    "name": "Dart", "version": "3.10",
+    "inception": "2025-11-12"
+  }, {
+    "parents": [ {
+      "name": "Kotlin"
+    } ],
+    "authors": [ {
+      "name": "A. Breslav", "affiliation": "JetBrains Inc."
+    } ],
+    "name": "Kotlin", "version": "2.3",
+    "inception": "2025-12-16"
+  }, {
+    "parents": [ {
+      "name": "Ruby"
+    }, {
+      "name": "Kotlin", "version": "2.2"
+    } ],
+    "authors": [ {
+      "name": "Matsumoto Yukihiro"
+    } ],
+    "name": "Ruby", "version": "4.0",
+    "inception": "2025-12-25"
+  }, {
+    "parents": [ {
+      "name": "Crystal"
+    } ],
+    "authors": [ {
+      "name": "Johannes Müller"
+    } ],
+    "name": "Crystal", "version": "1.19",
+    "inception": "2026-01-15"
+  }, {
+    "parents": [ {
+      "name": "Mojo"
+    }, {
+      "name": "Python"
+    }, {
+      "name": "Rust"
+    }, {
+      "name": "Swift"
+    } ],
+    "name": "Mojo", "version": "26.1",
+    "inception": "2026-01-29"
+  }, {
+    "parents": [ {
+      "name": "Dart"
+    } ],
+    "authors": [ {
+      "name": "Google Inc."
+    } ],
+    "name": "Dart", "version": "3.11",
+    "inception": "2026-02-11"
   } ]
 }
